@@ -1,0 +1,468 @@
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 90%;
+}
+
+body,
+.container {
+  font-family: Poppins;
+  font-style: normal;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.fw-b {
+  color: #FEFEFE;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  transition: left 0.3s ease;
+  z-index: 1050;
+  /* Above the main content */
+  padding-top: 20px;
+}
+section{
+  padding: 20px 0;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 10px;
+  text-align: start;
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #0dcaf0;
+}
+
+/* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  /* Initially hidden */
+  z-index: 1049;
+  /* Below the sidebar */
+}
+
+/* Active States */
+.sidebar.active {
+  right: 0;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Navbar (Desktop) Styling */
+.navbar-nav .nav-item .nav-link {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0dcaf0;
+}
+
+.navbar {
+  background-color: #111;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  overflow-y: auto;
+  /* Enable scrolling for overflow content */
+}
+
+/* Responsive Adjustments */
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background-image: url('img/Home.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.btn-circle {
+  display: flex;
+  width: 43.4px;
+  height: 43.4px;
+  padding: 7.922px;
+  justify-content: center;
+  align-items: center;
+  gap: 7.922px;
+  flex-shrink: 0;
+  border-radius: 79.222px;
+  background: #FEFEFE;
+}
+
+.btn-outline-i {
+  display: flex;
+  width: 298px;
+  height: 42px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #FEFEFE;
+  color: #D9D9D9;
+}
+
+.btn-get {
+  display: flex;
+  width: 231px;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #45E3FF;
+}
+
+.btn-get:hover {
+
+  border-radius: 100px;
+  border: 2px solid #45E3FF;
+}
+
+.btn-circle:hover {
+  color: #0dcaf0;
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-link {
+    margin-right: 0;
+    padding: 8px;
+  }
+
+
+}
+
+/* Initial Transparent Navbar */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Navbar Background After Scroll */
+.navbar.scrolled {
+  background-color: #111;
+  /* Or any color you want */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section Styling */
+.hero-section {
+  height: 100vh;
+  /* Full screen height */
+  background-size: cover;
+
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-custom {
+  background-color: #111;
+  /* Dark background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
+  /* Ensures the border effect stays inside the card */
+}
+
+.card-custom:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  /* Space for the gradient border to create the 1px effect */
+  background: linear-gradient(180deg,
+      #3b8c9c 50%,
+      /* Color for 1px border */
+      transparent 50%),
+    /* Transition to thinner border */
+    linear-gradient(180deg, transparent 50%, #2b5861 50%);
+  /* Color for 0.7px border */
+  background-size: 100% 100%;
+  background-origin: border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.card-custom .content {
+  position: relative;
+  z-index: 2;
+}
+
+.mob{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card-custom h5{
+    font-size: 18px;
+  }
+  .card-custom p{
+    font-size: 13px;
+  }
+  .desk{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
+  
+}
+
+
+/* Overlay Styling */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  /* Initially hidden */
+  z-index: 1049;
+  /* Below the sidebar */
+}
+
+.iconn {
+  width: fit-content;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  border: 1px solid #45E3FF;
+}
+
+.card {
+  display: flex;
+
+  padding: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  border-radius: 15px;
+  border: 1px solid #45E3FF;
+}
+
+
+
+.card-custom h5 {
+  color: #Fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.card-custom p {
+  color: #d1cdcd;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.buld h5 {
+
+  color: #FEFEFE;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.buld p {
+  color: #c6c3c3;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.buld .text-info {
+  color: #45E3FF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.btt {
+  margin-top: 20px;
+  display: flex;
+  width: 280px;
+  height: 64px;
+  padding: 10px 48px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+    /* Hide desktop menu on mobile */
+  }
+  .fw-b{
+    font-size: 32px;
+  }
+  .btn-outline-i{
+    font-size: 16px;
+    width: 230px ;
+    padding: 0px 10px;
+  }
+  .btn-outline-i span svg{
+    width: 20px;
+    height: 20px;
+
+  }
+  .btn-get{
+    width: 160px;
+    height: 40px;
+  }
+  .btn-circle{
+    width: 35.4px;
+    height: 35.4px;
+  }
+  .btn-circle {
+    margin-top: 0px;
+  }
+  .btt{
+    width: 190px;
+    padding: 10px 15px;
+  }
+}
+
+
+.splide1 .splide__arrows{
+  position: absolute;
+  top: -60%;
+    right: 0%;
+}
+.splide1 .splide__arrow--prev {
+  display: flex;
+  width: 75px;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+border: 1px solid #FEFEFE;
+background-color: transparent;
+  left: -13em;
+  color: #fff;
+ 
+}
+.splide1 .splide__arrow--next {
+  display: flex;
+  width: 75px;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+border-radius: 100px;
+border: 1px solid #FEFEFE;
+  
+}
+.splide__arrow svg {
+  fill: #fff;
+  height: 15px;
+  width: 1.2em;
+}
+.splide__arrow:hover svg {
+  fill: black;
+  height: 15px;
+  width: 1.2em;
+}
+ .splide__arrow--next:hover, .splide__arrow--prev:hover{
+  background-color: #45E3FF;
+  border: 1px solid #45E3FF;
+
+}
