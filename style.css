@@ -7,12 +7,12 @@
   max-width: 90%;
 }
 
-body,
-.container {
+body{
   font-family: Poppins;
   font-style: normal;
   line-height: normal;
   text-transform: capitalize;
+  background-color: #010012;
 }
 
 .fw-b {
@@ -507,7 +507,14 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 1568px) {
+  .fw-b {
+    font-size: 52px;
+  }
+  .splide2 h1{
+    font-size: 92px;
+  }
+}
 @media (max-width: 991px) {
   .navbar-collapse {
     display: none;
@@ -568,4 +575,12 @@ footer {
   .media {
     width: 80% !important;
   }
+  .splide1 .splide__arrows {
+ 
+    top: -40%;
+    right: 7%;
+}
+.mob-center{
+  text-align: center;
+}
 }
