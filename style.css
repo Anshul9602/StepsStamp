@@ -1,24 +1,16 @@
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  max-width: 90%;
-}
 
 body{
   font-family: Poppins;
   font-style: normal;
   line-height: normal;
   text-transform: capitalize;
-  background-color: #010012;
+  background-color: #030215;
 }
 
 .fw-b {
   color: #FEFEFE;
   font-family: Poppins;
-  font-size: 64px;
+  font-size: 54px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -148,7 +140,7 @@ h1 {
 
 .btn-outline-i {
   display: flex;
-  width: 298px;
+  width: 350px;
   height: 42px;
   padding: 0px 20px;
   justify-content: space-between;
@@ -397,7 +389,7 @@ button {
 
 .splide1 .splide__arrows {
   position: absolute;
-  top: -60%;
+  top: -10%;
   right: 0%;
 }
 
@@ -462,7 +454,7 @@ button {
 .splide2 .splide__slide {
   align-items: center;
   display: flex;
-  width: fit-content !important;
+
 }
 
 footer h4 {
@@ -516,6 +508,10 @@ footer {
   }
 }
 @media (max-width: 991px) {
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 0rem !important;
+}
   .navbar-collapse {
     display: none;
     /* Hide desktop menu on mobile */
@@ -527,7 +523,7 @@ footer {
 
   .btn-outline-i {
     font-size: 16px;
-    width: 230px;
+    width: 280px;
     padding: 0px 10px;
   }
 
@@ -577,8 +573,8 @@ footer {
   }
   .splide1 .splide__arrows {
  
-    top: -40%;
-    right: 7%;
+    top: -6%;
+    right: 20%;
 }
 .mob-center{
   text-align: center;
