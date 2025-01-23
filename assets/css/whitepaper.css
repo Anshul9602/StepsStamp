@@ -1,0 +1,147 @@
+  /* phasecard */
+.phase-card {
+    background: #1a062d; /* Dark background for cards */
+    /* color: #fff; */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    min-width: 214px;
+    border:1px solid #2a193a;
+  }
+
+  .phase-card.highlight {
+    border: 2px solid #ff9800; /* Highlight border for the ongoing phase */
+  }
+  /* .phase-card:hover {
+    border: 1px solid #ff9800; 
+  } */
+
+  .phase-status {
+    font-size: 14px;
+    color: #b0b0b0; /* Gray color for the status text */
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .phase-price {
+    font-size: 14px;
+    color: #b0b0b0;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .phase-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 10px;
+    color:#fdfbff;
+  }
+
+  .phase-tokens {
+    font-size: 16px;
+    font-weight: bold;
+    color: #C3C3C3;
+  }
+
+  .phase-note {
+    font-size: 12px;
+    color: #b0b0b0;
+    font-weight: 300;
+  }
+  /* phasecard */
+
+  /* table */
+
+  
+  .value-investing .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .value-investing .header h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .value-investing .header p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ccc;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: #160623;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  thead th {
+    background: #160623;
+    color: #858BA0;
+    padding: 15px;
+    font-size: 12px;
+    
+    border:2px solid #2a193a;
+  }
+  thead th h4{
+   
+    color: #fff;
+   font-weight: 700;
+    font-size: 24px;
+    
+    
+  }
+  thead th p{
+   
+    color: #858BA0;
+   font-weight: 500;
+    font-size: 14px;
+    
+    
+  }
+  
+  thead th span {
+    display: block;
+    font-size: 24px;
+  color: #fff;
+    margin-top: 5px;
+  }
+  
+  tbody td {
+    padding: 15px;
+    font-size: 15px;
+    font-size: 500;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background: #160623;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #160623;
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  table td {
+    border: 2px solid #2a193a;
+  }
+  
+  td, th {
+    color: #e0e0e0;
+  }
+  
+  /* table */

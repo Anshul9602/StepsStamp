@@ -1,0 +1,829 @@
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+
+
+
+ .font {
+   font-family: "Lexend", serif;
+   font-optical-sizing: auto;
+   /* font-weight: <weight>; */
+   font-style: normal;
+ }
+
+ body {
+   font-family: "Lexend", serif;
+   margin: 0;
+   background: #11011e;
+   color: #B6B6B6;
+ }
+
+ a,
+ a:hover {
+   text-decoration: none;
+ }
+
+ .btns {
+   background-color: #291A37;
+   color: white;
+   padding: 5px 20px;
+   border-radius: 51px;
+   font-size: 14px;
+   border: 1px solid #4A4A4A;
+ }
+
+ header {
+   background: #11011e;
+   /* Dark background */
+ }
+
+ .nav-link {
+   font-size: 16px;
+   font-weight: 400;
+   transition: color 0.3s ease;
+ }
+
+ .nav-link:hover {
+   color: #ffc107;
+   /* Hover effect with yellow color */
+ }
+
+ .sub-heading {
+   font-size: 18px;
+   font-weight: 300;;
+   color: #B6B6B6;
+ }
+
+ .main-heading {
+   font-weight: 600;
+ }
+
+
+
+ .powered-by-link {
+   display: inline-block;
+   padding: 5px 24px;
+   font-size: 16px;
+   font-weight: 600;
+   color: transparent;
+   /* Make the text transparent */
+   text-decoration: none;
+   border-radius: 25px;
+   background: linear-gradient(90deg, #FFFFB7 0%, #F9DF80 22%, #FAB001 57%, #ECDAA0 78%, #FCD063 98%);
+   -webkit-background-clip: text;
+   /* Ensures the gradient is clipped to the text */
+   background-clip: text;
+   border: 2px solid #F9DF80;
+   /* Border color matching the gradient */
+   position: relative;
+ }
+
+ .powered-by-link:before,
+ .powered-by-link:after {
+   content: "◆";
+   font-size: 12px;
+   color: #FAB001;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .powered-by-link:before {
+   left: 10px;
+ }
+
+ .powered-by-link:after {
+   right: 10px;
+ }
+
+ .powered-by-link:hover {
+   text-decoration: none;
+   color: transparent;
+   /* Gradient still visible on hover */
+   background: linear-gradient(90deg, #FFFFB7 0%, #F9DF80 22%, #FAB001 57%, #ECDAA0 78%, #FCD063 98%);
+   -webkit-background-clip: text;
+   background-clip: text;
+   border-color: #FAB001;
+   /* Slightly darker border on hover */
+ }
+
+
+ .btn-warning {
+   background: linear-gradient(90deg, #FFFFB7 0%, #F9DF80 22%, #FAB001 57%, #ECDAA0 78%, #FCD063 98%);
+   border: none;
+   transition: background 0.3s ease;
+   padding: 5px 20px;
+   font-weight: 500;
+   border-radius: 30px;
+ }
+
+ .btn-warning:hover {
+   background: linear-gradient(90deg, #FFFFB7 0%, #F9DF80 22%, #FAB001 57%, #ECDAA0 78%, #FCD063 98%);
+   color: #fff;
+ }
+
+ /* Centering the navbar on desktop */
+ .nav.justify-content-center {
+   gap: 20px;
+   /* Spacing between links */
+ }
+ .banner1
+ {
+  position: relative;
+ }
+
+ .hero-banner {
+   position: relative;
+   overflow: hidden;
+   background-color: #1a001f;
+
+ }
+
+ .circles {
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 0;
+   width: 500px;
+ }
+
+ .content {
+   position: absolute;
+   font-size: 20px;
+   top: 29%;
+   left: 31%;
+   z-index: 1;
+   width: 41%
+ }
+
+ /* banner circle alg */
+ /* .content {
+  position: absolute;
+    font-size: 55px;
+    top: 15%;
+    left: 36%;
+    z-index: 1;
+    width: 31%;
+} */
+
+ .center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .heading {
+   font-size: 21px;
+   /* font-weight: 800; */
+ }
+
+
+ .section-title {
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ .card {
+   background-color: #2b1b47;
+   border: none;
+   border-radius: 10px;
+   padding: 20px;
+   margin-bottom: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   height: 100%;
+ }
+
+ .icon {
+   font-size: 3rem;
+   color: #ffdd57;
+   margin-bottom: 15px;
+ }
+
+ .reward-value {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+ }
+
+ .pool {
+   margin-top: 15px;
+   background-color: #160622;
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   /* height: 100%; */
+ }
+
+ .pool-icon {
+   font-size: 1.5rem;
+   margin-right: 10px;
+   color: #ffdd57;
+ }
+
+ .btn-link {
+   color: #ffdd57;
+ }
+
+ .btn-link:hover {
+   text-decoration: underline;
+ }
+
+ /* .card-custom1 {
+    background-color: #160622;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-header1 {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .badge1 {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+  }
+  .price1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+  } */
+ .features1 {
+   margin-bottom: 20px;
+   text-align: left;
+ }
+
+ .features1 li {
+   margin-bottom: 10px;
+ }
+
+ .features1 li i {
+   margin-right: 10px;
+ }
+
+ .btn-custom1 {
+   background-color: #1a73e8;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 30px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+ }
+
+ .btn-custom1:hover {
+   background-color: #155ab2;
+ }
+
+ .yellow-gradient {
+  background: linear-gradient(141.81deg, #8C421D -14.99%, #FBE67B 37.9%, #FCFBE7 72.08%, #F7D14E 110.2%, #D4A041 147.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 45px;
+ }
+
+ /* features */
+ .normals {
+   padding: 40px 0;
+ }
+
+ .scrollable-section2 {
+   width: 100%;
+   max-height: 450px;
+   padding: 20px;
+   border-radius: 40px;
+   border: 1px solid rgba(255, 255, 255, 0.05);
+   
+   background: rgba(255, 255, 255, 0.02);
+   overflow-y: scroll;
+   /* Forces both horizontal and vertical scrollbars */
+ }
+
+ .scrollable-section2::-webkit-scrollbar {
+   width: 3px !important;
+   /* Sets the width of the vertical scrollbar to 3px */
+   height: 9px !important;
+   /* Sets the height of the horizontal scrollbar to 9px */
+ }
+
+ .scrollable-section2::-webkit-scrollbar-thumb {
+   background-color: #33a4f5 !important;
+   /* Sets the thumb color to red */
+   border-radius: 5px !important;
+   /* Optional: Adds rounded corners to the thumb */
+ }
+
+ .scrollable-section2::-webkit-scrollbar-track {
+   background-color: transparent !important;
+   /* Keeps the track transparent */
+ }
+
+
+ .active .scroll-item2 {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   margin: 10px 0;
+   border-radius: 8px;
+   background: rgba(255, 255, 255, 0.05);
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.3s ease;
+ }
+ .scroll-item2 {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   margin: 10px 0;
+   border-radius: 8px;
+   background: transparent;
+   cursor: pointer;
+   transition: background 0.3s ease, transform 0.3s ease;
+ }
+
+ .scroll-item2:hover {
+   background: rgba(255, 255, 255, 0.1);
+   transform: scale(1.02);
+ }
+
+ .scroll-item2.active2 {
+   background: rgba(255, 255, 255, 0.2);
+   outline: 1px solid #3a9efb;
+ }
+
+ .icon-circle2 {
+   width: 50px;
+   height: 50px;
+   border: 1px solid #33a4f5;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.02);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   margin-right: 15px;
+
+ }
+
+ .text-container2 h3 {
+   font-size: 16px;
+   margin: 0;
+ }
+
+ .text-container2 p {
+   font-size: 12px;
+   margin: 5px 0 0;
+   opacity: 0.8;
+   line-height: 1.5;
+ }
+
+ /* features */
+
+
+ /* faq */
+
+ .faq-container {
+   padding: 20px;
+   max-width: 100%;
+   margin: 20px auto;
+   border-radius: 8px;
+   background-color: none;
+ }
+
+ .faq-container h1 {
+   text-align: center;
+   /* color: #f5a623; */
+ }
+
+ .faq-container p {
+   text-align: center;
+   color: #d1d1d1;
+   margin-bottom: 20px;
+ }
+
+ .faq-section {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .faq-item {
+   background-color: #2c223b;
+   padding: 15px;
+   border-radius: 5px;
+ }
+
+ .faq-question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   font-weight: bold;
+   /* color: #f5a623; */
+ }
+
+ .faq-answer {
+   margin-top: 10px;
+   font-size: 14px;
+   color: #d1d1d1;
+   display: none;
+ }
+
+ .faq-question.open {
+   color: #fff;
+ }
+
+ .faq-icon {
+   font-size: 18px;
+ }
+
+ /* faq */
+
+ /* 5 card */
+ .card-custom1 {
+   background-color: #160622;
+   border-radius: 15px;
+   text-align: center;
+   max-width: 350px;
+   margin: auto;
+   /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); */
+   border: 1px solid #281A33;
+   transition: transform 0.5s ease, background-color 0.5s ease;
+ }
+ .card-custom1:hover {
+  background-color: #2c223b;
+  transform: scale(1.1); /* Scale by 10% */
+}
+ 
+ .card-custom1:hover .btn-custom1 {
+  background: linear-gradient(90deg, #FFFFB7 0%, #F9DF80 22%, #FAB001 57%, #ECDAA0 78%, #FCD063 98%);
+  border: 2px solid transparent;
+  transition: background 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+  color: black;
+}
+
+
+ .card-header1 {
+   position: relative;
+   height: 78px;
+   overflow: visible;
+ }
+
+ .card-header1 img {
+   position: absolute;
+   top: -50%;
+   /* Move half of the image above the card */
+   left: 50%;
+   transform: translate(-50%, 0);
+   width: 100%;
+   /* Adjust size as needed */
+   z-index: 2;
+   /* Ensure it stays above the card */
+ }
+
+ .card-header1 .overlay-text {
+   position: absolute;
+   top: 50%;
+   /* Place text in the middle of the image */
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   font-weight: 600;
+   font-size: 12px;
+   z-index: 3;
+   /* Ensure text appears above the image */
+ }
+
+ .card-body1 {
+   padding: 13px;
+   padding-top: 5px;
+ }
+
+ .badge1 {
+   background-color: #fff;
+   color: #000;
+   padding: 5px 20px;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 30px;
+   position: absolute;
+   top: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ .price1 {
+   font-size: 22px !important;
+   font-weight: bold;
+   margin: 20px 0;
+ }
+
+ .subtext1 {
+   font-size: 14px;
+   /* margin-bottom: 20px; */
+   color: rgba(255, 255, 255, 0.7);
+   text-align: left;
+ }
+
+ .features2 {
+   text-align: left;
+   /* margin: 20px 0; */
+ }
+
+ .features2 li {
+   display: flex;
+   align-items: center;
+   font-size: 13px;
+   /* margin-bottom: 10px; */
+ }
+
+ .features2 li i {
+   margin-right: 10px;
+   font-size: 14px;
+ }
+
+ .mini {
+   font-size: 11px;
+   margin: 0;
+   margin-bottom: 3px;
+   text-align: left;
+   color: #777777;
+ }
+
+ .super-mini {
+   font-weight: 400;
+   font-size: 8px;
+ }
+ .grey{
+  color: grey;
+ }
+
+ .btn-custom1 {
+   background-color: transparent;
+   /* Keeps the background white */
+   color: #1a73e8;
+   /* Sets the text color to #1a73e8 */
+   padding: 10px 50px;
+   border: 2px solid #1a73e8;
+   /* Sets the border color to #1a73e8 */
+   border-radius: 30px;
+   font-size: 14px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+ }
+
+ 
+
+
+
+ .bi-check-circle-fill::before {
+   color: #53BFFD;
+ }
+
+ .bi-x-circle-fill::before {
+   color: #EC7171;
+ }
+
+ .row1 .col-lg-2 {
+   width: 228px !important;
+   padding: 0;
+   padding-right: 15px;
+   padding-top: 15px;
+ }
+
+ /* 5 card */
+
+ /* reward1 */
+ .card3 {
+   position: relative;
+   width: 46%;
+   padding: 20px;
+   /* border: 1px solid #281A33; */
+   background-color: #160724;
+   /* color: #ffffff; */
+   border-radius: 16px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+
+ .content3 {
+   z-index: 1;
+   position: relative;
+ }
+
+ .icon-container3 {
+   position: absolute;
+   top: -20px;
+   /* Adjust positioning */
+   right: -20px;
+   /* Adjust positioning */
+   width: 97px;
+   height: 67px;
+   background-color: #11011e;
+   display: flex;
+   justify-content: start;
+   align-items: end;
+   padding-bottom: 10px;
+   padding-left: 15px;
+   border-radius: 20px;
+ }
+
+ .icon-container3 img {
+   width: 40px;
+   /* Adjust icon size */
+   height: 40px;
+ }
+
+ /* reward1 */
+
+ /* reward2 */
+ .card4 {
+   position: relative;
+   width: 46%;
+   padding: 20px;
+   /* border: 1px solid #281A33; */
+   background-color: #160724;
+   /* color: #ffffff; */
+   border-radius: 16px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+
+ .content4 {
+   z-index: 1;
+   position: relative;
+ }
+
+ .icon-container4 {
+   position: absolute;
+   top: -20px;
+   /* Adjust positioning */
+   right: -20px;
+   /* Adjust positioning */
+   width: 97px;
+   height: 67px;
+   background-color: #11011e;
+   display: flex;
+   justify-content: start;
+   align-items: end;
+   padding-bottom: 10px;
+   padding-left: 15px;
+   border-radius: 20px;
+ }
+
+ .icon-container4 img {
+   width: 40px;
+   /* Adjust icon size */
+   height: 40px;
+ }
+
+ /* reward2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* footer */
+ footer {
+   padding-top: 50px;
+ }
+
+ .flink {
+   font-size: 16px;
+   color: #B6B6B6;
+ }
+
+ .social-icons {
+   display: flex;
+   gap: 15px;
+ }
+
+ .social-icons a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   background-color: #331b49;
+   color: white;
+   border-radius: 50%;
+   font-size: 24px;
+   text-decoration: none;
+   transition: transform 0.2s;
+ }
+
+ .social-icons a:hover {
+   transform: scale(1.1);
+ }
+
+ .fa-brands,
+ .fab {
+   font-size: 16px;
+ }
+
+ /* footer */
+
+ /* crypto */
+ .crypto-card {
+  background-color: #2f1a38;
+    border: 1px solid #3e2845;
+    border-radius: 25px;
+    padding: 12px 27px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 88%;
+    width: 228px;
+}
+.cfont{
+  color: #b0afb1;
+  font-size:13px ;
+}
+
+.img-box {
+  position: relative;
+  height: 100%; /* Set an explicit height or let it auto-expand based on content */
+}
+
+.img-card {
+  position: absolute;
+  top:15%;
+  left: 10px;
+  right: 0;
+  z-index: 10; /* Ensure it is above the image */
+}
+.cc2{
+  margin-top: -90px;
+}
+
+.blue{
+  background: rgba(17, 243, 255, 1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 45px;
+}
+
+/* watches */
+/* .silverbox {
+  position: relative;
+  
+}
+
+.silvertext1 {
+  position: absolute;
+    top: 5%;
+    left: 33%;
+    height: 38vh;
+    width: 13vw;
+  border: 2px solid red;
+  transform: translate(-23%, -50%);
+}
+
+.limited{
+  font-size: 12px;
+  color:#246BFD ;
+}
+.wname{
+  color: #200745;
+  font-size: 34px;
+}
+.get{
+  color: #3A3A3A;
+  font-size: 16px;
+
+}
+.winfo{
+  color: #3A3A3A;
+  font-size: 16px;
+}
+.hurry{
+  color: #FF6F02;
+  font-size: 14px;
+}
+.units{
+  color: #200745;
+  font-size: 16px;
+}
+
+ */
+

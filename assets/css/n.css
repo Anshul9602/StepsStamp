@@ -1,0 +1,15 @@
+.reward-p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.btn-link, .btn-link:hover{
+    text-decoration: none;
+    color:#F78300 ;
+    font-size: 16px;
+}
+.rp{
+    font-size: 20px;
+}
+.mr{
+    margin-right: 10px;
+}
