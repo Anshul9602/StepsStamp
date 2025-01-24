@@ -13,3 +13,160 @@
 .mr{
     margin-right: 10px;
 }
+
+
+/* sailing */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    padding: 0 208px;
+    width: 100%;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #f78300;
+    z-index: -1;
+  }
+  
+  .timeline-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .timeline-item .timeline-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #080e26; /* Matches background color */
+    border: 2px solid #f78300;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-item .timeline-circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #f78300;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .timeline-item .timeline-circle::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: #f78300;
+  }
+  
+  /* For July and November: rotate the line upwards */
+  .timeline-item.top .timeline-circle::after {
+    transform: translateX(-50%) rotate(180deg);
+    top: -20px; /* Position above the circle */
+    bottom: unset; /* Reset the bottom position */
+  }
+  
+  /* Timeline content positioning */
+  .timeline-item .timeline-content {
+    position: absolute;
+    width: 150px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item .timeline-content.top {
+    top: -106px;
+  }
+  
+  .timeline-item .timeline-content.bottom {
+    top: 38px;
+  }
+  
+  .timeline-item h5 {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .timeline-item p {
+    font-size: 12px;
+    color: #cccccc;
+  }
+  .no-padding-margin {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box; /* Prevent padding from affecting width */
+  }
+  body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .margin-t{
+    margin: 130px 0;
+  } 
+
+/* sailing */
+
+.yellow{
+  font-feature-settings: 'salt' on, 'liga' off;
+font-family: Lexend;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%, #ECDAA0 80.52%, #FCD063 98.26%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.blue1{
+  color: #11F3FF;
+text-align: center;
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Lexend;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; /* 136.364% */
+}
+.where1{
+  color: var(--Font-Color-Light-Subtitle, #B6B6B6);
+text-align: center;
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Lexend;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+.lm{
+  color: #F78300;
+text-align: center;
+font-family: Lexend;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

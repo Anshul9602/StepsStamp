@@ -2,6 +2,53 @@
  <weight>: Use a value from 100 to 900 */
 
 
+ /* crypto */
+ .echosystem{
+  background-color: #2f1a38;
+    border: 1px solid #3e2845;
+    border-radius: 25px;
+    padding: 12px 27px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 88%;
+    width: 228px;
+}
+.cfont{
+  color: #b0afb1;
+  font-size:13px ;
+}
+
+.img-box {
+  position: relative;
+  height: 100%; /* Set an explicit height or let it auto-expand based on content */
+}
+
+.img-card1 {
+  position: absolute;
+  top:15%;
+  left:0;
+  right: 0;
+  z-index: 10; /* Ensure it is above the image */
+}
+.img-card2 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 0;
+  z-index: 10;
+  width: 90%;
+}
+.cc2{
+  margin-top: 94px;
+}
+
+.blue{
+  background: rgba(17, 243, 255, 1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 45px;
+}
 
 
  .font {
@@ -759,29 +806,6 @@
   font-size:13px ;
 }
 
-.img-box {
-  position: relative;
-  height: 100%; /* Set an explicit height or let it auto-expand based on content */
-}
-
-.img-card {
-  position: absolute;
-  top:15%;
-  left: 10px;
-  right: 0;
-  z-index: 10; /* Ensure it is above the image */
-}
-.cc2{
-  margin-top: -90px;
-}
-
-.blue{
-  background: rgba(17, 243, 255, 1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size: 45px;
-}
 
 /* watches */
 /* .silverbox {

@@ -22,6 +22,20 @@
       -webkit-text-fill-color: transparent;
     }
 
+    .offcanvas-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .offcanvas-body .nav-link {
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .offcanvas-body .nav-link:hover {
+      color: #f78300;
+    }
+
     .yellow-gradient {
       background: linear-gradient(141.81deg, #8C421D -14.99%, #FBE67B 37.9%, #FCFBE7 72.08%, #F7D14E 110.2%, #D4A041 147.62%);
       -webkit-background-clip: text;
@@ -29,9 +43,10 @@
       font-weight: 400;
       font-size: 45px;
     }
+
     .yellow-gradient1 {
-     
-    
+
+
       font-weight: 400;
       font-size: 45px;
     }
@@ -95,14 +110,16 @@
       align-items: center;
       gap: 18px;
     }
-.active .phase-card{
-  background: #2C223B;
-}
+
+    .active .phase-card {
+      background: #2C223B;
+    }
+
     .nav1 .nav-link.active {
       padding: 10px;
       color: #fff;
       background-color: transparent;
-     
+
       border-color: transparent;
     }
 
@@ -265,23 +282,22 @@
 
     .faq-item {
       border-radius: 20px;
-border: 1px solid rgba(255, 255, 255, 0.08);
-padding: 19px 20px;
-background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 19px 20px;
+      background: rgba(255, 255, 255, 0.02);
 
-align-self: stretch;
+      align-self: stretch;
 
 
     }
+
     .faq-item {
       border-radius: 20px;
-border: 1px solid rgba(255, 255, 255, 0.08);
-padding: 19px 20px;
-background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 19px 20px;
+      background: rgba(255, 255, 255, 0.02);
 
-align-self: stretch;
-
-
+      align-self: stretch;
     }
 
     .faq-question {
@@ -307,12 +323,12 @@ align-self: stretch;
       border-top: 0.5px solid #2e2c2c;
       display: none;
       color: #EDEDED;
-padding-top: 10px;
+      padding-top: 10px;
       font-family: Lexend;
       font-size: 14px;
       font-style: normal;
       font-weight: 300;
-      
+
     }
 
     .faq-answer.show {
@@ -324,27 +340,82 @@ padding-top: 10px;
       background: #F78300;
       border-radius: 50%;
       width: 30px;
-    height: 30px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+      height: 30px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
     }
-    .do_you{
+
+    .do_you {
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      
+
       background: rgba(255, 255, 255, 0.02);
-      padding:5% 10%;
-      
+      padding: 5% 10%;
+
     }
 
 
     .for input::placeholder,
     .for textarea::placeholder {
-      color: #fff; /* Change this to your desired color */
-      opacity: 1; /* Ensure full visibility of the placeholder */
+      color: #fff;
+      /* Change this to your desired color */
+      opacity: 1;
+      /* Ensure full visibility of the placeholder */
     }
+
+
+@media (max-width:680px){
+.nav1, .nav11, .nav2 {
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+
+}
+.nav1 .nav-item, .nav11 .nav-item, .nav2 .nav-item {
+  max-width: 100%;
+  
+
+}
+.tab_imgg{
+margin-left: 0px !important;
+width: 100%;
+}
+
+.mob-block {
+display: none !important;
+}
+.yellow-gradient{
+font-size: 22px;
+}
+.span_yellow{
+font-size: 22px;
+}
+.sub-heading {
+font-size: 14px;
+}
+.text-container2 h3{
+font-size: 14px;
+}
+.icon-circle2{
+  width:50px ;
+  height: 50px;
+}
+.comm h5{
+font-size: 16px;
+}
+.faq-question{
+font-size: 16px;
+}
+.do_you .yellow-gradient1{
+font-size: 24px;
+}
+.do_you .col-md-2{
+margin-top: 10px;
+}
+}
+
   </style>
 
 </head>
@@ -357,14 +428,13 @@ padding-top: 10px;
         <!-- Logo Section -->
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
-          <!-- <span class="fw-bold text-light">steps <span class="text-warning">STAMP</span></span> -->
         </div>
 
-        <!-- Navbar Links (centered) -->
+        <!-- Navbar Links (Desktop Only) -->
         <nav class="d-none d-lg-block">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Home</a>
+              <a href="index.html" class="nav-link text-light">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link text-light">Ecosystem</a>
@@ -381,7 +451,6 @@ padding-top: 10px;
             <li class="nav-item">
               <a href="#" class="nav-link text-light">Whitepaper</a>
             </li>
-
             <li class="nav-item">
               <a href="#" class="nav-link text-light">FAQ's</a>
             </li>
@@ -389,39 +458,55 @@ padding-top: 10px;
         </nav>
 
         <!-- Button Section -->
-        <div>
+        <div class="d-none d-lg-block">
           <a href="#" class="btn btn-warning text-dark">Get The App</a>
         </div>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
-          aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+          aria-controls="mobileNav">
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list "></i>
 
-      <!-- Mobile Menu -->
-      <div class="collapse d-lg-none mt-3" id="mobileNav">
-        <ul class="nav flex-column text-center">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="whitepaper.html" class="nav-link text-light">Whitepaper</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Referral</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Affiliation</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">FAQ's</a>
-          </li>
-        </ul>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <h5 id="mobileNavLabel" class="text-light">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Ecosystem</a>
+        </li>
+        <li class="nav-item">
+          <a href="blockchain.html" class="nav-link gradient-text">Blockchains</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">DSSB</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Rewards</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Whitepaper</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">FAQ's</a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#" class="btn btn-warning text-dark w-100">Get The App</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- header -->
 
   <!-- how -->
@@ -1105,7 +1190,7 @@ padding-top: 10px;
             <!-- Step to Coins -->
             <div class="tab-pane fade show active" id="stepCoins" role="tabpanel" aria-labelledby="stepCoins-tab">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" style="max-height:540px;margin-left:20%" />
+                <img src="assets/img/wood.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -1173,42 +1258,49 @@ padding-top: 10px;
         </div>
       </div>
       <div class="row">
-       
+
         <div class="container my-4 ">
           <!-- Tab Navigation -->
           <ul class="nav nav-tabs nav2" id="newTabsStructure" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link " id="tab-step-tracking" data-bs-toggle="tab" data-bs-target="#content-step-tracking" type="button" role="tab" aria-controls="content-step-tracking" aria-selected="true">
+              <button class="nav-link " id="tab-step-tracking" data-bs-toggle="tab"
+                data-bs-target="#content-step-tracking" type="button" role="tab" aria-controls="content-step-tracking"
+                aria-selected="true">
                 Step Tracking
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-blockchain" data-bs-toggle="tab" data-bs-target="#content-blockchain" type="button" role="tab" aria-controls="content-blockchain" aria-selected="false">
+              <button class="nav-link" id="tab-blockchain" data-bs-toggle="tab" data-bs-target="#content-blockchain"
+                type="button" role="tab" aria-controls="content-blockchain" aria-selected="false">
                 Blockchain
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-referral" data-bs-toggle="tab" data-bs-target="#content-referral" type="button" role="tab" aria-controls="content-referral" aria-selected="false">
+              <button class="nav-link" id="tab-referral" data-bs-toggle="tab" data-bs-target="#content-referral"
+                type="button" role="tab" aria-controls="content-referral" aria-selected="false">
                 Referral
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab-staking" data-bs-toggle="tab" data-bs-target="#content-staking" type="button" role="tab" aria-controls="content-staking" aria-selected="false">
+              <button class="nav-link active" id="tab-staking" data-bs-toggle="tab" data-bs-target="#content-staking"
+                type="button" role="tab" aria-controls="content-staking" aria-selected="false">
                 Staking
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-payment" data-bs-toggle="tab" data-bs-target="#content-payment" type="button" role="tab" aria-controls="content-payment" aria-selected="false">
+              <button class="nav-link" id="tab-payment" data-bs-toggle="tab" data-bs-target="#content-payment"
+                type="button" role="tab" aria-controls="content-payment" aria-selected="false">
                 Payment
               </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-pool" data-bs-toggle="tab" data-bs-target="#content-pool" type="button" role="tab" aria-controls="content-pool" aria-selected="false">
+              <button class="nav-link" id="tab-pool" data-bs-toggle="tab" data-bs-target="#content-pool" type="button"
+                role="tab" aria-controls="content-pool" aria-selected="false">
                 Pool Reward
               </button>
             </li>
           </ul>
-        
+
           <!-- Tab Content -->
           <div class="tab-content" id="newTabsStructureContent">
             <div class="tab-pane fade " id="content-step-tracking" role="tabpanel" aria-labelledby="tab-step-tracking">
@@ -1218,23 +1310,35 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1244,10 +1348,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1258,10 +1367,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1270,7 +1384,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
             <div class="tab-pane fade" id="content-blockchain" role="tabpanel" aria-labelledby="tab-blockchain">
@@ -1280,23 +1394,35 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1306,10 +1432,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1320,10 +1451,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1332,7 +1468,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
             <div class="tab-pane fade" id="content-referral" role="tabpanel" aria-labelledby="tab-referral">
@@ -1342,23 +1478,35 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1368,10 +1516,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1382,10 +1535,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1394,7 +1552,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
             <div class="tab-pane fade show active" id="content-staking" role="tabpanel" aria-labelledby="tab-staking">
@@ -1404,22 +1562,32 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
-                      </svg></span>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white"></path>
+                        </svg></span>
                     </div>
                     <div class="faq-answer show">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1429,10 +1597,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1443,10 +1616,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1455,7 +1633,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
             <div class="tab-pane fade" id="content-payment" role="tabpanel" aria-labelledby="tab-payment">
@@ -1465,23 +1643,35 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1491,10 +1681,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1505,10 +1700,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1517,7 +1717,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
             <div class="tab-pane fade" id="content-pool" role="tabpanel" aria-labelledby="tab-pool">
@@ -1527,23 +1727,35 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing monday with door teams break. Prioritize in discussion give any should by for on. We light shark move alpha paradigm.
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1553,10 +1765,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1567,10 +1784,15 @@ padding-top: 10px;
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                       How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="20" fill="#F78300"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"/>
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
                         </svg></span>
                     </div>
                     <div class="faq-answer">
@@ -1579,7 +1801,7 @@ padding-top: 10px;
                     </div>
                   </div>
                 </div>
-      
+
               </div>
             </div>
           </div>
@@ -1606,32 +1828,38 @@ padding-top: 10px;
                 <div class="row ">
                   <div class="col-md-10">
                     <div class="mb-3">
-                 
-                      <textarea class="form-control" id="message" name="message" style="background: transparent;    color: #fff;" rows="4" placeholder="Enter your message" required></textarea>
+
+                      <textarea class="form-control" id="message" name="message"
+                        style="background: transparent;    color: #fff;" rows="4" placeholder="Enter your message"
+                        required></textarea>
                     </div>
                     <!-- Email -->
                     <div class="">
-                      
-                      <input type="email" class="form-control" style="background: transparent;    color: #fff;"id="email" name="email" placeholder="Enter your email" required>
+
+                      <input type="email" class="form-control" style="background: transparent;    color: #fff;"
+                        id="email" name="email" placeholder="Enter your email" required>
                     </div>
                   </div>
-                  <div class="col-md-2" style="align-items: end; display: flex;">  <button type="submit" class="btn btn-primary" style="border-radius: 1000px;background: #F78300;border-color:#F78300;padding: 10px 28px;color:black;">SEND</button></div>
+                  <div class="col-md-2" style="align-items: end; display: flex;"> <button type="submit"
+                      class="btn btn-primary"
+                      style="border-radius: 1000px;background: #F78300;border-color:#F78300;padding: 10px 28px;color:black;">SEND</button>
+                  </div>
                 </div>
-               
-            
+
+
                 <!-- Submit Button -->
-               
+
               </form>
-             
-  
-            
+
+
+
             </div>
           </div>
         </div>
-      
+
       </div>
-    
-     
+
+
     </div>
   </section>
   <!-- faq -->
@@ -1639,7 +1867,7 @@ padding-top: 10px;
     function toggleFAQ(element) {
       const answer = element.nextElementSibling;
       const icon = element.querySelector(".faq-icon");
-    
+
       // SVG for the plus icon
       const plusSVG = `
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
@@ -1648,7 +1876,7 @@ padding-top: 10px;
           <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"></path>
         </svg>
       `;
-    
+
       // SVG for the minus icon
       const minusSVG = `
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
@@ -1656,7 +1884,7 @@ padding-top: 10px;
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
         </svg>
       `;
-    
+
       // Toggle the visibility of the answer
       if (answer.classList.contains("show")) {
         answer.classList.remove("show");
@@ -1669,7 +1897,7 @@ padding-top: 10px;
           openAnswer.previousElementSibling.querySelector(".faq-icon").innerHTML = plusSVG;
           openAnswer.previousElementSibling.querySelector(".faq-icon").classList.remove("rotate");
         });
-    
+
         answer.classList.add("show");
         icon.innerHTML = minusSVG; // Set to minus icon
         icon.classList.add("rotate");
@@ -1693,10 +1921,10 @@ padding-top: 10px;
               <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
           </div>
-          <div class="col-md-9 d-flex justify-content-around">
+          <div class="col-md-9 d-flex justify-content-around mob-block">
             <div class="center"><a class="flink" href>Home</a></div>
             <div class="center"><a class="flink" href>User Journey</a></div>
-            
+
             <div class="center"><a class="flink" href>Support</a></div>
             <div class="center"><a class="flink" href>Whitepaper</a></div>
             <div class="center"><a class="flink" href>Terms of Use</a></div>
@@ -1714,7 +1942,7 @@ padding-top: 10px;
         </div>
         <div class="row pt-1">
           <div class="col-md-5">
-            
+
           </div>
         </div>
         <hr />
