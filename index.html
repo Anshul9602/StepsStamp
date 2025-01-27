@@ -15,9 +15,66 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/n.css" />
+  <style>
+    .up1 {
+      border-radius: 20px;
+      border-top: 0.5px solid rgba(168, 194, 186, 0.20);
+
+      border-bottom: 0.5px solid rgba(168, 194, 186, 0.20);
+
+      background: rgba(255, 255, 255, 0.02);
+
+      backdrop-filter: blur(17.5px);
+
+      padding: 20px 40px 20px 40px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .up1 p {
+      color: #FFF;
+
+      font-family: Lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    .share1{
+      color: #1C192D;
+
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+      display: flex;
+height: 50px;
+padding: 0px 40px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 30px;
+background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%, #ECDAA0 80.52%, #FCD063 98.26%);
+    }
+    .share1:hover{
+      color: #1C192D;
+
+    }
+
+    @media (min-width: 768px) {
+      .desk_mr {
+        margin-top: -5%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
+  <!-- header -->
   <!-- header -->
   <header class="font py-3">
     <div class="container">
@@ -25,20 +82,19 @@
         <!-- Logo Section -->
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
-          <!-- <span class="fw-bold text-light">steps <span class="text-warning">STAMP</span></span> -->
         </div>
 
-        <!-- Navbar Links (centered) -->
+        <!-- Navbar Links (Desktop Only) -->
         <nav class="d-none d-lg-block">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">Home</a>
+              <a href="index.html" class="nav-link text-light  gradient-text">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link text-light">Ecosystem</a>
             </li>
             <li class="nav-item">
-              <a href="blockchain.html" class="nav-link text-light ">Blockchains</a>
+              <a href="blockchain.html" class="nav-link text-light">Blockchains</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link text-light">DSSB</a>
@@ -49,55 +105,71 @@
             <li class="nav-item">
               <a href="#" class="nav-link text-light">Whitepaper</a>
             </li>
-
             <li class="nav-item">
-              <a href="#" class="nav-link text-light">FAQ's</a>
+              <a href="#faq" class="nav-link text-light">FAQ's</a>
             </li>
           </ul>
         </nav>
 
         <!-- Button Section -->
-        <div>
+        <div class="d-none d-lg-block">
           <a href="#" class="btn btn-warning text-dark">Get The App</a>
         </div>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
-          aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+          aria-controls="mobileNav">
+          <i class="mobile-nav-toggle mobile-nav-show bi bi-list "></i>
 
-      <!-- Mobile Menu -->
-      <div class="collapse d-lg-none mt-3" id="mobileNav">
-        <ul class="nav flex-column text-center">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="whitepaper.html" class="nav-link text-light">Whitepaper</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Referral</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">Affiliation</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-light">FAQ's</a>
-          </li>
-        </ul>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <h5 id="mobileNavLabel" class="text-light">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link gradient-text">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Ecosystem</a>
+        </li>
+        <li class="nav-item">
+          <a href="blockchain.html" class="nav-link ">Blockchains</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">DSSB</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Rewards</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Whitepaper</a>
+        </li>
+        <li class="nav-item">
+          <a href="##faq" class="nav-link">FAQ's</a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#" class="btn btn-warning text-dark w-100">Get The App</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header -->
   <!-- header -->
 
   <!-- banner -->
   <section class="hero-banner text-center text-white font">
-    <img src="assets/img/hero1.png" alt="Hero Banner" class="img-fluid banner1 " style="width: 100%" />
+    <img src="img/hero.png" alt="Hero Banner" class="img-fluid banner1 " style="width: 100%;background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
     <!-- <img src="assets/img/circles.png" alt="ellipses" class="img-fluid position-absolute circles"> -->
 
-    <div class="container">
+    <div class="container d-none">
       <div class="content">
         <div class="powered-by mb-3">
           <a href="#" class="powered-by-link"> Powered By Solana </a>
@@ -119,59 +191,106 @@
 
   <!-- connecting -->
   <section>
+
+
     <div class="img-box">
       <img src="assets/img/ecosystem.png" alt="" style="width: 100%;" />
+
+
 
       <div class="img-card1">
 
         <div class="container">
-          <div class="row d-flex justify-content-center  ">
-            <div class="col-md-10 text-center">
-              <div class="powered-by ">
-                <a href="#" class="powered-by-link"> StepsStamp Ecosystem </a>
+          <div class="up1" style="">
+            <div class="row justify-content-around">
+              <div class="col-md-2 col-6">
+                <h3 class="main-heading yellow-gradient">125K+</h3>
+                <p>App Downloads</p>
               </div>
-              <h3 class="main-heading yellow-gradient" style="font-size: 31px;">Where Health, Wealth, and <span class="blue" style="font-size: 31px;">Technology</span> </h3>
-              <p class="sub-heading" style="    font-size: 13px;">
-                Through movement, empowerment & blockchain technology, we’re reshaping how health, wealth & <br> technology intersect in everyday life.
-              </p>
+              <div class="col-md-2 col-6">
+                <h3 class="main-heading yellow-gradient">$8M+</h3>
+                <p>Value of Blockchian</p>
+              </div>
+              <div class="col-md-3 col-6">
+                <h3 class="main-heading yellow-gradient">520M+</h3>
+                <p>StepsStamp Token Created</p>
+              </div>
+              <div class="col-md-2 col-6">
+                <h3 class="main-heading yellow-gradient">116B+</h3>
+                <p>Steps Walked</p>
+              </div>
+              <div class="col-md-2">
+                <h3 class="main-heading yellow-gradient">206K+</h3>
+                <p>Watches Delivered</p>
+              </div>
             </div>
           </div>
-        
+          <div class="desk">
+            <div class="row d-flex justify-content-center mt-5 ">
+              <div class="col-md-10 text-center">
+                <div class="powered-by ">
+                  <a href="#" class="powered-by-link"> StepsStamp Ecosystem </a>
+                </div>
+                <h3 class="main-heading yellow-gradient" style="font-size: 31px;">Where Health, Wealth, and <span
+                    class="blue" style="font-size: 31px;">Technology</span> </h3>
+                <p class="sub-heading" style="    font-size: 13px;">
+                  Through movement, empowerment & blockchain technology, we’re reshaping how health, wealth & <br>
+                  technology intersect in everyday life.
+                </p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="mob">
+            <div class="row d-flex justify-content-center mt-5 ">
+              <img src="img/piller.png" alt="" width="100%">
+            </div>
+          </div>
+         
+
         </div>
       </div>
-      <div class="container">
+      <div class="container desk">
         <div class="img-card2">
           <div class="row d-flex justify-content-evenly">
-            
-            <div class="col-md-3 d-flex">
-              <div class="col-md-2"></div>
-              <div class="col-md-10">
+
+            <div class="col-md-3 d-flex mt-3">
+              <div class="col-md-3"></div>
+              <div class="col-md-8">
                 <div class="text-center">
-                  <p class="mb-0 text-center yellow" >Finance</p>
-                  <p class="mb-0 text-center blue1" >Decentralization</p>
+                  <p class="mb-0 text-center yellow">Finance</p>
+                  <p class="mb-0 text-center blue1">Decentralization</p>
                   <p class="cfont text-center where1">Revolutionizing financial systems to give you ultimate control and
                     opportunity.</p>
                 </div>
               </div>
-              
+              <div class="col-md-1"></div>
             </div>
-            <div class="col-md-3 cc2">
-              <div class="text-center">
-                <p class="mb-0 text-center  yellow">Health</p>
-                <p class="mb-0 text-center blue1">Proof of Movement</p>
-                <p class="cfont text-center where1">Every step reflects your commitment to a healthier & more active life.</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="col-md-10">
+            <div class="col-md-3 cc2 d-flex">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
                 <div class="text-center">
-                  <p class="mb-0 text-center  yellow">Technology</p>
-                  <p class="mb-0 text-center blue1">Decentralization</p>
-                  <p class="cfont text-center where1">A trusted digital backbone ensuring security and transparency in every step.</p>
+                  <p class="mb-0 text-center  yellow">Health</p>
+                  <p class="mb-0 text-center blue1">Proof of Movement</p>
+                  <p class="cfont text-center where1">Every step reflects your commitment to a healthier & more active
+                    life.</p>
                 </div>
               </div>
               <div class="col-md-2"></div>
-             
+
+            </div>
+            <div class="col-md-3 d-flex mt-3">
+              <div class="col-md-1"></div>
+              <div class="col-md-8">
+                <div class="text-center">
+                  <p class="mb-0 text-center  yellow">Technology</p>
+                  <p class="mb-0 text-center blue1">Decentralization</p>
+                  <p class="cfont text-center where1">A trusted digital backbone ensuring security and transparency in
+                    every step.</p>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+
             </div>
 
           </div>
@@ -179,77 +298,11 @@
       </div>
 
   </section>
-  <!-- connecting -->
 
-  <!-- ======rewards=========== -->
-  <!-- ======rewards=========== -->
-  <!-- <div class="container">
-    <div class="section-title">
-        <h1>Get <span class="text-warning">Rewards</span> In Multiple Ways</h1>
-        <p>Exclusive StepStamp Watch: Early Birds Unlock Big Rewards!</p>
-    </div>
-
-    <div class="row">
- 
-        <div class="col-lg-6">
-            <div class="card">
-                <div>
-                    <span class="icon">🏃‍♂️</span>
-                    <h5 class="card-title">Mined by Movement</h5>
-                </div>
-                <p>Your movement, your reward—secure it on blockchain and mine StepStamp Tokens daily.</p>
-                <h4 class="reward-value">7,664 SST daily</h4>
-                <p>Earned by your steps or movements.</p>
-                <div class="pool">
-                    <div class="d-flex align-items-center">
-                        <span class="pool-icon">🍎</span>
-                        <h6>Pool A</h6>
-                    </div>
-                    <p>Score 1,000–4,999 Proof of Movement and earn rewards proportionately based on your contribution. <a href="#" class="btn-link">Know More</a></p>
-                </div>
-                <div class="pool">
-                    <div class="d-flex align-items-center">
-                        <span class="pool-icon">🎯</span>
-                        <h6>Pool B</h6>
-                    </div>
-                    <p>Reach 10,000 Proof of Movement Milestones and receive tokens equally among participants. <a href="#" class="btn-link">Know More</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6">
-            <div class="card">
-                <div>
-                    <span class="icon">📈</span>
-                    <h5 class="card-title">Compound by Stake</h5>
-                </div>
-                <p>Stake today, growtomorrow—StepStamp Tokens multiply your assets every single day.</p>
-                <h4 class="reward-value">5,173 SST daily</h4>
-                <p>Grown from your holdings.</p>
-                <div class="pool">
-                    <div class="d-flex align-items-center">
-                        <span class="pool-icon">🔄</span>
-                        <h6>Auto-Stacking</h6>
-                    </div>
-                    <p>In this method, both staking rewards and mining earnings are automatically reinvested into the staking pool the following day. <a href="#" class="btn-link">Know More</a></p>
-                </div>
-                <div class="pool">
-                    <div class="d-flex align-items-center">
-                        <span class="pool-icon">💼</span>
-                        <h6>Manual Staking</h6>
-                    </div>
-                    <p>In this method, earned rewards from staking are directly transferred to the user’s wallet daily. <a href="#" class="btn-link">Know More</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-  <!-- ======rewards=========== -->
-  <!-- ======rewards=========== -->
 
 
   <!-- reward -->
-  <section class="normals">
+  <section class="desk_mr" style="padding-bottom:40px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -277,11 +330,23 @@
                   </span>
                 </div>
                 <div class="col-md-10">
-                  <h6 class="m-0 rp" style="color: ECF1F0;">Pool A</h6>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Pool A</h4>
                   <p class="m-0 reward-p">
                     Score 1,000–4,999 Proof of Movement and earn rewards proportionately based on your contribution.
                   </p>
-                  <a href="#" class="btn-link">Know More</a>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
                 </div>
               </div>
             </div>
@@ -294,11 +359,23 @@
                   </span>
                 </div>
                 <div class="col-md-10">
-                  <h6 class="m-0 rp" style="color: ECF1F0;">Pool B</h6>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Pool B</h4>
                   <p class="m-0 reward-p">
                     Reach 10,000 Proof of Movement Milestones and receive tokens equally among participants.
                   </p>
-                  <a href="#" class="btn-link">Know More</a>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
                 </div>
               </div>
             </div>
@@ -324,12 +401,24 @@
                   <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" /></span>
                 </div>
                 <div class="col-md-10">
-                  <h6 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h6>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h4>
                   <p class="m-0 reward-p">
                     In this method, both staking rewards and mining earnings are automatically reinvested into the
                     staking pool the following day.
                   </p>
-                  <a href="#" class="btn-link">Know More</a>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
                 </div>
               </div>
             </div>
@@ -340,11 +429,23 @@
                   <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" /></span>
                 </div>
                 <div class="col-md-10">
-                  <h6 class="m-0 rp" style="color: ECF1F0;">Manual Staking</h6>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Manual Staking</h4>
                   <p class="m-0 reward-p">
                     In this method, rewards earned from staking are directly transferred to the user’s wallet daily.
                   </p>
-                  <a href="#" class="btn-link">Know More</a>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
                 </div>
               </div>
             </div>
@@ -361,213 +462,383 @@
   </section>
   <!-- reward -->
 
- 
-
-  <!--======= 5 card============= -->
-  <!--======= 5card============= -->
-<div style="background-image: url('assets/img/building.png');">
-  <section class="normals" >
+  <section class="normals">
     <div class="container">
       <div class="row">
+        <div class="powered-by " style="text-align: center;">
+          <a href="#" class="powered-by-link"> Decentralized StepsStamp Bank </a>
+        </div>
         <div class="col-md-12 text-center">
-          <h3 class="main-heading yellow-gradient">
-            Get Started Early with StepsStamp <span class="blue"> Blockchain</span> </h3>
-          <p class="sub-heading mb-1">Unlock nodes to mine SSTokens across 5 dynamic blockchains.</p>
-          <a href="" class="lm">Learn more </a>
+          <h3 class="main-heading yellow-gradient mt-4">
+            Your Gateway to Become StepsStamp <span class="blue">Shareholder</span> </h3>
+          <p class="sub-heading mb-1 mt-3">DSS Bank is a decentralized platform that allows users to earn daily rewards
+            by staking their SSBT tokens. With a fixed daily minting of 5173 SSBT, rewards are distributed
+            proportionally based on each user's share in the staking pool, ensuring transparency and sustainable growth.
+          </p>
+          <a href="" class="lm mt-2">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
+              viewBox="0 0 14 13" fill="none">
+              <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2" stroke-linecap="round" />
+            </svg></a>
+          <div class="text-center d-flex justify-content-center mt-3 pb-3"><button class="btn share1">Become StepsStramp Shareholder </button></div>
+
         </div>
       </div>
       <div class="row pt-5 row1 center">
         <!-- Card 1 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="card-custom1">
-            <div class="card-header1">
-              <img src="assets/img/white.png" alt="White Image">
-              <div class="overlay-text ">White SSB</div>
-              <div class="overlay-text price1">$100.00</div>
+        <div class="col-md-3">
+          <img src="img/gateway.png" alt="" width="100%">
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-6 row">
+          <div class="col-md-6 mt-2">
+            <div class="pool mt-0" style="display: flex; flex-direction: column; flex-grow: 1;">
+              <div class="d-flex align-items-center" style="flex-grow: 1;">
+                <div class="col-md-2 mr">
+                  <span class="pool-icon">
+                    <img src="img/share1.png" alt="Icon" width="100%"/>
+                  </span>
+                </div>
+                <div class="col-md-10">
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h4>
+                  <p class="m-0 reward-p">
+                    In this method, both staking rewards and mining earnings are automatically reinvested into the staking pool the following day.
+                  </p>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
             </div>
-            <div class="card-body1">
-              <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-              <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A /
-                  50% Pool B)</span> </p>
-              <div class="features2">
-                <p class="mini">Rewards Benefits</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
-                  <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                </ul>
+            <div class="pool " style="display: flex; flex-direction: column; flex-grow: 1;">
+              <div class="d-flex align-items-center" style="flex-grow: 1;">
+                <div class="col-md-2 mr">
+                  <span class="pool-icon">
+                    <img src="img/share2.png" alt="Icon" width="100%" />
+                  </span>
+                </div>
+                <div class="col-md-10">
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Manual Staking</h4>
+                  <p class="m-0 reward-p">
+                    In this method, rewards earned from staking are directly transferred to the user’s wallet daily.
+                  </p>
+                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_784_20743)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_784_20743">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
               </div>
-              <div class="features2">
-                <p class="mini">NFT Rewards</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
-                </ul>
-              </div>
-              <button class="btn btn-custom1">Buy Now</button>
             </div>
           </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="card-custom1">
-            <div class="card-header1">
-              <img src="assets/img/black.png" alt="White Image">
-              <div class="overlay-text " style="color: white;">Black SSB</div>
-              <div class="overlay-text price1" style="color: white;">$500.00</div>
-            </div>
-            <div class="card-body1">
-              <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-              <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A /
-                  50% Pool B)</span> </p>
-              <div class="features2">
-                <p class="mini">Rewards Benefits</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
-                  <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                </ul>
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabs = document.querySelectorAll('.tab');
+                const progressCircle = document.querySelector('.progress-circle');
+                const progressText = document.querySelector('.progress-text');
+                const autoReward = document.querySelector('.reward.auto p');
+                const manualReward = document.querySelector('.reward.manual p');
+    
+                const rewardsData = {
+                    '7 Days': { percentage: 25, auto: 1500, manual: 750 },
+                    '30 Days': { percentage: 66, auto: 4000, manual: 2000 },
+                    '90 Days': { percentage: 90, auto: 6000, manual: 3000 },
+                    '120 Days': { percentage: 100, auto: 8000, manual: 4000 },
+                };
+    
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+    
+                        const duration = tab.textContent.trim();
+                        const data = rewardsData[duration];
+    
+                        progressCircle.style.background = `conic-gradient(#ffab00 0% ${data.percentage}%, #2d1a59 ${data.percentage}% 100%)`;
+                        progressText.textContent = `${data.percentage}%`;
+                        autoReward.textContent = `${data.auto} SSBTs`;
+                        manualReward.textContent = `${data.manual} SSBTs`;
+                    });
+                });
+            });
+        </script>
+          <div class="col-md-6 mt-2">
+            <div class="container1 ">
+              <h4 class="m-0 rp" style="color: ECF1F0;">If You Stake 1000 SSB Tokens, Today!</h4>
+              <h4 class="m-0 rp" style="color: ECF1F0;">It Will Become...</h4>
+              
+              <div class="tabs mt-3">
+                  <div class="tab">7 Days</div>
+                  <div class="tab active">30 Days</div>
+                  <div class="tab">90 Days</div>
+                  <div class="tab">120 Days</div>
               </div>
-              <div class="features2">
-                <p class="mini">NFT Rewards</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
-                </ul>
+              <div class="row mt-0 pt-4">
+                <div class="col-md-5 d-flex align-content-center" style="align-items: center;">
+                  <div class="progress">
+                    <div class="progress-circle"></div>
+                    <div class="progress-text">66%</div>
+                </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="rewards ">
+                    <div class="reward auto row">
+                        
+                        
+                        <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center" style="margin:auto;"></span></div>
+                        <div class="col-md-10 col-9"> Auto Stake Reward</div>
+                        <div class="col-md-2 col-3"> </div>
+                        <div class="col-md-10 col-9"> <p>4000 SSBTs</p></div>
+                    </div>
+                    
+                    <div class="reward manual row">
+                      <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center" style="margin:auto;"></span></div>
+                      <div class="col-md-10 col-9"> Manual Stake Reward</div>
+                      <div class="col-md-2 col-3"> </div>
+                      <div class="col-md-10 col-9"> <p>2000 SSBTs</p></div>
+                    </div>
+                    
+                </div>
+                </div>
               </div>
-              <button class="btn btn-custom1">Buy Now</button>
-            </div>
+             
+             
           </div>
-        </div>
-
-        <!-- Card 3-->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="card-custom1">
-            <div class="card-header1">
-              <img src="assets/img/silver.png" alt="White Image">
-              <div class="overlay-text ">Silver SSB</div>
-              <div class="overlay-text price1">$1000.00</div>
-            </div>
-            <div class="card-body1">
-              <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-              <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A /
-                  50% Pool B)</span> </p>
-              <div class="features2">
-                <p class="mini">Rewards Benefits</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
-                  <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                </ul>
-              </div>
-              <div class="features2">
-                <p class="mini">NFT Rewards</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
-                </ul>
-              </div>
-              <button class="btn btn-custom1">Buy Now</button>
-            </div>
           </div>
+         
         </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="card-custom1">
-            <div class="card-header1">
-              <img src="assets/img/gold.png" alt="White Image">
-              <div class="overlay-text ">Gold SSB</div>
-              <div class="overlay-text price1">$5000.00</div>
-            </div>
-            <div class="card-body1">
-              <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-              <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A /
-                  50% Pool B)</span> </p>
-              <div class="features2">
-                <p class="mini">Rewards Benefits</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                </ul>
-              </div>
-              <div class="features2">
-                <p class="mini">NFT Rewards</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
-                </ul>
-              </div>
-              <button class="btn btn-custom1">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="col-lg-2 col-md-4 col-sm-6">
-          <div class="card-custom1">
-            <div class="card-header1">
-              <img src="assets/img/green.png" alt="White Image">
-              <div class="overlay-text " style="color: white;">Green SSB</div>
-              <div class="overlay-text price1" style="color: white;">$10000.00</div>
-            </div>
-            <div class="card-body1">
-              <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-              <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A /
-                  50% Pool B)</span> </p>
-              <div class="features2">
-                <p class="mini">Rewards Benefits</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
-                  <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                </ul>
-              </div>
-              <div class="features2">
-                <p class="mini">NFT Rewards</p>
-                <ul class="list-unstyled">
-                  <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
-                  <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
-                </ul>
-              </div>
-              <button class="btn btn-custom1">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  
- <!-- strategy -->
- <section class="normals">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h3 class="main-heading yellow-gradient">
-          Grab Amazing <span class="blue"> Opportunity</span> before It Go Away </h3>
-        <p class="sub-heading mb-1">Since the last 2 phases are completed, don’t miss out the amazing opportunity coming in your way.</p>
-        <a href="" class="lm">Learn more </a>
+  <!--======= 5 card============= -->
+  <!--======= 5card============= -->
+  <div style="background-image: url('assets/img/building.png');">
+    <section class="normals">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="main-heading yellow-gradient">
+              Get Started Early with StepsStamp <span class="blue"> Blockchain</span> </h3>
+            <p class="sub-heading mb-1">Unlock nodes to mine SSTokens across 5 dynamic blockchains.</p>
+            <a href="" class="lm">Learn more </a>
+          </div>
+        </div>
+        <div class="row pt-5 row1 center">
+          <!-- Card 1 -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card-custom1">
+              <div class="card-header1">
+                <img src="assets/img/white.png" alt="White Image">
+                <div class="overlay-text ">White SSB</div>
+                <div class="overlay-text price1">$100.00</div>
+              </div>
+              <div class="card-body1">
+                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                    /
+                    50% Pool B)</span> </p>
+                <div class="features2">
+                  <p class="mini">Rewards Benefits</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
+                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                  </ul>
+                </div>
+                <div class="features2">
+                  <p class="mini">NFT Rewards</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
+                  </ul>
+                </div>
+                <button class="btn btn-custom1">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card-custom1">
+              <div class="card-header1">
+                <img src="assets/img/black.png" alt="White Image">
+                <div class="overlay-text " style="color: white;">Black SSB</div>
+                <div class="overlay-text price1" style="color: white;">$500.00</div>
+              </div>
+              <div class="card-body1">
+                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                    /
+                    50% Pool B)</span> </p>
+                <div class="features2">
+                  <p class="mini">Rewards Benefits</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
+                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                  </ul>
+                </div>
+                <div class="features2">
+                  <p class="mini">NFT Rewards</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
+                  </ul>
+                </div>
+                <button class="btn btn-custom1">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3-->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card-custom1">
+              <div class="card-header1">
+                <img src="assets/img/silver.png" alt="White Image">
+                <div class="overlay-text ">Silver SSB</div>
+                <div class="overlay-text price1">$1000.00</div>
+              </div>
+              <div class="card-body1">
+                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                    /
+                    50% Pool B)</span> </p>
+                <div class="features2">
+                  <p class="mini">Rewards Benefits</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
+                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                  </ul>
+                </div>
+                <div class="features2">
+                  <p class="mini">NFT Rewards</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
+                  </ul>
+                </div>
+                <button class="btn btn-custom1">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card-custom1">
+              <div class="card-header1">
+                <img src="assets/img/gold.png" alt="White Image">
+                <div class="overlay-text ">Gold SSB</div>
+                <div class="overlay-text price1">$5000.00</div>
+              </div>
+              <div class="card-body1">
+                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                    /
+                    50% Pool B)</span> </p>
+                <div class="features2">
+                  <p class="mini">Rewards Benefits</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                  </ul>
+                </div>
+                <div class="features2">
+                  <p class="mini">NFT Rewards</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
+                  </ul>
+                </div>
+                <button class="btn btn-custom1">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="card-custom1">
+              <div class="card-header1">
+                <img src="assets/img/green.png" alt="White Image">
+                <div class="overlay-text " style="color: white;">Green SSB</div>
+                <div class="overlay-text price1" style="color: white;">$10000.00</div>
+              </div>
+              <div class="card-body1">
+                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                    /
+                    50% Pool B)</span> </p>
+                <div class="features2">
+                  <p class="mini">Rewards Benefits</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>4000 SSB Bonus</li>
+                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus (30 days)</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                  </ul>
+                </div>
+                <div class="features2">
+                  <p class="mini">NFT Rewards</p>
+                  <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success"></i>450 Fresh or SSB Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>150 Mini Tokens</li>
+                    <li><i class="bi bi-check-circle-fill text-success"></i>75 Micro Tokens</li>
+                  </ul>
+                </div>
+                <button class="btn btn-custom1">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-    <img src="assets/img/strategy.png" alt="" style="width: 100%" />
+    </section>
+
+
+    <!-- strategy -->
+    <section class="normals">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="main-heading yellow-gradient">
+              Grab Amazing <span class="blue"> Opportunity</span> before It Go Away </h3>
+            <p class="sub-heading mb-1">Since the last 2 phases are completed, don’t miss out the amazing opportunity coming in your way.</p>
+            <a href="" class="lm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+              <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2" stroke-linecap="round"/>
+              </svg></a>
+          </div>
+        </div>
+        <img class="mt-4" src="img/Phase.png" alt="" style="width: 100%" />
+      </div>
+    </section>
   </div>
-</section>
-</div>
-<!-- strategy -->
+  <!-- strategy -->
 
 
 
@@ -588,36 +859,16 @@
         </div>
       </div>
       <div class="row pt-md-4   d-flex justify-content-center">
-        <div class="col-md-12 d-flex justify-content-evenly">
-          <!--  <div class="col-md-3 silverbox">
-            <img src="assets/img/s.png" alt="" style="width: 100%;" />
+        <div class="col-md-12 row justify-content-evenly">
           
-           <div class="silvertext1">
-              <div class="limited">Limited Edition</div>
-              <h2 class="wname">Silver Watch</h2>
-              <p class="winfo">Office ipsum you must be muted.<br>Anom eye closing low-hanging latest eco.</p>
-              <div class="get">Get 10 SSBT/Day for 300 Days</div>
-              <div class="row d-flex ">
-                <div class="col-md-7">
-                  <div class="hurry">Hurry Up!</div>
-              <div class="units">1000 Units Left</div>
-                </div>
-                <div class="col-md-5">
-                  <a href="#" class="silver-btn">GET NOW</a>
-                </div>
-              </div> 
-              
-             
-            </div>
-          </div>-->
 
-          <div class="col-md-3">
+          <div class="col-md-3 col-6 mt-3">
             <img src="assets/img/s.png" alt="" style="width: 100%" />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6 mt-3">
             <img src="assets/img/go.png" alt="" style="width: 100%" />
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6 mt-3">
             <img src="assets/img/gr.png" alt="" style="width: 100%" />
           </div>
         </div>
@@ -643,7 +894,7 @@
           <!-- Jan 2024 -->
           <div class="timeline-item">
             <div class="timeline-circle"></div>
-            <div class="timeline-content bottom">
+            <div class="timeline-content t1 bottom">
               <h5>Jan, 2024</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -652,8 +903,9 @@
           <div class="timeline-item top">
             <div class="timeline-circle"></div>
             <div class="timeline-content top">
-              <h5>Jul, 2024</h5>
+              
               <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>Jul, 2024</h5><br><br>
             </div>
           </div>
           <!-- Dec 2024 -->
@@ -668,14 +920,16 @@
           <div class="timeline-item top">
             <div class="timeline-circle"></div>
             <div class="timeline-content top">
-              <h5>Nov, 2024</h5>
+              
               <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <h5>Nov, 2024</h5>
+              <br>
             </div>
           </div>
           <!-- Mar 2025 -->
           <div class="timeline-item">
             <div class="timeline-circle"></div>
-            <div class="timeline-content bottom">
+            <div class="timeline-content t3 bottom">
               <h5>Mar, 2025</h5>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -689,147 +943,561 @@
 
 
 
-  <!-- features -->
-  <section class="normals pt-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="main-heading yellow-gradient">Our App <span class="blue">Features</span> </h3>
-          <p class="sub-heading">
-            Connect real-life steps with earning cryptos - Walk more to earn
-            more by participating in less crowded POOLS
-          </p>
-        </div>
-      </div>
-
-      <div class="row pt-md-4   d-flex justify-content-between">
-        <div class="col-md-6">
-          <div class="scrollable-section2">
-            <div class="scroll-item2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Step to Coins</h3>
-                <p>
-                  A user-friendly digital wallet for storing and sending <br>
-                  cryptocurrencies, with encryption.
-                </p>
-              </div>
-            </div>
-            <div class="scroll-item2 active2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Daily Activity Tracking</h3>
-                <p>
-                  Tracks price trends and volumes for informed investment
-                  decisions.
-                </p>
-              </div>
-            </div>
-            <div class="scroll-item2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Pool A</h3>
-                <p>
-                  Tracks price trends and volumes for informed investment
-                  decisions.
-                </p>
-              </div>
-            </div>
-            <div class="scroll-item2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Step to Coins</h3>
-                <p>
-                  A user-friendly digital wallet for storing and sending <br>
-                  cryptocurrencies, with encryption.
-                </p>
-              </div>
-            </div>
-            <div class="scroll-item2 active2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Daily Activity Tracking</h3>
-                <p>
-                  Tracks price trends and volumes for informed investment
-                  decisions.
-                </p>
-              </div>
-            </div>
-            <div class="scroll-item2">
-              <div class="icon-circle2"></div>
-              <div class="text-container2">
-                <h3>Pool A</h3>
-                <p>
-                  Tracks price trends and volumes for informed investment
-                  decisions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img src="assets/img/wood.png" alt="img" style="width: 100%;" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- features -->
-
   <!-- faq -->
   <section class="normals">
-    <div class="container">
+    <div class="container" id="faq">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h3 class="main-heading yellow-gradient">
-            FAQ's
-          </h3>
-          <p class="sub-heading">Exclusive StepsStamp Watch: Early Birds Unlock Big Rewards!</p>
+          <h3 class="main-heading yellow-gradient" style="font-weight: 400;">Frequently Asked <span class="span_yellow">
+              Questions</span></h3>
+          <p class="sub-heading">What people usually asked about us.</p>
         </div>
       </div>
       <div class="row">
-        <div class="faq-container">
 
-          <div class="faq-section">
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                How Steps Tracking Works
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                LessAccounting is 100% web-based, meaning it can be
-                accessed from anywhere and there's no software to install
-                on your computer. You can easily use LessAccounting on
-                your iPhone or any Android mobile device with our cloud
-                accounting.
+        <div class="container my-4 ">
+          <!-- Tab Navigation -->
+          <ul class="nav nav-tabs nav2" id="newTabsStructure" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link " id="tab-step-tracking" data-bs-toggle="tab"
+                data-bs-target="#content-step-tracking" type="button" role="tab" aria-controls="content-step-tracking"
+                aria-selected="true">
+                Step Tracking
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-blockchain" data-bs-toggle="tab" data-bs-target="#content-blockchain"
+                type="button" role="tab" aria-controls="content-blockchain" aria-selected="false">
+                Blockchain
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-referral" data-bs-toggle="tab" data-bs-target="#content-referral"
+                type="button" role="tab" aria-controls="content-referral" aria-selected="false">
+                Referral
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-staking" data-bs-toggle="tab" data-bs-target="#content-staking"
+                type="button" role="tab" aria-controls="content-staking" aria-selected="false">
+                Staking
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-payment" data-bs-toggle="tab" data-bs-target="#content-payment"
+                type="button" role="tab" aria-controls="content-payment" aria-selected="false">
+                Payment
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-pool" data-bs-toggle="tab" data-bs-target="#content-pool" type="button"
+                role="tab" aria-controls="content-pool" aria-selected="false">
+                Pool Reward
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="newTabsStructureContent">
+            <div class="tab-pane fade " id="content-step-tracking" role="tabpanel" aria-labelledby="tab-step-tracking">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                When will OMNILEND be listed on exchanges?
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                OMNILEND listing details will be announced soon.
+            <div class="tab-pane fade" id="content-blockchain" role="tabpanel" aria-labelledby="tab-blockchain">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                What is the OMNILEND Token smart contract address?
-                <span class="faq-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                The smart contract address will be provided on the
-                official website.
+            <div class="tab-pane fade" id="content-referral" role="tabpanel" aria-labelledby="tab-referral">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                How can I create a crypto-wallet?
-                <span class="faq-icon">+</span>
+            <div class="tab-pane fade show active" id="content-staking" role="tabpanel" aria-labelledby="tab-staking">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white"></path>
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer show">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="faq-answer">
-                You can create a crypto-wallet using apps like MetaMask or
-                Trust Wallet.
+            </div>
+            <div class="tab-pane fade" id="content-payment" role="tabpanel" aria-labelledby="tab-payment">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="content-pool" role="tabpanel" aria-labelledby="tab-pool">
+              <div class="faq-container">
+
+                <div class="faq-section">
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What is Manual Stacking ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                      move alpha paradigm.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      What are Stacking Types ?
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      OMNILEND listing details will be announced soon.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      The smart contract address will be provided on the official
+                      website.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                      How Steps Tracking Works
+                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                          viewBox="0 0 40 40" fill="none">
+                          <circle cx="20" cy="20" r="20" fill="#F78300" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                            fill="white" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                            fill="white" />
+                        </svg></span>
+                    </div>
+                    <div class="faq-answer">
+                      You can create a crypto-wallet using apps like MetaMask or
+                      Trust Wallet.
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -838,28 +1506,112 @@
       </div>
     </div>
   </section>
+  <section class="normals">
+    <div class="container">
+      <div class="do_you">
+        <div style="
+">
+          <div class="row justify-content-between">
+            <div class="col-md-5 text-start">
+              <h3 class="main-heading yellow-gradient1" style="font-weight: 400;text-transform: capitalize;">Do you have
+                any <span class="span_yellow">
+                  Questions</span>?</h3>
+              <p class="sub-heading">Feel free to send us your questions or request a free consultation.</p>
+            </div>
+            <div class="col-md-5  text-center">
+              <form id="contactForm" action="#" class="for">
+                <!-- Name -->
+                <div class="row ">
+                  <div class="col-md-10">
+                    <div class="mb-3">
+
+                      <textarea class="form-control" id="message" name="message"
+                        style="background: transparent;    color: #fff;" rows="4" placeholder="Enter your message"
+                        required></textarea>
+                    </div>
+                    <!-- Email -->
+                    <div class="">
+
+                      <input type="email" class="form-control" style="background: transparent;    color: #fff;"
+                        id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                  </div>
+                  <div class="col-md-2" style="align-items: end; display: flex;"> <button type="submit"
+                      class="btn btn-primary"
+                      style="border-radius: 1000px;background: #F78300;border-color:#F78300;padding: 10px 28px;color:black;">SEND</button>
+                  </div>
+                </div>
+
+
+                <!-- Submit Button -->
+
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- faq -->
+  <script>
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      const icon = element.querySelector(".faq-icon");
+
+      // SVG for the plus icon
+      const plusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"></path>
+        </svg>
+      `;
+
+      // SVG for the minus icon
+      const minusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
+        </svg>
+      `;
+
+      // Toggle the visibility of the answer
+      if (answer.classList.contains("show")) {
+        answer.classList.remove("show");
+        icon.innerHTML = plusSVG; // Set back to plus icon
+        icon.classList.remove("rotate");
+      } else {
+        // Close other open answers
+        document.querySelectorAll(".faq-answer.show").forEach((openAnswer) => {
+          openAnswer.classList.remove("show");
+          openAnswer.previousElementSibling.querySelector(".faq-icon").innerHTML = plusSVG;
+          openAnswer.previousElementSibling.querySelector(".faq-icon").classList.remove("rotate");
+        });
+
+        answer.classList.add("show");
+        icon.innerHTML = minusSVG; // Set to minus icon
+        icon.classList.add("rotate");
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- faq -->
 
   <footer>
     <section>
       <div class="container">
-        <div class="row d-flex justify-content-end">
-          <div class="col-md-9 d-flex justify-content-around">
-            <div class="center"><a class="flink" href="">Home</a></div>
-            <div class="center"><a class="flink" href="">Terms of Use</a></div>
-            <div class="center"><a class="flink" href="">Support</a></div>
-            <div class="center"><a class="flink" href="">Privacy Policy</a></div>
-            <div class="center">
-              <div class="d-flex justify-content-center gap-3">
-                <a class="btns "><img src="assets/img/appstore.png" alt=""> App Store</a>
-                <a class="btns "><img src="assets/img/playstore.png" alt=""> Play Store</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-1">
-          <div class="col-md-5">
-            <div class="social-icons">
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-md-2 ">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
+            <div class="social-icons mt-3">
               <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
               <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
               <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
@@ -867,33 +1619,46 @@
               <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
           </div>
+          <div class="col-md-10 d-flex justify-content-around mob-block">
+            <div class="center gradient-text"><a class="flink" href>Home</a></div>
+            <div class="center"><a class="flink" href>User Journey</a></div>
+
+            <div class="center"><a class="flink" href>Support</a></div>
+            <div class="center"><a class="flink" href="blockchain.html">Whitepaper</a></div>
+            <div class="center"><a class="flink" href>Terms of Use</a></div>
+            <div class="center"><a class="flink" href>Privacy Policy</a></div>
+            <div class="center"><a class="flink" href>FAQ’s</a></div>
+            <div class="center">
+              <div class="d-flex justify-content-center gap-3">
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                  <path d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z" fill="#F78300"/>
+                </svg> App
+                  Store</a>
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                  <path d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z" fill="#F78300"/>
+                  </svg> Play
+                  Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-1">
+          <div class="col-md-5">
+
+          </div>
         </div>
         <hr />
         <div class="row py-md-3 py-1">
           <div class="col-md-12 text-center">
-            <p class="sub-heading">© Copyright 2024, All Rights Reserved by StepsStamp</p>
+            <p class="sub-heading copyy">© Copyright 2024, All Rights Reserved by
+              StepsStamp</p>
           </div>
         </div>
       </div>
     </section>
   </footer>
 
-  <script>
-    function toggleFAQ(element) {
-      const parent = element.parentElement;
-      const answer = parent.querySelector(".faq-answer");
-      const icon = parent.querySelector(".faq-icon");
-
-      if (answer.style.display === "block") {
-        answer.style.display = "none";
-        icon.textContent = "+";
-      } else {
-        answer.style.display = "block";
-        icon.textContent = "-";
-      }
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
