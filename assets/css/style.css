@@ -1260,8 +1260,25 @@
  .mob {
    display: none;
  }
+ .offcanvas-body { 
+  background: #1C192D !important;
+ }
+
+ .offcanvas-header {
+  background: #1C192D !important;
+}
 
  @media (max-width:680px) {
+  .nav-item{
+    text-align: center;
+    color: #ECF1F0;
+
+font-family: Lexend;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
 
    .blue {
 
