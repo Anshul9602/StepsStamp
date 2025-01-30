@@ -1,0 +1,148 @@
+.timeline-container1 {
+    /* width: 80%; */
+    position: relative;
+    top: 46px;
+    height: 70vh;
+}
+.timeline-container1 .phase1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: #f78300;
+}
+
+.timeline1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.timeline1::before {
+    content: "";
+    position: absolute;
+    top: 87%;
+    left: 0;
+    right: 0;
+    height: 13px;
+    background: #444;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.phase1 {
+
+
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.phase1-circle1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.finished {
+    background-color: #F78300;
+    color: white;
+}
+
+.active1 {
+    background-color: #F78300;
+    color: white;
+    box-shadow: 0 0 10px 2px #f9a825;
+}
+
+.upcoming {
+    background-color: #E5E5E54D;
+    color: #999;
+}
+
+.phase1-label1 {
+    background: #2C223B;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.tooltip1 {
+    background: #11011E;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 12px;
+    width: 220px;
+}
+.active .tooltip1 {
+  
+    top: 200%;
+    padding: 20px;
+    width: 370px;
+}
+
+.body{
+    background: #11011E;
+}
+
+.mob {
+    display: none;
+}
+@media (max-width: 768px) {
+    .share1 {
+        padding: 0px 20px !important;
+    }
+    .lm {
+        font-size: 14px !important;
+    }
+    .reward-p {
+        font-size: 14px !important;
+       
+    }
+    .card-custom1{
+width: 228px !important;
+    }
+    .card-body1 {
+        padding: 13px;
+        padding-top: 40px;
+    }
+    .card-header1 img {
+        
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        z-index: 2;
+    }
+    .splide__slide{
+        padding-top: 10%;
+    }
+    .btn-custom1{
+        margin-top: 15px;
+        border-radius: 30px;
+background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%, #ECDAA0 80.52%, #FCD063 98.26%);
+border: #ECDAA0;
+
+width: 99%;
+    }
+    .splide__pagination {
+        bottom: 0 !important;}
+}

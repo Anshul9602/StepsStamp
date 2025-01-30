@@ -217,10 +217,10 @@
  .content {
    position: absolute;
    font-size: 20px;
-   top: 29%;
-   left: 31%;
+   top: 20%;
+   left: 0%;
    z-index: 1;
-   width: 41%
+   width: 100%
  }
 
  /* banner circle alg */
@@ -1265,7 +1265,7 @@
 
    .blue {
 
-     font-size: 24px;
+     font-size: 18px !important;
    }
 
    .img-card1 {
@@ -1281,7 +1281,7 @@
    }
 
    .mob {
-     display: block;
+     display: block !important;
    }
 
    .nav1,
@@ -1309,11 +1309,11 @@
    }
 
    .content3 h6 {
-     font-size: 20px;
+     font-size: 14px;
    }
 
    .content3 p b {
-     font-size: 18px;
+     font-size: 14px;
    }
 
    .share1 {
@@ -1323,7 +1323,7 @@
    }
 
    .yellow-gradient {
-     font-size: 24px;
+     font-size: 18px !important;
    }
 
    .pool img{
@@ -1337,7 +1337,7 @@ padding: 10px 15px;
   
 }
 .rp {
-  font-size: 16px;
+  font-size: 16px !important;
   
 }
 .row1 .col-lg-2 {

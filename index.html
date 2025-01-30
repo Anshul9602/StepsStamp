@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/n.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
   <style>
     .up1 {
       border-radius: 20px;
@@ -40,28 +41,47 @@
       font-weight: 300;
       line-height: normal;
     }
-    .share1{
+
+    .share1 {
       color: #1C192D;
 
-font-family: Lexend;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+      font-family: Lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
       display: flex;
-height: 50px;
-padding: 0px 40px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 30px;
-background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%, #ECDAA0 80.52%, #FCD063 98.26%);
+      height: 35px;
+      padding: 0px 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%, #ECDAA0 80.52%, #FCD063 98.26%);
     }
-    .share1:hover{
+
+    .share1:hover {
       color: #1C192D;
 
+    }
+
+    .blue-btn {
+      color: #FFF;
+
+      font-family: Lexend;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      display: flex;
+      padding: 16px 26px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 42px;
+      border: 1px solid #11F3FF;
     }
 
     @media (min-width: 768px) {
@@ -72,7 +92,12 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
   </style>
 
 </head>
-
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 <body>
   <!-- header -->
   <!-- header -->
@@ -119,7 +144,12 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
         <!-- Mobile Toggle -->
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
           aria-controls="mobileNav">
-          <i class="mobile-nav-toggle mobile-nav-show bi bi-list "></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
 
         </button>
       </div>
@@ -161,44 +191,136 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
       </ul>
     </div>
   </div>
-  <!-- header -->
-  <!-- header -->
+
 
   <!-- banner -->
   <section class="hero-banner text-center text-white font">
-    <img src="img/hero.png" alt="Hero Banner" class="img-fluid banner1 " style="width: 100%;background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
-    <!-- <img src="assets/img/circles.png" alt="ellipses" class="img-fluid position-absolute circles"> -->
 
-    <div class="container d-none">
-      <div class="content">
-        <div class="powered-by mb-3">
-          <a href="#" class="powered-by-link"> Powered By Solana </a>
+    <div class="desk">
+      <img src="img/home2.png" alt="Hero Banner" class="img-fluid banner1 "
+        style="width: 100%;background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
+      <div class="content" style="height: 100%;">
+
+        <div class="row justify-content-around" style="height: 100%;">
+          <div class="col-12" style="height: 20%;">
+            <div class="powered-by mb-3">
+              <a href="#" class="powered-by-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 25 24" fill="none">
+                  <path
+                    d="M7.017 11.9991L4.761 14.2551L2.5 11.9991L4.756 9.74305L7.017 11.9991ZM12.5 6.51605L16.37 10.3861L18.625 8.13005L12.5 1.99905L6.37 8.12905L8.625 10.3851L12.5 6.51605ZM20.239 9.74305L17.983 11.9991L20.239 14.2551L22.494 11.9991L20.239 9.74305ZM12.5 17.4821L8.63 13.6121L6.375 15.8681L12.5 21.9991L18.625 15.8691L16.369 13.6131L12.5 17.4821ZM12.5 14.2551L14.756 11.9991L12.5 9.74305L10.239 11.9991L12.5 14.2551Z"
+                    fill="#F0B90B" />
+                </svg> Powered By Binance </a>
+            </div>
+            <h1 class="heading yellow-gradient mt-4">
+              Every Single <span class="blue">Step</span> Is A Gem, Enriching The <br> <span
+                class="blue">Treasure</span> Of Your Path
+            </h1>
+
+          </div>
+          <div class="col-11 row justify-content-between">
+            <div class="col-md-4">
+              <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                  viewBox="0 0 7 7" fill="none">
+                  <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+                </svg>Get Reward by Your Each Movement</button>
+              <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                  viewBox="0 0 7 7" fill="none">
+                  <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+                </svg>Get Reward by StepsStamp Blockchains</button>
+              <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+                  viewBox="0 0 7 7" fill="none">
+                  <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+                </svg>Get Reward by Staking SSBTs</button>
+
+            </div>
+            <div class="col-md-3">
+              <img src="img/Video.png" alt="">
+              <div class="mt-3 text-start" style="    width: fit-content; margin: auto;">
+                <button type="button" class="yellow_btn">Download </button> <svg xmlns="http://www.w3.org/2000/svg"
+                  width="41" height="41" viewBox="0 0 41 41" fill="none">
+                  <circle cx="20.5" cy="20.5" r="20" stroke="#18F3FF" />
+                  <path d="M15 15H26M26 15V26M26 15L15 26" stroke="#18F3FF" />
+                </svg>
+                <h5 class="mt-3">Get the App & Become<br> StepsStamp
+                  Stakeholder</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <h1 class="heading">
-          Every Single Step Is A Gem, Enriching The Treasure Of Your Path
-        </h1>
-        <p class="sub-heading">
-          Finding Value in Every Journey: The Hidden Wealth of Each Step
-        </p>
-        <div class="d-flex justify-content-center gap-3 mt-4">
-          <a class="btns center"><img src="assets/img/appstore.png" alt=""> App Store</a>
-          <a class="btns center"><img src="assets/img/playstore.png" alt=""> Play Store</a>
-        </div>
+
+
       </div>
     </div>
+    <div class="mob">
+      <img src="img/home2.png" alt="Hero Banner" class="img-fluid banner1 "
+        style="background: var(--High-Fidelity-Color-Main-Background, #11011E);height:100vh;" />
+      <div class="content" style="height: 100%;top:2%">
+        <div class="desk " style="width: 100%;overflow: scroll;">
+          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+              viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+            </svg>Get Reward by Your Each Movement</button>
+          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+              viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+            </svg>Get Reward by StepsStamp Blockchains</button>
+          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
+              viewBox="0 0 7 7" fill="none">
+              <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
+            </svg>Get Reward by Staking SSBTs</button>
+
+        </div>
+        <div class="row justify-content-around" style="height: 100%;">
+          <div class="col-12" style="height: 20%;">
+            <div class="powered-by mb-3">
+              <a href="#" class="powered-by-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 25 24" fill="none">
+                  <path
+                    d="M7.017 11.9991L4.761 14.2551L2.5 11.9991L4.756 9.74305L7.017 11.9991ZM12.5 6.51605L16.37 10.3861L18.625 8.13005L12.5 1.99905L6.37 8.12905L8.625 10.3851L12.5 6.51605ZM20.239 9.74305L17.983 11.9991L20.239 14.2551L22.494 11.9991L20.239 9.74305ZM12.5 17.4821L8.63 13.6121L6.375 15.8681L12.5 21.9991L18.625 15.8691L16.369 13.6131L12.5 17.4821ZM12.5 14.2551L14.756 11.9991L12.5 9.74305L10.239 11.9991L12.5 14.2551Z"
+                    fill="#F0B90B" />
+                </svg> Powered By Binance </a>
+            </div>
+            <h1 class="heading yellow-gradient mt-4">
+              Every Single <span class="blue">Step</span> Is A Gem, Enriching The <br> <span
+                class="blue">Treasure</span> Of Your Path
+            </h1>
+
+          </div>
+          <div class="col-11 row justify-content-between">
+           
+            <div class="col-md-3">
+              <div class="mt-3 text-center" style="    width: fit-content; margin: auto;">
+                <button type="button" class="yellow_btn">Download </button> <svg xmlns="http://www.w3.org/2000/svg"
+                  width="41" height="41" viewBox="0 0 41 41" fill="none">
+                  <circle cx="20.5" cy="20.5" r="20" stroke="#18F3FF" />
+                  <path d="M15 15H26M26 15V26M26 15L15 26" stroke="#18F3FF" />
+                </svg>
+                <h5 class="mt-3" style="font-size: 12px;">Get the App & Become StepsStamp
+                  Stakeholder</h5>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+   
   </section>
   <!-- banner -->
-
+  <div class="mob text-center" style="background: #11011E;">
+    <img src="img/Video.png" alt="">
+  </div>
   <!-- connecting -->
   <section>
 
 
     <div class="img-box">
-      <img src="assets/img/ecosystem.png" alt="" style="width: 100%;" />
+      <img class="desk" src="assets/img/ecosystem.png" alt="" style="width: 100%;" />
 
-
-
-      <div class="img-card1"   id="eco">
+      <div class="img-card1" id="eco">
 
         <div class="container">
           <!-- <div class="up1" style="">
@@ -225,13 +347,13 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
               </div>
             </div>
           </div> -->
-          <div class="desk">
+          <div class="">
             <div class="row d-flex justify-content-center mt-5 ">
               <div class="col-md-10 text-center">
                 <div class="powered-by ">
                   <a href="#" class="powered-by-link"> StepsStamp Ecosystem </a>
                 </div>
-                <h3 class="main-heading yellow-gradient" style="font-size: 31px;">Where Health, Wealth, and <span
+                <h3 class="main-heading yellow-gradient mt-3" style="font-size: 31px;">Where Health, Wealth, and <span
                     class="blue" style="font-size: 31px;">Technology</span> </h3>
                 <p class="sub-heading" style="    font-size: 13px;">
                   Through movement, empowerment & blockchain technology, we’re reshaping how health, wealth & <br>
@@ -240,13 +362,13 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
               </div>
             </div>
           </div>
-         
+
           <div class="mob">
             <div class="row d-flex justify-content-center mt-5 ">
-              <img src="img/piller.png" alt="" width="100%">
+              <img src="img/hom1.png" alt="" width="100%">
             </div>
           </div>
-         
+
 
         </div>
       </div>
@@ -479,7 +601,8 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
               viewBox="0 0 14 13" fill="none">
               <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2" stroke-linecap="round" />
             </svg></a>
-          <div class="text-center d-flex justify-content-center mt-3 pb-3"><button class="btn share1">Become StepsStamp Shareholder </button></div>
+          <div class="text-center d-flex justify-content-center mt-3 pb-3"><button class="btn share1">Become StepsStamp
+              Shareholder </button></div>
 
         </div>
       </div>
@@ -488,19 +611,20 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
         <div class="col-md-3">
           <img src="img/gateway.png" alt="" width="100%">
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-6 row">
+        <div class="col-lg-9 col-md-8 col-sm-6 row mt-md-0 mt-3">
           <div class="col-md-6 mt-2">
             <div class="pool mt-0" style="display: flex; flex-direction: column; flex-grow: 1;">
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
                   <span class="pool-icon">
-                    <img src="img/share1.png" alt="Icon" width="100%"/>
+                    <img src="img/share1.png" alt="Icon" width="100%" />
                   </span>
                 </div>
                 <div class="col-md-10">
                   <h4 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h4>
                   <p class="m-0 reward-p">
-                    In this method, both staking rewards and mining earnings are automatically reinvested into the staking pool the following day.
+                    In this method, both staking rewards and mining earnings are automatically reinvested into the
+                    staking pool the following day.
                   </p>
                   <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                       viewBox="0 0 24 24" fill="none">
@@ -549,79 +673,85 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
           </div>
           <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const tabs = document.querySelectorAll('.tab');
-                const progressCircle = document.querySelector('.progress-circle');
-                const progressText = document.querySelector('.progress-text');
-                const autoReward = document.querySelector('.reward.auto p');
-                const manualReward = document.querySelector('.reward.manual p');
-    
-                const rewardsData = {
-                    '7 Days': { percentage: 25, auto: 1500, manual: 750 },
-                    '30 Days': { percentage: 66, auto: 4000, manual: 2000 },
-                    '90 Days': { percentage: 90, auto: 6000, manual: 3000 },
-                    '120 Days': { percentage: 100, auto: 8000, manual: 4000 },
-                };
-    
-                tabs.forEach(tab => {
-                    tab.addEventListener('click', () => {
-                        tabs.forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-    
-                        const duration = tab.textContent.trim();
-                        const data = rewardsData[duration];
-    
-                        progressCircle.style.background = `conic-gradient(#ffab00 0% ${data.percentage}%, #2d1a59 ${data.percentage}% 100%)`;
-                        progressText.textContent = `${data.percentage}%`;
-                        autoReward.textContent = `${data.auto} SSBTs`;
-                        manualReward.textContent = `${data.manual} SSBTs`;
-                    });
+              const tabs = document.querySelectorAll('.tab');
+              const progressCircle = document.querySelector('.progress-circle');
+              const progressText = document.querySelector('.progress-text');
+              const autoReward = document.querySelector('.reward.auto p');
+              const manualReward = document.querySelector('.reward.manual p');
+
+              const rewardsData = {
+                '7 Days': { percentage: 25, auto: 1500, manual: 750 },
+                '30 Days': { percentage: 66, auto: 4000, manual: 2000 },
+                '90 Days': { percentage: 90, auto: 6000, manual: 3000 },
+                '120 Days': { percentage: 100, auto: 8000, manual: 4000 },
+              };
+
+              tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                  tabs.forEach(t => t.classList.remove('active'));
+                  tab.classList.add('active');
+
+                  const duration = tab.textContent.trim();
+                  const data = rewardsData[duration];
+
+                  progressCircle.style.background = `conic-gradient(#ffab00 0% ${data.percentage}%, #2d1a59 ${data.percentage}% 100%)`;
+                  progressText.textContent = `${data.percentage}%`;
+                  autoReward.textContent = `${data.auto} SSBTs`;
+                  manualReward.textContent = `${data.manual} SSBTs`;
                 });
+              });
             });
-        </script>
+          </script>
           <div class="col-md-6 mt-2">
             <div class="container1 ">
               <h4 class="m-0 rp" style="color: ECF1F0;">If You Stake 1000 SSB Tokens, Today!</h4>
               <h4 class="m-0 rp" style="color: ECF1F0;">It Will Become...</h4>
-              
+
               <div class="tabs mt-3">
-                  <div class="tab">7 Days</div>
-                  <div class="tab active">30 Days</div>
-                  <div class="tab">90 Days</div>
-                  <div class="tab">120 Days</div>
+                <div class="tab">7 Days</div>
+                <div class="tab active">30 Days</div>
+                <div class="tab">90 Days</div>
+                <div class="tab">120 Days</div>
               </div>
               <div class="row mt-0 pt-4">
                 <div class="col-md-5 d-flex align-content-center" style="align-items: center;">
                   <div class="progress">
                     <div class="progress-circle"></div>
                     <div class="progress-text">66%</div>
-                </div>
+                  </div>
                 </div>
                 <div class="col-md-7">
                   <div class="rewards ">
                     <div class="reward auto row">
-                        
-                        
-                        <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center" style="margin:auto;"></span></div>
-                        <div class="col-md-10 col-9"> Auto Stake Reward</div>
-                        <div class="col-md-2 col-3"> </div>
-                        <div class="col-md-10 col-9"> <p>4000 SSBTs</p></div>
+
+
+                      <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center"
+                          style="margin:auto;"></span></div>
+                      <div class="col-md-10 col-9"> Auto Stake Reward</div>
+                      <div class="col-md-2 col-3"> </div>
+                      <div class="col-md-10 col-9">
+                        <p>4000 SSBTs</p>
+                      </div>
                     </div>
-                    
+
                     <div class="reward manual row">
-                      <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center" style="margin:auto;"></span></div>
+                      <div class="col-md-2 col-3 align-content-center p-0"> <span class="d-flex dot text-center"
+                          style="margin:auto;"></span></div>
                       <div class="col-md-10 col-9"> Manual Stake Reward</div>
                       <div class="col-md-2 col-3"> </div>
-                      <div class="col-md-10 col-9"> <p>2000 SSBTs</p></div>
+                      <div class="col-md-10 col-9">
+                        <p>2000 SSBTs</p>
+                      </div>
                     </div>
-                    
-                </div>
+
+                  </div>
                 </div>
               </div>
-             
-             
+
+
+            </div>
           </div>
-          </div>
-         
+
         </div>
       </div>
     </div>
@@ -636,190 +766,373 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
           <div class="col-md-12 text-center">
             <h3 class="main-heading yellow-gradient">
               Get Started Early with StepsStamp <span class="blue"> Blockchain</span> </h3>
-            <p class="sub-heading mb-1">Unlock nodes to mine SSTokens across 5 dynamic blockchains.</p>
+            <p class="sub-heading mb-1">Unlock nodes to mine SSTokens across <br> 5 dynamic blockchains.</p>
             <a href="" class="lm">Learn more </a>
           </div>
         </div>
-        <div class="row pt-5 row1 center">
-          <!-- Card 1 -->
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card-custom1">
-              <div class="card-header1">
-                <img src="assets/img/white.png" alt="White Image">
-                <div class="overlay-text ">White SS Blockchain</div>
-                <div class="overlay-text price1">$100.00</div>
-              </div>
-              <div class="card-body1">
-                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
-                    /
-                    50% Pool B)</span> </p>
-                <div class="features2">
-                  <p class="mini">Rewards Benefits</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>300 SSB Bonus</li>
-                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 1 (30 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
-                  </ul>
+        <div class="desk">
+          <div class="row pt-5 row1 center">
+            <!-- Card 1 -->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="card-custom1">
+                <div class="card-header1">
+                  <img src="assets/img/white.png" alt="White Image">
+                  <div class="overlay-text ">White SS Blockchain</div>
+                  <div class="overlay-text price1">$100.00</div>
                 </div>
-                <div class="features2">
-                  <p class="mini">NFT Rewards</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>W450 Fresh SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>W150 Mini SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>W75 Mini SSB</li>
-                  </ul>
+                <div class="card-body1">
+                  <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                  <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                      /
+                      50% Pool B)</span> </p>
+                  <div class="features2">
+                    <p class="mini">Rewards Benefits</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>300 SSB Bonus</li>
+                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 1 (30 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                    </ul>
+                  </div>
+                  <div class="features2">
+                    <p class="mini">NFT Rewards</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>W450 Fresh SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>W150 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>W75 Mini SSB</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-custom1">Buy Now</button>
                 </div>
-                <button class="btn btn-custom1">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card-custom1">
-              <div class="card-header1">
-                <img src="assets/img/black.png" alt="White Image">
-                <div class="overlay-text " style="color: white;">Black SS Blockchain</div>
-                <div class="overlay-text price1" style="color: white;">$500.00</div>
-              </div>
-              <div class="card-body1">
-                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                <p class="mini"><span style="color:#b6b6b6">1,150 SSBT</span> <span class="super-mini">(50% Pool A
-                    /
-                    50% Pool B)</span> </p>
-                    <p class="mini" style="color:#246BFD ;">Watch included only 1000 Units.</p>
-                <div class="features2">
-                  <p class="mini">Rewards Benefits</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>1500 SSBT Bonus</li>
-                    <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 5 (30 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>$100 Withdraw Limit</li>
-                  </ul>
-                </div>
-                <div class="features2">
-                  <p class="mini">NFT Rewards</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>B450 Fresh SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>B150 Mini SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>B75 Mini SSB</li>
-                  </ul>
-                </div>
-                <button class="btn btn-custom1">Buy Now</button>
               </div>
             </div>
-          </div>
-
-          <!-- Card 3-->
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card-custom1">
-              <div class="card-header1">
-                <img src="assets/img/silver.png" alt="White Image">
-                <div class="overlay-text ">Silver SS Blockchain</div>
-                <div class="overlay-text price1">$1000.00</div>
-              </div>
-              <div class="card-body1">
-                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                <p class="mini"><span style="color:#b6b6b6 ;">1,534 SSBT</span> <span class="super-mini">(50% Pool A
-                    /
-                    50% Pool B)</span> </p>
-                    <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
-                <div class="features2">
-                  <p class="mini">Rewards Benefits</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>3,000 SSBT Bonus</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 10 (300 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 16 (30 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>$200 Withdraw Limit</li>
-                  </ul>
+  
+            <!-- Card 2 -->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="card-custom1">
+                <div class="card-header1">
+                  <img src="assets/img/black.png" alt="White Image">
+                  <div class="overlay-text " style="color: white;">Black SS Blockchain</div>
+                  <div class="overlay-text price1" style="color: white;">$500.00</div>
                 </div>
-                <div class="features2">
-                  <p class="mini">NFT Rewards</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>S450 Fresh SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>S150 Mini SSB </li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>S75 Mini SSB</li>
-                  </ul>
+                <div class="card-body1">
+                  <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                  <p class="mini"><span style="color:#b6b6b6">1,150 SSBT</span> <span class="super-mini">(50% Pool A
+                      /
+                      50% Pool B)</span> </p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 1000 Units.</p>
+                  <div class="features2">
+                    <p class="mini">Rewards Benefits</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>1500 SSBT Bonus</li>
+                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 5 (30 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>$100 Withdraw Limit</li>
+                    </ul>
+                  </div>
+                  <div class="features2">
+                    <p class="mini">NFT Rewards</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>B450 Fresh SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>B150 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>B75 Mini SSB</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-custom1">Buy Now</button>
                 </div>
-                <button class="btn btn-custom1">Buy Now</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card-custom1">
-              <div class="card-header1">
-                <img src="assets/img/gold.png" alt="White Image">
-                <div class="overlay-text ">Gold SS Blockchain</div>
-                <div class="overlay-text price1">$5000.00</div>
-              </div>
-              <div class="card-body1">
-                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                <p class="mini"><span style="color:#b6b6b6 ;">1,919 SSBT</span> <span class="super-mini">(50% Pool A
-                    /
-                    50% Pool B)</span> </p>
-                    <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
-                <div class="features2">
-                  <p class="mini">Rewards Benefits</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>15,000 SSBT Bonus</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 50 (450 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 167 (30 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>$1000 Withdraw Limit</li>
-                  </ul>
-                </div>
-                <div class="features2">
-                  <p class="mini">NFT Rewards</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>G450 Fresh SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>G150 Mini SSB </li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>G75 Mini SSB</li>
-                  </ul>
-                </div>
-                <button class="btn btn-custom1">Buy Now</button>
               </div>
             </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <div class="card-custom1">
-              <div class="card-header1">
-                <img src="assets/img/green.png" alt="White Image">
-                <div class="overlay-text " style="color: white;">Green SS Blockchain</div>
-                <div class="overlay-text price1" style="color: white;">$10000.00</div>
-              </div>
-              <div class="card-body1">
-                <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                <p class="mini"><span style="color:#b6b6b6 ;">2,299 SSBT</span> <span class="super-mini">(50% Pool A
-                    /
-                    50% Pool B)</span> </p>
-                <div class="features2">
-                  <p class="mini">Rewards Benefits</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>30,000 SSBT Bonus</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 100(730 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 500 (30 Days)</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>$2000 Withdraw Limit</li>
-                  </ul>
+  
+            <!-- Card 3-->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="card-custom1">
+                <div class="card-header1">
+                  <img src="assets/img/silver.png" alt="White Image">
+                  <div class="overlay-text ">Silver SS Blockchain</div>
+                  <div class="overlay-text price1">$1000.00</div>
                 </div>
-                <div class="features2">
-                  <p class="mini">NFT Rewards</p>
-                  <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle-fill text-success"></i>GR450 Fresh SSB</li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>GR150 Mini SSB </li>
-                    <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Mini SSB</li>
-                  </ul>
+                <div class="card-body1">
+                  <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                  <p class="mini"><span style="color:#b6b6b6 ;">1,534 SSBT</span> <span class="super-mini">(50% Pool A
+                      /
+                      50% Pool B)</span> </p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
+                  <div class="features2">
+                    <p class="mini">Rewards Benefits</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>3,000 SSBT Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 10 (300 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 16 (30 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>$200 Withdraw Limit</li>
+                    </ul>
+                  </div>
+                  <div class="features2">
+                    <p class="mini">NFT Rewards</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>S450 Fresh SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>S150 Mini SSB </li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>S75 Mini SSB</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-custom1">Buy Now</button>
                 </div>
-                <button class="btn btn-custom1">Buy Now</button>
               </div>
             </div>
+  
+            <!-- Card 4 -->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="card-custom1">
+                <div class="card-header1">
+                  <img src="assets/img/gold.png" alt="White Image">
+                  <div class="overlay-text ">Gold SS Blockchain</div>
+                  <div class="overlay-text price1">$5000.00</div>
+                </div>
+                <div class="card-body1">
+                  <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                  <p class="mini"><span style="color:#b6b6b6 ;">1,919 SSBT</span> <span class="super-mini">(50% Pool A
+                      /
+                      50% Pool B)</span> </p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
+                  <div class="features2">
+                    <p class="mini">Rewards Benefits</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>15,000 SSBT Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 50 (450 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 167 (30 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>$1000 Withdraw Limit</li>
+                    </ul>
+                  </div>
+                  <div class="features2">
+                    <p class="mini">NFT Rewards</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>G450 Fresh SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>G150 Mini SSB </li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>G75 Mini SSB</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-custom1">Buy Now</button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Card 5 -->
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="card-custom1">
+                <div class="card-header1">
+                  <img src="assets/img/green.png" alt="White Image">
+                  <div class="overlay-text " style="color: white;">Green SS Blockchain</div>
+                  <div class="overlay-text price1" style="color: white;">$10000.00</div>
+                </div>
+                <div class="card-body1">
+                  <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                  <p class="mini"><span style="color:#b6b6b6 ;">2,299 SSBT</span> <span class="super-mini">(50% Pool A
+                      /
+                      50% Pool B)</span> </p>
+                  <div class="features2">
+                    <p class="mini">Rewards Benefits</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>30,000 SSBT Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 100(730 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 500 (30 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>$2000 Withdraw Limit</li>
+                    </ul>
+                  </div>
+                  <div class="features2">
+                    <p class="mini">NFT Rewards</p>
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-check-circle-fill text-success"></i>GR450 Fresh SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>GR150 Mini SSB </li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Mini SSB</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-custom1">Buy Now</button>
+                </div>
+              </div>
+            </div>
+  
           </div>
-
         </div>
+        <div class="mob">
+          <div class="row pt-5 row1 center">
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="card-custom1">
+                      <div class="card-header1">
+                        <img src="assets/img/white.png" alt="White Image">
+                        <div class="overlay-text ">White SS Blockchain</div>
+                        <div class="overlay-text price1">$100.00</div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                        <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool A
+                            /
+                            50% Pool B)</span> </p>
+                        <div class="features2">
+                          <p class="mini">Rewards Benefits</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>300 SSB Bonus</li>
+                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 1 (30 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+                          </ul>
+                        </div>
+                        <div class="features2">
+                          <p class="mini">NFT Rewards</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>W450 Fresh SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>W150 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>W75 Mini SSB</li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-custom1">Buy Now</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card-custom1">
+                      <div class="card-header1">
+                        <img src="assets/img/black.png" alt="White Image">
+                        <div class="overlay-text " style="color: white;">Black SS Blockchain</div>
+                        <div class="overlay-text price1" style="color: white;">$500.00</div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                        <p class="mini"><span style="color:#b6b6b6">1,150 SSBT</span> <span class="super-mini">(50% Pool A
+                            /
+                            50% Pool B)</span> </p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 1000 Units.</p>
+                        <div class="features2">
+                          <p class="mini">Rewards Benefits</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>1500 SSBT Bonus</li>
+                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 5 (30 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>$100 Withdraw Limit</li>
+                          </ul>
+                        </div>
+                        <div class="features2">
+                          <p class="mini">NFT Rewards</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>B450 Fresh SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>B150 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>B75 Mini SSB</li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-custom1">Buy Now</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card-custom1">
+                      <div class="card-header1">
+                        <img src="assets/img/silver.png" alt="White Image">
+                        <div class="overlay-text ">Silver SS Blockchain</div>
+                        <div class="overlay-text price1">$1000.00</div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                        <p class="mini"><span style="color:#b6b6b6 ;">1,534 SSBT</span> <span class="super-mini">(50% Pool A
+                            /
+                            50% Pool B)</span> </p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
+                        <div class="features2">
+                          <p class="mini">Rewards Benefits</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>3,000 SSBT Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 10 (300 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 16 (30 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>$200 Withdraw Limit</li>
+                          </ul>
+                        </div>
+                        <div class="features2">
+                          <p class="mini">NFT Rewards</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>S450 Fresh SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>S150 Mini SSB </li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>S75 Mini SSB</li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-custom1">Buy Now</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card-custom1">
+                      <div class="card-header1">
+                        <img src="assets/img/gold.png" alt="White Image">
+                        <div class="overlay-text ">Gold SS Blockchain</div>
+                        <div class="overlay-text price1">$5000.00</div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                        <p class="mini"><span style="color:#b6b6b6 ;">1,919 SSBT</span> <span class="super-mini">(50% Pool A
+                            /
+                            50% Pool B)</span> </p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
+                        <div class="features2">
+                          <p class="mini">Rewards Benefits</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>15,000 SSBT Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 50 (450 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 167 (30 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>$1000 Withdraw Limit</li>
+                          </ul>
+                        </div>
+                        <div class="features2">
+                          <p class="mini">NFT Rewards</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>G450 Fresh SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>G150 Mini SSB </li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>G75 Mini SSB</li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-custom1">Buy Now</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="card-custom1">
+                      <div class="card-header1">
+                        <img src="assets/img/green.png" alt="White Image">
+                        <div class="overlay-text " style="color: white;">Green SS Blockchain</div>
+                        <div class="overlay-text price1" style="color: white;">$10000.00</div>
+                      </div>
+                      <div class="card-body1">
+                        <p class="subtext1 mb-0 grey">Per day mining capacity</p>
+                        <p class="mini"><span style="color:#b6b6b6 ;">2,299 SSBT</span> <span class="super-mini">(50% Pool A
+                            /
+                            50% Pool B)</span> </p>
+                        <div class="features2">
+                          <p class="mini">Rewards Benefits</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>30,000 SSBT Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 100(730 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 500 (30 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>$2000 Withdraw Limit</li>
+                          </ul>
+                        </div>
+                        <div class="features2">
+                          <p class="mini">NFT Rewards</p>
+                          <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i>GR450 Fresh SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>GR150 Mini SSB </li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Mini SSB</li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-custom1">Buy Now</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+  
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -831,23 +1144,134 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
           <div class="col-md-12 text-center">
             <h3 class="main-heading yellow-gradient">
               Grab Amazing <span class="blue"> Opportunity</span> before It Go Away </h3>
-            <p class="sub-heading mb-1">Since the last 2 phases are completed, don’t miss out the amazing opportunity coming in your way.</p>
-            <a href="" class="lm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
-              <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2" stroke-linecap="round"/>
+            <p class="sub-heading mb-1">Since the last 2 phases are completed, don’t miss out the amazing opportunity
+              coming in your way.</p>
+            <a href="" class="lm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
+                viewBox="0 0 14 13" fill="none">
+                <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2"
+                  stroke-linecap="round" />
               </svg></a>
           </div>
         </div>
-        <img class="mt-4" src="img/Phase.png" alt="" style="width: 100%" />
+        <div class="desk">
+          <div class="timeline-container1">
+            <div class="timeline1">
+              <div class="phase1">
+                <div class="phase1-label1">phase A</div>
+                <div class="phase1-circle1 finished" style=""></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Completed</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start" style="font-size: 13px;">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
+                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.05/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="phase1">
+                <div class="phase1-label1">phase B</div>
+                <div class="phase1-circle1 finished"></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Completed</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
+                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.06/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="phase1 active">
+                <div class="phase1-label1" style="background-color: #F78300;">phase C</div>
+                <div class="phase1-circle1 active1"></div>
+
+                <div class="tooltip1 text-center" style="border: 1px solid #F78300;border-radius:16px">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h6>SSBTs Remaining</h6>
+                    </div>
+                    <div class="col-md-4">
+                      <p>4,000,000</p>
+                    </div>
+                  </div>
+
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start justify-content-around">
+                    <div class="col-md-5 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-5 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-5 col-6 mt-2">People Already</div>
+                    <div class="col-md-5 col-6 mt-2">80,000</div>
+                    <div class="col-md-5 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-5 col-6 mt-2">$0.07/SSB</div>
+                    <div class="col-md-12">
+                      <p></p>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="text-center d-flex justify-content-center mt-3 pb-3"><button
+                          class="btn share1">DOWNLOAD
+                          APP TODAY</button></div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="phase1">
+                <div class="phase1-label1">phase D</div>
+                <div class="phase1-circle1 upcoming"></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Upcomming</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
+                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.08/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="phase1">
+                <div class="phase1-label1">phase E</div>
+                <div class="phase1-circle1 upcoming"></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Upcomming</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
+                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.08/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
   <!-- strategy -->
-
-
-
-
-  <!--======= 5card============= -->
-  <!--======= 5card============= -->
 
   <!-- watch -->
   <section class="normals">
@@ -863,15 +1287,15 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
       </div>
       <div class="row pt-md-4   d-flex justify-content-center">
         <div class="col-md-12 row justify-content-evenly">
-          
 
-          <div class="col-md-3 col-6 mt-3">
+
+          <div class="col-md-3 col-12 mt-3">
             <img src="assets/img/s.png" alt="" style="width: 100%" />
           </div>
-          <div class="col-md-3 col-6 mt-3">
+          <div class="col-md-3 col-12 mt-3">
             <img src="assets/img/go.png" alt="" style="width: 100%" />
           </div>
-          <div class="col-md-3 col-6 mt-3">
+          <div class="col-md-3 col-12 mt-3">
             <img src="assets/img/gr.png" alt="" style="width: 100%" />
           </div>
         </div>
@@ -906,7 +1330,7 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
           <div class="timeline-item top">
             <div class="timeline-circle"></div>
             <div class="timeline-content top">
-              
+
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h5>Jul, 2024</h5><br><br>
             </div>
@@ -923,7 +1347,7 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
           <div class="timeline-item top">
             <div class="timeline-circle"></div>
             <div class="timeline-content top">
-              
+
               <p>Lorem ipsum dolor sit amet consectetur.</p>
               <h5>Nov, 2024</h5>
               <br>
@@ -943,9 +1367,6 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
     </div>
   </section>
   <!-- sailing -->
-
-
-
   <!-- faq -->
   <section class="normals">
     <div class="container" id="faq">
@@ -1512,8 +1933,7 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
   <section class="normals">
     <div class="container">
       <div class="do_you">
-        <div style="
-">
+        <div style="">
           <div class="row justify-content-between">
             <div class="col-md-5 text-start">
               <h3 class="main-heading yellow-gradient1" style="font-weight: 400;text-transform: capitalize;">Do you have
@@ -1563,6 +1983,11 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
   </section>
   <!-- faq -->
   <script>
+    var splide = new Splide('.splide', {
+     
+  });
+  splide.mount();
+
     function toggleFAQ(element) {
       const answer = element.nextElementSibling;
       const icon = element.querySelector(".faq-icon");
@@ -1633,12 +2058,18 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
             <div class="center"><a class="flink" href>FAQ’s</a></div>
             <div class="center">
               <div class="d-flex justify-content-center gap-3">
-                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                  <path d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z" fill="#F78300"/>
-                </svg> App
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                    fill="none">
+                    <path
+                      d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z"
+                      fill="#F78300" />
+                  </svg> App
                   Store</a>
-                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                  <path d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z" fill="#F78300"/>
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                    fill="none">
+                    <path
+                      d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z"
+                      fill="#F78300" />
                   </svg> Play
                   Store</a>
               </div>
@@ -1661,7 +2092,7 @@ background: linear-gradient(90deg, #FFFFB7 13.22%, #F9DF80 32.3%, #FAB001 62.58%
     </section>
   </footer>
 
-  
+
 </body>
 
 </html>
