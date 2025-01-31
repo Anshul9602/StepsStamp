@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/whitepaper.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
 
 
 </head>
@@ -25,6 +26,16 @@
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <!-- Logo Section -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+        aria-controls="mobileNav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+          <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+      </button>
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
         </div>
@@ -33,25 +44,25 @@
         <nav class="d-none d-lg-block">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a href="index.html" class="nav-link text-light ">Home</a>
+              <a href="index.html" class="nav-link text-light  ">Home</a>
             </li>
             <li class="nav-item">
               <a href="journey.html" class="nav-link text-light">User Journey</a>
             </li>
             <li class="nav-item">
-              <a href="index.html#eco" class="nav-link text-light">Ecosystem</a>
+              <a href="#eco" class="nav-link text-light">Ecosystem</a>
             </li>
             <li class="nav-item">
-              <a href="blockchain.html" class="nav-link text-light  gradient-text">Blockchains</a>
+              <a href="blockchain.html" class="nav-link text-light gradient-text">Blockchains</a>
             </li>
             <li class="nav-item">
-              <a href="index.html#dssb" class="nav-link text-light">DSSB</a>
+              <a href="#dssb" class="nav-link text-light">DSSB</a>
             </li>
             <li class="nav-item">
-              <a href="index.html#reward" class="nav-link text-light">Rewards</a>
+              <a href="#reward" class="nav-link text-light">Rewards</a>
             </li>
             <li class="nav-item">
-              <a href="index.html#whitepaper" class="nav-link text-light">Whitepaper</a>
+              <a href="#whitepaper" class="nav-link text-light">Whitepaper</a>
             </li>
             <li class="nav-item">
               <a href="#faq" class="nav-link text-light">FAQ's</a>
@@ -60,21 +71,12 @@
         </nav>
 
         <!-- Button Section -->
-        <div class="d-none d-lg-block">
+        <div class="">
           <a href="#" class="btn btn-warning text-dark">Get App</a>
         </div>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
-          aria-controls="mobileNav">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-
-        </button>
+      
       </div>
     </div>
   </header>
@@ -815,7 +817,7 @@
             <!-- Daily Activity Tracking -->
             <div class="tab-pane fade" id="dailyActivity" role="tabpanel" aria-labelledby="dailyActivity-tab">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" style="max-height:540px;margin-left:20%" />
+                <img src="assets/img/wood.png" alt="img" class="tab_imgg"style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -828,7 +830,7 @@
             <!-- Pool A -->
             <div class="tab-pane fade" id="poolA" role="tabpanel" aria-labelledby="poolA-tab">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" style="max-height:540px;margin-left:20%" />
+                <img src="assets/img/wood.png" alt="img" class="tab_imgg"style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -840,7 +842,7 @@
             </div>
             <div class="tab-pane fade" id="poolA1" role="tabpanel" aria-labelledby="poolA-tab1">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" style="max-height:540px;margin-left:20%" />
+                <img src="assets/img/wood.png" alt="img"class="tab_imgg" style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>

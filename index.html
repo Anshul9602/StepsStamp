@@ -51,7 +51,7 @@
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
-      display: flex;
+      display: inline;
       height: 35px;
       padding: 0px 40px;
       flex-direction: column;
@@ -106,6 +106,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <!-- Logo Section -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+        aria-controls="mobileNav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+          <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+      </button>
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
         </div>
@@ -141,21 +151,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </nav>
 
         <!-- Button Section -->
-        <div class="d-none d-lg-block">
+        <div class="">
           <a href="#" class="btn btn-warning text-dark">Get App</a>
         </div>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
-          aria-controls="mobileNav">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-
-        </button>
+      
       </div>
     </div>
   </header>
@@ -205,8 +206,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <section class="hero-banner text-center text-white font">
 
     <div class="desk">
-      <img src="img/home2.png" alt="Hero Banner" class="img-fluid banner1 "
+      <img src="img/home2.png" alt="Hero Banner" class=" img-fluid banner1 "
         style="width: 100%;background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
+      
       <div class="content" style="height: 100%;">
 
         <div class="row justify-content-around" style="height: 100%;">
@@ -260,26 +262,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
     <div class="mob">
-      <img src="img/home2.png" alt="Hero Banner" class="img-fluid banner1 "
-        style="background: var(--High-Fidelity-Color-Main-Background, #11011E);height:100vh;" />
-      <div class="content" style="height: 100%;top:2%">
-        <div class="desk " style="width: 100%;overflow: scroll;">
-          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
-              viewBox="0 0 7 7" fill="none">
+      <img src="img/home_mob.png" alt="Hero Banner" class="img-fluid banner1 "
+        style="background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
+      <div class="content" style="height: 100%;top:-2%">
+        <div class="scroll-container" style="width: 100%; overflow-x: auto; white-space: nowrap;">
+          <button class="btn blue-btn mt-3" style="font-size: 12px;padding:10px 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
-            </svg>Get Reward by Your Each Movement</button>
-          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
-              viewBox="0 0 7 7" fill="none">
+            </svg>
+            Get Reward by Your Each Movement
+          </button>
+          <button class="btn blue-btn mt-3"style="font-size: 12px;padding:10px 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
-            </svg>Get Reward by StepsStamp Blockchains</button>
-          <button class="btn blue-btn mt-3"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"
-              viewBox="0 0 7 7" fill="none">
+            </svg>
+            Get Reward by StepsStamp Blockchains
+          </button>
+          <button class="btn blue-btn mt-3"style="font-size: 12px;padding:10px 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
-            </svg>Get Reward by Staking SSBTs</button>
-
+            </svg>
+            Get Reward by Staking SSBTs
+          </button>
         </div>
         <div class="row justify-content-around" style="height: 100%;">
-          <div class="col-12" style="height: 20%;">
+          <div class="col-12" style="height: 20%;    margin-top: 15%;">
             <div class="powered-by mb-3">
               <a href="#" class="powered-by-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                   viewBox="0 0 25 24" fill="none">
@@ -296,10 +303,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
           <div class="col-11 row justify-content-between">
 
-            <div class="col-md-3">
-              <div class="mt-3 text-center" style="    width: fit-content; margin: auto;">
+            <div class="col-md-3 d-flex align-items-center ttt1">
+              <div class="mt-3 text-center" style="    width: fit-content; margin: auto auto 10%;">
                 <button type="button" class="yellow_btn">Download </button> <svg xmlns="http://www.w3.org/2000/svg"
-                  width="41" height="41" viewBox="0 0 41 41" fill="none">
+                  width="30" height="30" viewBox="0 0 41 41" fill="none">
                   <circle cx="20.5" cy="20.5" r="20" stroke="#18F3FF" />
                   <path d="M15 15H26M26 15V26M26 15L15 26" stroke="#18F3FF" />
                 </svg>
@@ -319,7 +326,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   </section>
   <!-- banner -->
   <div class="mob text-center" style="background: #11011E;">
-    <img src="img/Video.png" alt="">
+    <img src="img/mob_video.png" alt="">
   </div>
   <!-- connecting -->
   <section>
@@ -1234,7 +1241,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="col-md-12">
                       <div class="text-center d-flex justify-content-center mt-3 pb-3"><button
                           class="btn share1">DOWNLOAD
-                          APP TODAY</button></div>
+                          APP TODAY <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="12.5" cy="12.5" r="11" stroke="#F58200" stroke-width="2"/>
+                            <path d="M9.28394 9.27979H15.723M15.723 9.27979V15.7188M15.723 9.27979L9.28394 15.7188" stroke="#F58200" stroke-width="2"/>
+                            </svg></span></button></div>
                     </div>
 
 
