@@ -1267,7 +1267,9 @@
  .offcanvas-header {
   background: #1C192D !important;
 }
-
+.bold{
+  font-weight: 600;
+}
  @media (max-width:680px) {
   .nav-item{
     text-align: center;

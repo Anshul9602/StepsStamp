@@ -82,7 +82,8 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
     <div class="offcanvas-header">
-      <h5 id="mobileNavLabel" class="text-light">  <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" /></h5>
+      <h5 id="mobileNavLabel" class="text-light"> <img src="assets/img/logo.png" alt="Logo" style="width: 150px"
+          class="me-2" /></h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -871,547 +872,1480 @@
 
         <div class="container my-md-4 my-0">
           <!-- Tab Navigation -->
-          <ul class="nav nav-tabs nav2" id="newTabsStructure" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link " id="tab-step-tracking" data-bs-toggle="tab"
-                data-bs-target="#content-step-tracking" type="button" role="tab" aria-controls="content-step-tracking"
-                aria-selected="true">
-                Step Tracking
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-blockchain" data-bs-toggle="tab" data-bs-target="#content-blockchain"
-                type="button" role="tab" aria-controls="content-blockchain" aria-selected="false">
-                Blockchain
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-referral" data-bs-toggle="tab" data-bs-target="#content-referral"
-                type="button" role="tab" aria-controls="content-referral" aria-selected="false">
-                Referral
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="tab-staking" data-bs-toggle="tab" data-bs-target="#content-staking"
-                type="button" role="tab" aria-controls="content-staking" aria-selected="false">
-                Staking
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-payment" data-bs-toggle="tab" data-bs-target="#content-payment"
-                type="button" role="tab" aria-controls="content-payment" aria-selected="false">
-                Payment
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="tab-pool" data-bs-toggle="tab" data-bs-target="#content-pool" type="button"
-                role="tab" aria-controls="content-pool" aria-selected="false">
-                Pool Reward
-              </button>
-            </li>
-          </ul>
+          <div class="container my-4 ">
+            <!-- Tab Navigation -->
+            <ul class="nav nav-tabs nav2" id="newTabsStructure" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link " id="tab-step-tracking" data-bs-toggle="tab"
+                  data-bs-target="#content-step-tracking" type="button" role="tab" aria-controls="content-step-tracking"
+                  aria-selected="true">
+                  Step Tracking
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-blockchain" data-bs-toggle="tab" data-bs-target="#content-blockchain"
+                  type="button" role="tab" aria-controls="content-blockchain" aria-selected="false">
+                  Blockchain
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-referral" data-bs-toggle="tab" data-bs-target="#content-referral"
+                  type="button" role="tab" aria-controls="content-referral" aria-selected="false">
+                  Referral
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="tab-staking" data-bs-toggle="tab" data-bs-target="#content-staking"
+                  type="button" role="tab" aria-controls="content-staking" aria-selected="false">
+                  Staking
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-payment" data-bs-toggle="tab" data-bs-target="#content-payment"
+                  type="button" role="tab" aria-controls="content-payment" aria-selected="false">
+                  Payment
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tab-pool" data-bs-toggle="tab" data-bs-target="#content-pool" type="button"
+                  role="tab" aria-controls="content-pool" aria-selected="false">
+                  Pool Reward
+                </button>
+              </li>
+            </ul>
+            <!-- Tab Content -->
+            <div class="tab-content" id="newTabsStructureContent">
+              <div class="tab-pane fade " id="content-step-tracking" role="tabpanel"
+                aria-labelledby="tab-step-tracking">
+                <div class="faq-container">
 
-          <!-- Tab Content -->
-          <div class="tab-content" id="newTabsStructureContent">
-            <div class="tab-pane fade " id="content-step-tracking" role="tabpanel" aria-labelledby="tab-step-tracking">
-              <div class="faq-container">
+                  <div class="faq-section">
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is StepsStamp?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        StepsStamp is a revolutionary platform where you earn crypto rewards for moving! Built on
+                        Binance Smart Chain (BSC), StepsStamp uses<span class="bold"> “Proof of Movement (POM)”</span> –
+                        every step you
+                        take counts as 1 POM to unlock rewards.
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is “Proof of movement”?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        <span class="bold">Proof of Movement </span>(PoM) is an innovative concept that leverages
+                        blockchain
+                        technology to incentivize physical movement. It's a new consensus mechanism that rewards
+                        users for their physical movement. One Proof of movement is equal to 1 Step taken by the user.
+                      </div>
                     </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Do I get any tokens for indoor workouts like treadmill running etc?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        No. Indoor workouts are reflected in your step count, however they don’t qualify as
+                        “Normalized Steps” required to mint the SSB token. Tokens are only rewarded for natural steps
+                        taken to go from point A to Point B.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How does the app track my steps?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Our app uses the phone’s built-in sensors, such as the accelerometer and gyroscope,
+                        to detect movements that match a walking pattern. This data is then processed by our
+                        proprietary algorithm, which translates as a ‘Normalised step’ count.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Why does my step count increase when I shake the phone?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Phone sensors detect all motion, and shaking can sometimes mimic the pattern of
+                        walking steps. However, our algorithm eliminates artificial movements and displays only the
+                        normalised step count on the app.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How can I get the most accurate step count?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        For the best accuracy, keep your phone in a stable position, like in a pocket or
+                        attached to your body. Avoid frequently moving it around or shaking it, as this can interfere
+                        with
+                        accurate step detection.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can the app tell the difference between walking and other activities like cycling?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Yes, the app uses activity recognition APIs that can detect different activities, including
+                        walking, running, and cycling. These APIs help filter out non-walking activities so the step
+                        count
+                        remains accurate. SSBT(StepsStamp Blockchain Tokens) can only be mined via actual walking
+                        activity.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Does the app work when it’s running in the background?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Yes, our app can continue to count steps and track your activity even when it’s running
+                        in the background, provided you’ve granted the necessary permissions for background activity.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Why is there a discrepancy between my steps on this app and other fitness apps?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Each app may use slightly different algorithms and settings for step counting.
+                        Differences in sensor sensitivity, activity filtering, and distance thresholds can lead to minor
+                        variations in step counts across apps.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How often does the app update my step count?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The app updates your step count in real time as it detects new steps. However, for
+                        better battery life, step counts are sometimes batched and updated periodically.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Does the app use my location data to calculate steps?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        While the app primarily uses motion sensors to calculate steps, location data may be
+                        used periodically to verify movement accuracy and improve step detection. This data is only
+                        used for accuracy purposes and is not shared or stored.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What permissions are required for step counting?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The app requires access to motion and fitness data for step counting, and location
+                        permissions are needed for enhanced accuracy in tracking movement. Background permissions
+                        may also be required for continuous tracking.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Will step counting drain my battery?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Step counting is optimized to minimize battery usage by using low-power motion
+                        sensors. However, continuous background activity and frequent location checks may use more
+                        battery, especially on longer tracking sessions.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How accurate is the step counting?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Our app aims to achieve high accuracy by using both motion sensors and activity
+                        recognition. Small differences may occur based on the phone’s position, the environment, and
+                        specific activities, but we strive to provide reliable step counts.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I report an issue with step counting accuracy?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        If you notice inconsistencies, please reach out via our Support section in the app, and
+                        provide details about the issue. We’re constantly working to improve accuracy, and your
+                        feedback is valuable.
+                      </div>
+                    </div>
+
                   </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
-                  </div>
+
                 </div>
-
               </div>
-            </div>
-            <div class="tab-pane fade" id="content-blockchain" role="tabpanel" aria-labelledby="tab-blockchain">
-              <div class="faq-container">
+              <div class="tab-pane fade" id="content-blockchain" role="tabpanel" aria-labelledby="tab-blockchain">
+                <div class="faq-container">
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                  <div class="faq-section">
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is a StepsStamp Blockchain (NFT)?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        A StepsStamp Blockchain (NFT) is a unique digital asset that lets you <span class="bold">mine
+                          SSBT</span> by
+                        walking. Each Blockchain has <span class="bold">450 blocks</span>, and activating a block
+                        requires<span class="bold"> 1,500
+                          POM/day</span>.
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How does mining work with Blockchains?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        <style>
+                          .blockchain-table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 20px 0;
+                            font-size: 16px;
+                            text-align: left;
+                          }
+
+                          .blockchain-table thead th {
+                            background-color: transparent;
+                            border-bottom: 2px solid #ddd;
+                            padding: 10px;
+                          }
+
+                          .blockchain-table tbody td {
+                            border-bottom: 1px solid #ddd;
+                            padding: 10px;
+                          }
+
+                          .blockchain-table tbody tr:nth-child(even) {
+                            background-color: transparent;
+                          }
+
+                          .blockchain-table tbody tr:hover {
+                            background-color: transparent;
+                          }
+                        </style>
+                        Only Blockchain owners can mine SSBT. Mining rewards are decentralized and fixed:
+                        <ul>
+                          <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
+                          <li>Your Daily Reward: Depends on your Blockchain type: </li>
+
+                        </ul>
+                        <div style="    width: 100%;        overflow-x: scroll;">
+                          <table class="blockchain-table">
+                            <thead>
+                              <tr>
+                                <th>Blockchain Type</th>
+                                <th>Daily SSBT</th>
+                                <th>Pool A (50%)</th>
+                                <th>Pool B (50%)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>White</td>
+                                <td>767 SSBT</td>
+                                <td>383,50 SSBT</td>
+                                <td>383,50 SSBT</td>
+                              </tr>
+                              <tr>
+                                <td>Black</td>
+                                <td>1,150 SSBT</td>
+                                <td>575,00 SSBT</td>
+                                <td>575,00 SSBT</td>
+                              </tr>
+                              <tr>
+                                <td>Silver</td>
+                                <td>1,534 SSBT</td>
+                                <td>767,00 SSBT</td>
+                                <td>767,00 SSBT</td>
+                              </tr>
+                              <tr>
+                                <td>Gold</td>
+                                <td>1,919 SSBT</td>
+                                <td>959,50 SSBT</td>
+                                <td>959,50 SSBT</td>
+                              </tr>
+                              <tr>
+                                <td>Green</td>
+                                <td>2,299 SSBT</td>
+                                <td>1.149,50 SSBT</td>
+                                <td>1.149,50 SSBT</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <h6 class="bold mt-3">Considered as an example: </h6>
+                        <ul>
+                          <li>Total Green Blockchain Owners: 100 participants.</li>
+                          <li>Daily SSBT Pool for Green: 2.299,00 SSBT (split 50-50):
+                            <div style="padding-left: 10px;">
+                              <p class="text-start mt-2 mb-1">○ Pool A: 1.149,50 SSBT (for 1.500–9.999 POM, distributed
+                                proportionally). </p>
+                              <p class="text-start mb-0">○ Pool B: 1.149,50 SSBT (for 10.000+ POM, distributed equally).
+                              </p>
+                            </div>
+
+
+                          </li>
+                        </ul>
+                        <h6 class="bold">Participants: </h6>
+                        <ul>
+                          <li>100 users walked 1.500 POM → Eligible for Pool A. </li>
+                          <li>28 users walked 10.000 POM → Eligible for Pool A (up to 9.999 POM) + Pool B
+                            (10.000 POM).
+
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Why 120 years?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The 120-year timeframe ensures long-term sustainability and rewards for loyal users.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How long does it take to complete a Blockchain?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        At least 450 days (1 block/day). Consistency is key!
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can I activate multiple Blockchains at once?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        No. Only one Blockchain can be active at a time.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What happens after I finish 300 and 450 blocks?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        You’ll receive 150 Blocks in Mini StepsStamp Blockchain(New NFT) after 300 Blocks
+                        completed and 75 Blocks in Micro StepsStamp Blockchain(New NFT) after 450 Blocks
+                        completed as rewards. Use them to keep earning or transfer them.
+                        <p
+                          style="color: rgba(17, 243, 255, 1);font-size: 14px;text-align: start;text-decoration: underline;">
+                          Please add here all mini and micro StepsStamp Blockchain Names or Codes: e.g. W450,
+                          W150, and W75 ( W stands for White StepsStamp Blockchain, and 450 stands for 450
+                          Blocks)</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What are the differences between White, Black, Silver, Gold, and Green
+                        Blockchains?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Higher-tier Blockchains cost more but offer greater daily mining capacity of SSBT
+                        rewards and perks (e.g., StepsStamp Watches).
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can I sell my Blockchain (NFT) to someone else?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Yes! Inactive Blockchains or Mini or Micro Blockchains(NFTs) can be transferred or sold
+                        to others.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What happens if I lose access to my Blockchain (NFT)?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Your Blockchain is stored securely in your wallet. If you lose access, use your recovery
+                        phrase to restore it.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I purchase a Blockchain during Phases A-E?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Use BUSD to buy Blockchains. After Phase E, only SSBT will be accepted.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What if I miss Phases A-E?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        After Phase E, you’ll need SSBT (purchased from exchanges) to buy Blockchains.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Are Phase bonuses time-limited?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Yes! Bonuses (welcome Phases Bonus, Investor Bonus, StepsStamp Watches) are
+                        exclusive to purchases made during their respective phases.
+                      </div>
+                    </div>
+
                   </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
-                  </div>
+
                 </div>
-
               </div>
-            </div>
-            <div class="tab-pane fade" id="content-referral" role="tabpanel" aria-labelledby="tab-referral">
-              <div class="faq-container">
+              <div class="tab-pane fade" id="content-referral" role="tabpanel" aria-labelledby="tab-referral">
+                <div class="faq-container">
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                  <div class="faq-section">
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I earn referral rewards?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Share your referral link. When someone buys any Blockchain (NFT) using your link,
+                        you earn SSBT tokens equal to a percentage of their purchase in BUSD, based on your
+                        Blockchain tier:
+                        <ul>
+                          <li class="blod">White/Black Tier: 7% </li>
+                          <li class="blod">Silver Tier: 8% </li>
+                          <li class="blod">Gold Tier: 10% </li>
+                          <li class="blod">Green Tier: 15% </li>
+                        </ul>
+                        <h6 class="mt-3 bold">Example: </h6>
+                        <p style="color: rgba(17, 243, 255, 1);font-size: 14px;text-align: start;">
+                          If you own a <span class="bold">Green Blockchain</span> and your referral buys a <span
+                            class="bold">White Blockchain (100
+                            BUSD)</span>, you earn: <br>
+                          15% of 100 BUSD = 15 BUSD → Converted to SSBT at the current price (e.g.,
+                          Phase A: 0.05 BUSD/SSBT) → <span class="bold">300 SSBT</span> sent to your wallet!
+                        </p>
+
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Are there limits to referral rewards?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        No! Refer as many friends as you want.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        When do I receive referral rewards?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Immediately after your referral purchases a Blockchain.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Can I track my referral progress?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Yes! Check the “Referrals” tab in the app to see your earnings and pending rewards.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How is the Welcome Bonus in Phase A calculated?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The Welcome Bonus equals 20% of the Blockchain price in BUSD, converted to SSBT at
+                        the Phase A rate (1 SSBT = 0.05 BUSD).
+                        <p class="mt-2 text-start">● Example: Green Blockchain costs <span class="bold">10,000 BUSD
+                          </span>→ 20% = <span class="bold">2,000 BUSD</span> → 2,000 /
+                          0.05 = <span class="bold">40,000 SSBT</span>.</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What are StepsStamp Watches, and how do they work?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        StepsStamp Watches are exclusive gifts for Silver, Gold, or Green Blockchain holders.
+                        They give you free daily SSBT rewards without walking, but hurry – they’re limited!
+                        <ul>
+                          <li>Silver Watch (1,000 units): 10 SSBT/day for 300 days. </li>
+                          <li>Gold Watch (500 units): 50 SSBT/day for 450 days. </li>
+                          <li>Green Watch (250 units): 100 SSBT/day for 730 days. </li>
+                        </ul>
+
+                        <p class="text-start mt-2" style="color:#246BFD">First come, first served! Claim yours before
+                          they’re gone. </p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        When will I receive my StepsStamp Watch?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        StepsStamp Watches will be delivered after Phase C concludes. Limited quantities
+                        are available – first-come, first-served!
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is the Investor Bonus in Phase A?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        A daily SSBT reward paid for 30 days after purchasing a Blockchain. For example: <br>
+                        ● Gold Blockchain: 167 SSBT/day × 30 days = 5,010 SSBT.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is the Total Withdraw Limit in Phase A?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The maximum 10% BUSD you can swap for SSBT per Blockchain tier. For example: <br>
+                        ● Green Blockchain: Swap up to 1,000 BUSD worth of SSBT.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is the SSBT price in Phase A?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Phase A SSBT price: 1 SSBT = 0.05 BUSD.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I calculate my SSBT rewards in Phase A?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        All rewards (Welcome Bonus, Watch, Investor) are paid in SSBT. Use the Phase A rate to
+                        estimate their BUSD value:<br>
+                        ● Example: 40,000 SSBT (Green Welcome Bonus) = 40,000 × 0.05 = 2,000 BUSD.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What happens after Phase E?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        After Phase E: <br>
+                        ● Payment Method: Only SSBT tokens can be used to purchase Blockchains. <br>
+                        ● SSBT Price: Determined by the open market (exchanges).
+                      </div>
                     </div>
                   </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
-                  </div>
+
                 </div>
-
               </div>
-            </div>
-            <div class="tab-pane fade show active" id="content-staking" role="tabpanel" aria-labelledby="tab-staking">
-              <div class="faq-container">
+              <div class="tab-pane fade show active" id="content-staking" role="tabpanel" aria-labelledby="tab-staking">
+                <div class="faq-container">
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white"></path>
-                        </svg></span>
+                  <div class="faq-section">
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What is Manual Stacking ?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white"></path>
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer show">
+                        Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
+                        monday with door teams break. Prioritize in discussion give any should by for on. We light shark
+                        move alpha paradigm.
+                      </div>
                     </div>
-                    <div class="faq-answer show">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What are Stacking Types ?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        OMNILEND listing details will be announced soon.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How Steps Tracking Works
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        The smart contract address will be provided on the official
+                        website.
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How Steps Tracking Works
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        You can create a crypto-wallet using apps like MetaMask or
+                        Trust Wallet.
+                      </div>
                     </div>
                   </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
-                  </div>
+
                 </div>
-
               </div>
-            </div>
-            <div class="tab-pane fade" id="content-payment" role="tabpanel" aria-labelledby="tab-payment">
-              <div class="faq-container">
+              <div class="tab-pane fade" id="content-payment" role="tabpanel" aria-labelledby="tab-payment">
+                <div class="faq-container">
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                  <div class="faq-section">
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        What payment methods are accepted?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Only BUSD (Binance USD) is accepted for purchasing Blockchains.
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        How do I buy BUSD?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        Purchase BUSD on crypto exchanges like Binance, then transfer it to your wallet.
+                      </div>
                     </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                    <div class="faq-item">
+                      <div class="faq-question" onclick="toggleFAQ(this)">
+                        Are there transaction fees?
+                        <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="20" fill="#F78300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                              fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                              fill="white" />
+                          </svg></span>
+                      </div>
+                      <div class="faq-answer">
+                        A small BSC network fee applies for blockchain transactions (typically <$1). </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          Can I get a refund if I’m unsatisfied?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          Blockchain purchases are final due to their digital nature. Review details carefully before
+                          buying.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          How long do payments take to process?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          BUSD transactions are usually confirmed within 2-3 minutes on BSC.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What payment methods are accepted during Phases A-E?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          During Phases A to E, you can purchase StepsStamp Blockchains (NFTs) only with
+                          BUSD. After Phase E ends, only SSBT tokens will be accepted for purchases.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What happens after Phase E?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          ● Payment Method: Only SSBT tokens can be used to buy Blockchains. <br>
+                          ● SSBT in the Open Market: SSBT will be listed on exchanges, and its price will be
+                          determined by market demand and supply.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          Are Watch rewards affected by my daily steps?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          No! Watches reward SSBT automatically, even if you don’t walk.
+
+                          <p class="mt-3 text-start" style="color: #246BFD;">Please add here: Phases A-E withdrawal
+                            limits
+                            value table or following table for Phase A.</p>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What are the benefits of purchasing a Blockchain in Phase A?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          Phase A offers exclusive rewards for Blockchain purchasers:
+                          <div style="    width: 100%;        overflow-x: scroll;">
+                            <table class="blockchain-table">
+                              <thead>
+                                <tr>
+                                  <th>Blockchain </th>
+                                  <th>Price <br>
+                                    (BUSD) </th>
+                                  <th>Welcome
+                                    Bonus <br>
+                                    (SSBT) </th>
+                                  <th>Watch
+                                    Bonus <br>
+                                    (SSBT/Day)</th>
+                                  <th>Investor Bonus <br>
+                                    (SSBT/Day for 30
+                                    Days) </th>
+                                  <th>Total
+                                    Withdraw <br>
+                                    Limit (BUSD) </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>White</td>
+                                  <td>100 <br>
+                                    BUSD </td>
+                                  <td>400 SSBT</td>
+                                  <td>0</td>
+                                  <td>1 SSBT </td>
+                                  <td>10 BUSD </td>
+                                </tr>
+                                <tr>
+                                  <td>Black</td>
+                                  <td>500 <br>
+                                    BUSD </td>
+                                  <td>2,000 SSBT</td>
+                                  <td>0 </td>
+                                  <td>5 SSBT </td>
+                                  <td>50 BUSD </td>
+                                </tr>
+                                <tr>
+                                  <td>Silver</td>
+                                  <td>1,000 <br>
+                                    BUSD </td>
+                                  <td>4,000 SSBT</td>
+                                  <td>10 SSBT <br>
+                                    (300 Days) </td>
+                                  <td>16 SSBT </td>
+                                  <td>100 BUSD</td>
+                                </tr>
+                                <tr>
+                                  <td>Green</td>
+                                  <td>10,000 <br>
+                                    BUSD</td>
+                                  <td>40,000 <br>
+                                    SSBT</td>
+                                  <td>100 SSBT <br>
+                                    (730 Days)</td>
+                                  <td>500 SSBT </td>
+                                  <td>1,000 BUSD </td>
+                                </tr>
+                                <tr>
+                                  <td>Gold</td>
+                                  <td>5,000 <br>
+                                    BUSD</td>
+                                  <td>20,000
+                                    SSBT</td>
+                                  <td>50 SSBT <br>
+                                    (450 Days) </td>
+                                  <td>167 SSBT</td>
+                                  <td>500 BUSD</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
+
                   </div>
                 </div>
+                <div class="tab-pane fade" id="content-pool" role="tabpanel" aria-labelledby="tab-pool">
+                  <div class="faq-container">
 
-              </div>
-            </div>
-            <div class="tab-pane fade" id="content-pool" role="tabpanel" aria-labelledby="tab-pool">
-              <div class="faq-container">
+                    <div class="faq-section">
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What is SSBT (StepsStamp Blockchain Token)?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          SSBT is the official reward token of StepsStamp. Earn SSBT by hitting POM(Proof of
+                          Movement) goals, then stake, withdraw, or spend it in the ecosystem!
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          How are SSBT rewards split daily?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          Daily rewards are divided into two pools: <br>
+                          <span class="bold"> Pool A (1,500–9,999 POM)</span>: Rewards shared proportionally based on
+                          your
+                          POM. <br>
+                          <span class="bold">Pool B (10,000+ POM)</span>: Rewards shared equally among qualifying users.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What are the daily SSBT rewards for mining capacity as per Blockchain(NFT) pool?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          <ul>
+                            <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
+                            <li>Your Daily Reward: Depends on your Blockchain type: </li>
+                          </ul>
+                          <div style="    width: 100%;        overflow-x: scroll;">
+                            <table class="blockchain-table">
+                              <thead>
+                                <tr>
+                                  <th>Blockchain Type </th>
+                                  <th>Daily SSBT</th>
+                                  <th>Pool A (50%) </th>
+                                  <th>Pool B (50%)</th>
 
-                <div class="faq-section">
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What is Manual Stacking ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>White</td>
+                                  <td>767 SSBT </td>
+                                  <td>383,50 SSBT </td>
+                                  <td>383,50 SSBT</td>
+
+                                </tr>
+                                <tr>
+                                  <td>Black</td>
+                                  <td>1,150 SSBT</td>
+                                  <td>575,00 SSBT</td>
+                                  <td>575,00 SSBT </td>
+
+                                </tr>
+                                <tr>
+                                  <td>Silver</td>
+                                  <td>1,534 SSBT </td>
+                                  <td>767,00 SSBT</td>
+                                  <td>767,00 SSBT </td>
+
+                                </tr>
+                                <tr>
+                                  <td>Gold</td>
+                                  <td>1,919 SSBT </td>
+                                  <td>959,50 SSBT </td>
+                                  <td>959,50 SSBT </td>
+
+                                </tr>
+                                <tr>
+                                  <td>Green</td>
+                                  <td>2,299 SSBT <br>
+                                    BUSD</td>
+                                  <td>1.149,50 SSBT</td>
+                                  <td>1.149,50 SSBT</td>
+
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                          <h6 class="bold mt-3">Considered as an example: </h6>
+                          <ul>
+                            <li>Total Green Blockchain Owners: 100 participants.</li>
+                            <li>Daily SSBT Pool for Green: 2.299,00 SSBT (split 50-50):
+                              <div style="padding-left: 10px;">
+                                <p class="text-start mt-2 mb-1">○ Pool A: 1.149,50 SSBT (for 1.500–9.999 POM,
+                                  distributed
+                                  proportionally). </p>
+                                <p class="text-start mb-0">○ Pool B: 1.149,50 SSBT (for 10.000+ POM, distributed
+                                  equally).
+                                </p>
+                              </div>
+
+
+                            </li>
+                          </ul>
+                          <h6 class="bold">Participants: </h6>
+                          <ul>
+                            <li>100 users walked 1.500 POM → Eligible for Pool A. </li>
+                            <li>28 users walked 10.000 POM → Eligible for Pool A (up to 9.999 POM) + Pool B
+                              (10.000 POM).
+
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          When are rewards distributed?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          Daily at 00:00 GMT.
+                        </div>
+                      </div>
+                      <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                          What if multiple users have the same POM?
+                          <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 40 40" fill="none">
+                              <circle cx="20" cy="20" r="20" fill="#F78300" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
+                                fill="white" />
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
+                                fill="white" />
+                            </svg></span>
+                        </div>
+                        <div class="faq-answer">
+                          Rewards are distributed proportionally in Pool A and equally in Pool B, regardless of
+                          duplicates.
+                        </div>
+                      </div>
                     </div>
-                    <div class="faq-answer">
-                      Office ipsum you must be muted. Shelf-ware guys charts blue whistles overflow. Cause own playing
-                      monday with door teams break. Prioritize in discussion give any should by for on. We light shark
-                      move alpha paradigm.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are Stacking Types ?
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      OMNILEND listing details will be announced soon.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      The smart contract address will be provided on the official
-                      website.
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                      How Steps Tracking Works
-                      <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                          viewBox="0 0 40 40" fill="none">
-                          <circle cx="20" cy="20" r="20" fill="#F78300" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z"
-                            fill="white" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z"
-                            fill="white" />
-                        </svg></span>
-                    </div>
-                    <div class="faq-answer">
-                      You can create a crypto-wallet using apps like MetaMask or
-                      Trust Wallet.
-                    </div>
+
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -1585,22 +2519,22 @@
           <div class="col-6 mt-3"></div>
           <div class="col-6 mt-3"></div>
           <div class="col-6 mt-3"></div>
-          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
-            fill="none">
-            <path
-              d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z"
-              fill="#F78300" />
-          </svg> App
-          Store</a></div>
-          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
-            fill="none">
-            <path
-              d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z"
-              fill="#F78300" />
-          </svg> Play
-          Store</a></div>
-          
-          <div class="col-md-2 col-12 mt-5 text-center" >
+          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                viewBox="0 0 16 20" fill="none">
+                <path
+                  d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z"
+                  fill="#F78300" />
+              </svg> App
+              Store</a></div>
+          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z"
+                  fill="#F78300" />
+              </svg> Play
+              Store</a></div>
+
+          <div class="col-md-2 col-12 mt-5 text-center">
             <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
             <div class="social-icons mt-3 text-center  justify-content-center">
               <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -1610,10 +2544,10 @@
               <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
           </div>
-         
+
         </div>
         <div class="row pt-1">
-          
+
         </div>
         <hr />
         <div class="row py-md-3 py-1">
