@@ -16,26 +16,26 @@
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/whitepaper.css" />
   <link rel="stylesheet" href="assets/css/mobile.css" />
-
+  <script src="assets/js.js"></script>
 
 </head>
 
 <body>
   <!-- header -->
-  <header class="font py-3">
+  <header class="font py-3" id="header">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <!-- Logo Section -->
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
-          aria-controls="mobileNav">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
+        aria-controls="mobileNav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+          <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
 
-        </button>
+      </button>
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
         </div>
@@ -46,26 +46,28 @@
             <li class="nav-item">
               <a href="index.html" class="nav-link text-light  ">Home</a>
             </li>
+           
             <li class="nav-item">
-              <a href="journey.html" class="nav-link text-light gradient-text">User Journey</a>
+              <a href="index.html#eco" class="nav-link text-light">Ecosystem</a>
             </li>
             <li class="nav-item">
-              <a href="#eco" class="nav-link text-light">Ecosystem</a>
+              <a href="index.html#reward" class="nav-link text-light">Rewards</a>
             </li>
             <li class="nav-item">
-              <a href="blockchain.html" class="nav-link text-light ">Blockchains</a>
+              <a href="index.html#dssb" class="nav-link text-light">DSSB</a>
             </li>
             <li class="nav-item">
-              <a href="#dssb" class="nav-link text-light">DSSB</a>
+              <a href="index.html#blockchain" class="nav-link text-light">Blockchains</a>
             </li>
-            <li class="nav-item">
-              <a href="#reward" class="nav-link text-light">Rewards</a>
-            </li>
-            <li class="nav-item">
-              <a href="#whitepaper" class="nav-link text-light">Whitepaper</a>
-            </li>
-            <li class="nav-item">
-              <a href="#faq" class="nav-link text-light">FAQ's</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle gradient-text" href="#" id="othersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#fff;">
+                Others
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="othersDropdown">
+                <li><a class="dropdown-item" href="#faq">FAQ's</a></li>
+                <li><a class="dropdown-item" href="journey.html">User Journey</a></li>
+                
+              </ul>
             </li>
           </ul>
         </nav>
@@ -76,7 +78,7 @@
         </div>
 
         <!-- Mobile Toggle -->
-
+      
       </div>
     </div>
   </header>
@@ -91,28 +93,29 @@
     <div class="offcanvas-body">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link ">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="journey.html" class="nav-link  gradient-text">User Journey</a>
-        </li>
+       
         <li class="nav-item">
           <a href="index.html#eco" class="nav-link">Ecosystem</a>
-        </li>
-        <li class="nav-item">
-          <a href="blockchain.html" class="nav-link">Blockchains</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.html#dssb" class="nav-link">DSSB</a>
         </li>
         <li class="nav-item">
           <a href="index.html#reward" class="nav-link">Rewards</a>
         </li>
         <li class="nav-item">
+          <a href="index.html#dssb" class="nav-link">DSSB</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#block" class="nav-link gradient-text">Blockchains</a>
+        </li>      
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ's</a>
+        </li>
+        <li class="nav-item">
           <a href="index.html#whitepaper" class="nav-link">Whitepaper</a>
         </li>
         <li class="nav-item">
-          <a href="#faq" class="nav-link">FAQ's</a>
+          <a href="journey.html" class="nav-link ">User Journey</a>
         </li>
         <li class="nav-item mt-3">
           <a href="#" class="btn btn-warning text-dark w-100">Get The App</a>
@@ -126,7 +129,7 @@
   <section>
     <div style="position: relative;">
       <img class="desk" src="img/user_desk.png" alt="" width="100%">
-      <img class="mob" src="img/user_mob2.png" alt="" width="100%">
+      <img class="mob" src="img/user_mob.png" alt="" width="100%">
       <div class="conn desk" style="width: 100%;position: absolute;    top: 2%;">
         <div class="row" style="width: 100%;">
           <div class="col-md-12 text-center">
@@ -188,7 +191,7 @@
       </div>
 
       <div class="row pt-md-4   d-flex justify-content-between">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12">
           <div class="scrollable-section2">
 
             <ul class="nav nav-tabs nav11" id="customTabs" role="tablist">
@@ -203,7 +206,7 @@
                           fill="#35ABFF" />
                       </svg></div>
                     <div class="text-container2">
-                      <h3>Step to SSB Tokens</h3>
+                      <h3>Step to SSBT</h3>
                       <p>Tracks price trends and volumes for informed
                         investment decisions.
 
@@ -263,7 +266,7 @@
                       </svg>
                     </div>
                     <div class="text-container2">
-                      <h3>DSSB Bank</h3>
+                      <h3>DSSB </h3>
                       <p>
                         Tracks price trends and volumes for informed
                         investment decisions.
@@ -311,7 +314,7 @@
             <!-- Tab Content -->
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-12 mt-md-3 mt-2">
           <div class="tab-content" id="customTabsContent">
             <!-- Step to Coins -->
             <div class="tab-pane fade show active" id="stepCoins" role="tabpanel" aria-labelledby="stepCoins-tab">
@@ -330,7 +333,7 @@
             <!-- Daily Activity Tracking -->
             <div class="tab-pane fade" id="dailyActivity" role="tabpanel" aria-labelledby="dailyActivity-tab">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
+                <img src="img/min.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -343,7 +346,7 @@
             <!-- Pool A -->
             <div class="tab-pane fade" id="poolA" role="tabpanel" aria-labelledby="poolA-tab">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
+                <img src="img/dsb.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -355,7 +358,7 @@
             </div>
             <div class="tab-pane fade" id="poolA1" role="tabpanel" aria-labelledby="poolA-tab1">
               <div class="tab_img" style="    position: relative;">
-                <img src="assets/img/wood.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
+                <img src="img/helth.png" alt="img" class="tab_imgg" style="max-height:540px;margin-left:20%" />
                 <div class="comm" style="    position: absolute;bottom: 10px;">
                   <div style="max-width: 250px;">
                     <button type="button" class="yellow_btn">Download</button>
@@ -430,10 +433,9 @@
             </ul>
             <!-- Tab Content -->
             <div class="tab-content" id="newTabsStructureContent">
-              <div class="tab-pane fade " id="content-step-tracking" role="tabpanel"
-                aria-labelledby="tab-step-tracking">
+              <div class="tab-pane fade " id="content-step-tracking" role="tabpanel" aria-labelledby="tab-step-tracking">
                 <div class="faq-container">
-
+  
                   <div class="faq-section">
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
@@ -454,7 +456,7 @@
                         Binance Smart Chain (BSC), StepsStamp uses<span class="bold"> “Proof of Movement (POM)”</span> –
                         every step you
                         take counts as 1 POM to unlock rewards.
-
+  
                       </div>
                     </div>
                     <div class="faq-item">
@@ -515,7 +517,7 @@
                       <div class="faq-answer">
                         Our app uses the phone’s built-in sensors, such as the accelerometer and gyroscope,
                         to detect movements that match a walking pattern. This data is then processed by our
-                        proprietary algorithm, which translates as a ‘Normalised step’ count.
+                        proprietary algorithm, which translates as a <span>‘Normalised step’</span> count.
                       </div>
                     </div>
                     <div class="faq-item">
@@ -554,8 +556,7 @@
                       </div>
                       <div class="faq-answer">
                         For the best accuracy, keep your phone in a stable position, like in a pocket or
-                        attached to your body. Avoid frequently moving it around or shaking it, as this can interfere
-                        with
+                        attached to your body. Avoid frequently moving it around or shaking it, as this can interfere with
                         accurate step detection.
                       </div>
                     </div>
@@ -575,8 +576,7 @@
                       </div>
                       <div class="faq-answer">
                         Yes, the app uses activity recognition APIs that can detect different activities, including
-                        walking, running, and cycling. These APIs help filter out non-walking activities so the step
-                        count
+                        walking, running, and cycling. These APIs help filter out non-walking activities so the step count
                         remains accurate. SSBT(StepsStamp Blockchain Tokens) can only be mined via actual walking
                         activity.
                       </div>
@@ -739,14 +739,14 @@
                         feedback is valuable.
                       </div>
                     </div>
-
+  
                   </div>
-
+  
                 </div>
               </div>
               <div class="tab-pane fade" id="content-blockchain" role="tabpanel" aria-labelledby="tab-blockchain">
                 <div class="faq-container">
-
+  
                   <div class="faq-section">
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
@@ -785,39 +785,12 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        <style>
-                          .blockchain-table {
-                            width: 100%;
-                            border-collapse: collapse;
-                            margin: 20px 0;
-                            font-size: 16px;
-                            text-align: left;
-                          }
-
-                          .blockchain-table thead th {
-                            background-color: transparent;
-                            border-bottom: 2px solid #ddd;
-                            padding: 10px;
-                          }
-
-                          .blockchain-table tbody td {
-                            border-bottom: 1px solid #ddd;
-                            padding: 10px;
-                          }
-
-                          .blockchain-table tbody tr:nth-child(even) {
-                            background-color: transparent;
-                          }
-
-                          .blockchain-table tbody tr:hover {
-                            background-color: transparent;
-                          }
-                        </style>
+                        
                         Only Blockchain owners can mine SSBT. Mining rewards are decentralized and fixed:
                         <ul>
-                          <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
-                          <li>Your Daily Reward: Depends on your Blockchain type: </li>
-
+                          <li><span class="bold">Total Daily Mining Supply:</span> 7,664 SSBT/day (distributed for 120 years). </li>
+                          <li><span class="bold">Your Daily Reward:</span> Depends on your Blockchain type: </li>
+  
                         </ul>
                         <div style="    width: 100%;        overflow-x: scroll;">
                           <table class="blockchain-table">
@@ -873,8 +846,8 @@
                               <p class="text-start mb-0">○ Pool B: 1.149,50 SSBT (for 10.000+ POM, distributed equally).
                               </p>
                             </div>
-
-
+  
+  
                           </li>
                         </ul>
                         <h6 class="bold">Participants: </h6>
@@ -882,7 +855,7 @@
                           <li>100 users walked 1.500 POM → Eligible for Pool A. </li>
                           <li>28 users walked 10.000 POM → Eligible for Pool A (up to 9.999 POM) + Pool B
                             (10.000 POM).
-
+  
                           </li>
                         </ul>
                       </div>
@@ -920,7 +893,7 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        At least 450 days (1 block/day). Consistency is key!
+                        At least <span class="bold">450 days</span> (1 block/day). Consistency is key!
                       </div>
                     </div>
                     <div class="faq-item">
@@ -938,7 +911,7 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        No. Only one Blockchain can be active at a time.
+                        No. Only <span class="bold">one Blockchain</span> can be active at a time.
                       </div>
                     </div>
                     <div class="faq-item">
@@ -956,10 +929,57 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        You’ll receive 150 Blocks in Mini StepsStamp Blockchain(New NFT) after 300 Blocks
+                        You’ll receive <span class="bold">150 Blocks in Mini StepsStamp Blockchain(New NFT)</span> after <span class="bold">300 Blocks
                         completed and 75 Blocks in Micro StepsStamp Blockchain(New NFT) after 450 Blocks
-                        completed as rewards. Use them to keep earning or transfer them.
-
+                        completed</span> as rewards. Use them to keep earning or transfer them.
+                        <div style="margin-top:20px;    width: 100%;        overflow-x: scroll;">
+                          <table class="blockchain-table">
+                            <thead>
+                              <tr>
+                                <th>Blockchain Type</th>
+                                <th>Main Blockchain
+                                  (450 Blocks)
+                                </th>
+                                <th>Mini Blockchain
+                                  (300 Blocks)</th>
+                                <th>Micro Blockchain
+                                  (450 Blocks)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>White</td>
+                                <td>W450</td>
+                                <td>W150</td>
+                                <td>W75</td>
+                              </tr>
+                              <tr>
+                                <td>Black</td>
+                                <td>B450</td>
+                                <td>B150</td>
+                                <td>B75</td>
+                              </tr>
+                              <tr>
+                                <td>Silver</td>
+                                <td>S450</td>
+                                <td>S150</td>
+                                <td>S75</td>
+                              </tr>
+                              <tr>
+                                <td>Gold</td>
+                                <td>G450</td>
+                                <td>G150</td>
+                                <td>G75</td>
+                              </tr>
+                              <tr>
+                                <td>Green</td>
+                                <td>GR450</td>
+                                <td>GR150</td>
+                                <td>GR75</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1075,14 +1095,14 @@
                         exclusive to purchases made during their respective phases.
                       </div>
                     </div>
-
+  
                   </div>
-
+  
                 </div>
               </div>
               <div class="tab-pane fade" id="content-referral" role="tabpanel" aria-labelledby="tab-referral">
                 <div class="faq-container">
-
+  
                   <div class="faq-section">
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
@@ -1103,10 +1123,10 @@
                         you earn SSBT tokens equal to a percentage of their purchase in BUSD, based on your
                         Blockchain tier:
                         <ul>
-                          <li class="blod">White/Black Tier: 7% </li>
-                          <li class="blod">Silver Tier: 8% </li>
-                          <li class="blod">Gold Tier: 10% </li>
-                          <li class="blod">Green Tier: 15% </li>
+                          <li class="bold">White/Black Tier: 7% </li>
+                          <li class="bold">Silver Tier: 8% </li>
+                          <li class="bold">Gold Tier: 10% </li>
+                          <li class="bold">Green Tier: 15% </li>
                         </ul>
                         <h6 class="mt-3 bold">Example: </h6>
                         <p style="color: rgba(17, 243, 255, 1);font-size: 14px;text-align: start;">
@@ -1116,7 +1136,7 @@
                           15% of 100 BUSD = 15 BUSD → Converted to SSBT at the current price (e.g.,
                           Phase A: 0.05 BUSD/SSBT) → <span class="bold">300 SSBT</span> sent to your wallet!
                         </p>
-
+  
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1188,7 +1208,7 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        The Welcome Bonus equals 20% of the Blockchain price in BUSD, converted to SSBT at
+                        The Welcome Bonus equals <span class="bold">20% of the Blockchain price in BUSD,</span> converted to SSBT at
                         the Phase A rate (1 SSBT = 0.05 BUSD).
                         <p class="mt-2 text-start">● Example: Green Blockchain costs <span class="bold">10,000 BUSD
                           </span>→ 20% = <span class="bold">2,000 BUSD</span> → 2,000 /
@@ -1213,11 +1233,11 @@
                         StepsStamp Watches are exclusive gifts for Silver, Gold, or Green Blockchain holders.
                         They give you free daily SSBT rewards without walking, but hurry – they’re limited!
                         <ul>
-                          <li>Silver Watch (1,000 units): 10 SSBT/day for 300 days. </li>
-                          <li>Gold Watch (500 units): 50 SSBT/day for 450 days. </li>
-                          <li>Green Watch (250 units): 100 SSBT/day for 730 days. </li>
+                          <li><span class="bold">Silver Watch (1,000 units):</span> 10 SSBT/day for 300 days. </li>
+                          <li><span class="bold">Gold Watch (500 units):</span> 50 SSBT/day for 450 days. </li>
+                          <li><span class="bold">Green Watch (250 units):</span> 100 SSBT/day for 730 days. </li>
                         </ul>
-
+  
                         <p class="text-start mt-2" style="color:#246BFD">First come, first served! Claim yours before
                           they’re gone. </p>
                       </div>
@@ -1256,8 +1276,8 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        A daily SSBT reward paid for 30 days after purchasing a Blockchain. For example: <br>
-                        ● Gold Blockchain: 167 SSBT/day × 30 days = 5,010 SSBT.
+                        A daily SSBT reward paid for <span class="bold">30 days</span> after purchasing a Blockchain. For example: <br>
+                        <span class="bold">● Gold Blockchain:</span> 167 SSBT/day × 30 days = <span class="bold">5,010 SSBT.</span>
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1276,7 +1296,7 @@
                       </div>
                       <div class="faq-answer">
                         The maximum 10% BUSD you can swap for SSBT per Blockchain tier. For example: <br>
-                        ● Green Blockchain: Swap up to 1,000 BUSD worth of SSBT.
+                        <span class="bold">● Green Blockchain:</span> Swap up to <span class="bold">1,000 BUSD</span> worth of SSBT.
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1294,7 +1314,7 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        Phase A SSBT price: 1 SSBT = 0.05 BUSD.
+                        Phase A SSBT price: <span class="bold">1 SSBT = 0.05 BUSD.</span>
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1314,7 +1334,7 @@
                       <div class="faq-answer">
                         All rewards (Welcome Bonus, Watch, Investor) are paid in SSBT. Use the Phase A rate to
                         estimate their BUSD value:<br>
-                        ● Example: 40,000 SSBT (Green Welcome Bonus) = 40,000 × 0.05 = 2,000 BUSD.
+                        ● Example: 40,000 SSBT (Green Welcome Bonus) = 40,000 × 0.05 = <span class="bold">2,000 BUSD.</span>
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1333,17 +1353,17 @@
                       </div>
                       <div class="faq-answer">
                         After Phase E: <br>
-                        ● Payment Method: Only SSBT tokens can be used to purchase Blockchains. <br>
-                        ● SSBT Price: Determined by the open market (exchanges).
+                        <span class="bold">● Payment Method:</span> Only SSBT tokens can be used to purchase Blockchains. <br>
+                        <spa● class="bold">● SSBT Price:</span> Determined by the open market (exchanges).
                       </div>
                     </div>
                   </div>
-
+  
                 </div>
               </div>
               <div class="tab-pane fade show active" id="content-staking" role="tabpanel" aria-labelledby="tab-staking">
                 <div class="faq-container">
-
+  
                   <div class="faq-section">
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
@@ -1357,13 +1377,13 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer show">
-                        DSSB is a decentralized bank where you become a shareholder by staking SSBT tokens.
-                        Stakeholders earn daily rewards from a fixed pool of 5,173 SSBT/day for 120 years.
+                        DSSB is a decentralized bank where you become a <span class="bold">shareholder</span by staking SSBT tokens. 
+                        Stakeholders earn daily rewards from a fixed pool of <span class="bold">>5,173 SSBT/day for 120 years.</span>
                       </div>
                     </div>
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
-                        How does staking work?
+                        How does staking work? 
                         <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             viewBox="0 0 40 40" fill="none">
                             <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -1376,14 +1396,14 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        ● Daily Staking Pool: 5,173 SSBT (fixed supply). <br>
-                        ● Distribution: Proportional to your stake. <br>
-                        ● Payout Time: Daily at 00:00 GMT.
+                        <span class="bold">● Daily Staking Pool:</span> 5,173 SSBT (fixed supply). <br>
+                        <span class="bold">● Distribution:</span> Proportional to your stake. <br>
+                        <span class="bold">● Payout Time:</span> Daily at <span class="bold">00:00 GMT.</span>
                       </div>
                     </div>
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
-                        What are manual and auto staking?
+                        What are manual and auto staking? 
                         <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             viewBox="0 0 40 40" fill="none">
                             <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -1396,24 +1416,33 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        ● Manual Staking: <br>
-                        ○ Example: <br>
-                        ■ You stake 40,000 SSBT in a pool of 1,000,000 SSBT. <br>
-                        ■ Your share: 4% → Daily reward = 5,173 SSBT × 4% = 206.92 SSBT. <br>
-                        ■ Your stake remains 40,000 SSBT unless you manually add more.<br>
-                        ● Auto Staking: <br>
-                        ○ Example: <br>
-                        ■ You stake 40,000 SSBT in a pool of 1,000,000 SSBT. <br>
-                        ■ Daily staking reward: 206.92 SSBT. <br>
-                        ■ Daily mining reward: 120 SSBT (if applicable). <br>
-                        ■ New Stake Next Day: 40,000 + 206.92 + 120 = 40,326.92 SSBT
-                        (rewards compound automatically).
-
+                        <h5 class="bold">● Manual Staking: </h5>
+                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;○ Example:  </h6>
+                     
+                         <ul>
+                          <p class="text-start" style="padding-left:10px">■ You stake <span class="bold">40,000 SSBT</span> in a pool of <span class="bold">1,000,000 SSBT.</span></p>
+                          <p class="text-start" style="padding-left:10px">■ Your share: <span class="bold">4%</span> → Daily reward = 5,173 SSBT × 4% = <span class="bold">206.92 SSBT.</span></p>
+                          <p class="text-start" style="padding-left:10px">■ Your stake remains <span class="bold">40,000 SSBT</span> unless you manually add more.</p>
+                        </ul>
+                        <br>
+                        <h5 class="bold">● Auto Staking: </h5>
+                        <h6>&nbsp;&nbsp;&nbsp;&nbsp;○ Example:  </h6>
+                     
+                         <ul>
+                          <p class="text-start" style="padding-left:10px">■ You stake <span class="bold">40,000</span> SSBT in a pool of <span class="bold">1,000,000 SSBT.</span></p>
+                          <p class="text-start" style="padding-left:10px">■ Daily staking reward: <span class="bold">206.92 SSBT.</span></p>
+                          <p class="text-start" style="padding-left:10px">■ Daily mining reward: <span class="bold">120 SSBT</span> (if applicable).</p>
+                          <p class="text-start" style="padding-left:10px">■ <span class="bold">New Stake Next Day:</span> 40,000 + 206.92 + 120 = <span class="bold">40,326.92 SSBT </span>
+                            (rewards compound automatically). </p>
+                        </ul>
+  
+  
+  
                       </div>
                     </div>
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
-                        How do I become a DSSB shareholder?
+                        How do I become a DSSB shareholder? 
                         <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             viewBox="0 0 40 40" fill="none">
                             <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -1426,12 +1455,12 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        Stake SSBT tokens for 24 hours to start earning rewards.
+                        Stake SSBT tokens for <span class="bold">24 hours</span> to start earning rewards.
                       </div>
                     </div>
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
-                        Can I unstake my tokens anytime?
+                        Can I unstake my tokens anytime? 
                         <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                             viewBox="0 0 40 40" fill="none">
                             <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -1444,16 +1473,16 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        Yes! Unstaking takes 24 hours, and tokens return to your wallet.
+                        Yes! Unstaking takes 24 hours, and tokens return to your wallet. 
                       </div>
                     </div>
                   </div>
-
+  
                 </div>
               </div>
               <div class="tab-pane fade" id="content-payment" role="tabpanel" aria-labelledby="tab-payment">
                 <div class="faq-container">
-
+  
                   <div class="faq-section">
                     <div class="faq-item">
                       <div class="faq-question" onclick="toggleFAQ(this)">
@@ -1470,7 +1499,7 @@
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        Only BUSD (Binance USD) is accepted for purchasing Blockchains.
+                        Only <span class="bold">BUSD</span> (Binance USD) is accepted for purchasing Blockchains.
                       </div>
                     </div>
                     <div class="faq-item">
@@ -1560,7 +1589,7 @@
                             </svg></span>
                         </div>
                         <div class="faq-answer">
-                          During Phases A to E, you can purchase StepsStamp Blockchains (NFTs) only with
+                          During <span class="bold">Phases A to E,</span> you can purchase StepsStamp Blockchains (NFTs) only with
                           BUSD. After Phase E ends, only SSBT tokens will be accepted for purchases.
                         </div>
                       </div>
@@ -1579,8 +1608,8 @@
                             </svg></span>
                         </div>
                         <div class="faq-answer">
-                          ● Payment Method: Only SSBT tokens can be used to buy Blockchains. <br>
-                          ● SSBT in the Open Market: SSBT will be listed on exchanges, and its price will be
+                          <span class="bold"> ● Payment Method:</span> Only SSBT tokens can be used to buy Blockchains. <br>
+                            <span class="bold">● SSBT in the Open Market:</span> SSBT will be listed on exchanges, and its price will be
                           determined by market demand and supply.
                         </div>
                       </div>
@@ -1599,9 +1628,9 @@
                             </svg></span>
                         </div>
                         <div class="faq-answer">
-                          No! Watches reward SSBT automatically, even if you don’t walk.
-
-
+                          No! Watches reward SSBT <span class="bold">automatically,</span> even if you don’t walk.
+  
+                
                         </div>
                       </div>
                       <div class="faq-item">
@@ -1698,12 +1727,12 @@
                         </div>
                       </div>
                     </div>
-
+  
                   </div>
                 </div>
                 <div class="tab-pane fade" id="content-pool" role="tabpanel" aria-labelledby="tab-pool">
                   <div class="faq-container">
-
+  
                     <div class="faq-section">
                       <div class="faq-item">
                         <div class="faq-question" onclick="toggleFAQ(this)">
@@ -1740,8 +1769,7 @@
                         </div>
                         <div class="faq-answer">
                           Daily rewards are divided into two pools: <br>
-                          <span class="bold"> Pool A (1,500–9,999 POM)</span>: Rewards shared proportionally based on
-                          your
+                          <span class="bold"> Pool A (1,500–9,999 POM)</span>: Rewards shared proportionally based on your
                           POM. <br>
                           <span class="bold">Pool B (10,000+ POM)</span>: Rewards shared equally among qualifying users.
                         </div>
@@ -1762,8 +1790,8 @@
                         </div>
                         <div class="faq-answer">
                           <ul>
-                            <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
-                            <li>Your Daily Reward: Depends on your Blockchain type: </li>
+                            <li><span class="bold">Total Daily Mining Supply:</span> 7,664 SSBT/day (distributed for 120 years). </li>
+                            <li><span class="bold"> Your Daily Reward: </span>Depends on your Blockchain type: </li>
                           </ul>
                           <div style="    width: 100%;        overflow-x: scroll;">
                             <table class="blockchain-table">
@@ -1773,7 +1801,7 @@
                                   <th>Daily SSBT</th>
                                   <th>Pool A (50%) </th>
                                   <th>Pool B (50%)</th>
-
+  
                                 </tr>
                               </thead>
                               <tbody>
@@ -1782,63 +1810,60 @@
                                   <td>767 SSBT </td>
                                   <td>383,50 SSBT </td>
                                   <td>383,50 SSBT</td>
-
+  
                                 </tr>
                                 <tr>
                                   <td>Black</td>
                                   <td>1,150 SSBT</td>
                                   <td>575,00 SSBT</td>
                                   <td>575,00 SSBT </td>
-
+  
                                 </tr>
                                 <tr>
                                   <td>Silver</td>
                                   <td>1,534 SSBT </td>
                                   <td>767,00 SSBT</td>
                                   <td>767,00 SSBT </td>
-
+  
                                 </tr>
                                 <tr>
                                   <td>Gold</td>
                                   <td>1,919 SSBT </td>
                                   <td>959,50 SSBT </td>
                                   <td>959,50 SSBT </td>
-
+  
                                 </tr>
                                 <tr>
                                   <td>Green</td>
-                                  <td>2,299 SSBT <br>
-                                    BUSD</td>
+                                  <td>2,299 SSBT </td>
                                   <td>1.149,50 SSBT</td>
                                   <td>1.149,50 SSBT</td>
-
+  
                                 </tr>
-
+  
                               </tbody>
                             </table>
                           </div>
-                          <h6 class="bold mt-3">Considered as an example: </h6>
+                          <h6 class="bold mt-3"> Example: </h6>
                           <ul>
-                            <li>Total Green Blockchain Owners: 100 participants.</li>
-                            <li>Daily SSBT Pool for Green: 2.299,00 SSBT (split 50-50):
+                            <li><span class="bold">Total Green Blockchain Owners:</span>  100 participants.</li>
+                            <li><span class="bold">Daily SSBT Pool for Green:</span>  2.299,00 SSBT (split 50-50):
                               <div style="padding-left: 10px;">
-                                <p class="text-start mt-2 mb-1">○ Pool A: 1.149,50 SSBT (for 1.500–9.999 POM,
-                                  distributed
-                                  proportionally). </p>
-                                <p class="text-start mb-0">○ Pool B: 1.149,50 SSBT (for 10.000+ POM, distributed
-                                  equally).
+                                <p class="text-start mt-2 mb-1"><span class="bold">○ Pool A:</span>  1.149,50 SSBT (for 1.500–9.999 POM, distributed
+                                  <span class="bold">proportionally</span> ). </p>
+                                <p class="text-start mb-0"><span class="bold">○ Pool B:</span>  1.149,50 SSBT (for 10.000+ POM, distributed equally).
                                 </p>
                               </div>
-
-
+  
+  
                             </li>
                           </ul>
                           <h6 class="bold">Participants: </h6>
                           <ul>
-                            <li>100 users walked 1.500 POM → Eligible for Pool A. </li>
-                            <li>28 users walked 10.000 POM → Eligible for Pool A (up to 9.999 POM) + Pool B
-                              (10.000 POM).
-
+                            <li><span class="bold">100 users</span>  walked <span class="bold">1.500 POM</span>  → Eligible for Pool A. </li>
+                            <li><span class="bold">28 users</span>  walked <span class="bold">10.000 POM</span>  → Eligible for<span class="bold">Pool A (up to 9.999 POM) + Pool B
+                              (10.000 POM).</span> 
+  
                             </li>
                           </ul>
                         </div>
@@ -1881,7 +1906,7 @@
                         </div>
                       </div>
                     </div>
-
+  
                   </div>
                 </div>
               </div>
@@ -1895,16 +1920,15 @@
   <section class="normals">
     <div class="container">
       <div class="do_you">
-        <div style="
-">
+        <div style="">
           <div class="row justify-content-between">
-            <div class="col-md-5 text-start">
+            <div class="col-lg-5 col-md-10 text-start">
               <h3 class="main-heading yellow-gradient1" style="font-weight: 400;text-transform: capitalize;">Do you have
                 any <span class="span_yellow">
                   Questions</span>?</h3>
               <p class="sub-heading">Feel free to send us your questions or request a free consultation.</p>
             </div>
-            <div class="col-md-5  text-center">
+            <div class="col-lg-5 col-md-12  text-center">
               <form id="contactForm" action="#" class="for">
                 <!-- Name -->
                 <div class="row ">
@@ -1990,7 +2014,7 @@
 
   <footer>
     <section>
-      <div class="container desk">
+      <div class="container desk1">
         <div class="row d-flex justify-content-center">
 
           <div class="col-md-2 ">
@@ -2004,11 +2028,11 @@
             </div>
           </div>
           <div class="col-md-10 d-flex justify-content-around mob-block">
-            <div class="center "><a class="flink" href="index.html">Home</a></div>
-            <div class="center"><a class="flink" href="journey.html">User Journey</a></div>
+            <div class="center "><a class="flink" href>Home</a></div>
+            <div class="center gradient-text"><a class="flink" href="journey.html">User Journey</a></div>
 
             <div class="center"><a class="flink" href>Support</a></div>
-            <div class="center gradient-text"><a class="flink" href="blockchain.html">Whitepaper</a></div>
+            <div class="center "><a class="flink" href="blockchain.html">Whitepaper</a></div>
             <div class="center"><a class="flink" href>Terms of Use</a></div>
             <div class="center"><a class="flink" href>Privacy Policy</a></div>
             <div class="center"><a class="flink" href>FAQ’s</a></div>
@@ -2045,11 +2069,11 @@
           </div>
         </div>
       </div>
-      <div class="container mob">
+      <div class="container tablet">
         <div class="row d-flex justify-content-center">
-          <div class="col-6 "><a class="flink" href="index.html">Home</a></div>
+          <div class="col-6 "><a class="flink" href>Home</a></div>
           <div class="col-6 gradient-text"><a class="flink" href="journey.html">User Journey</a></div>
-          <div class="col-6 mt-3"><a class="flink" href>Support</a></div>
+          <div class="col-6 mt-3"><a class="flink" href="">Support</a></div>
           <div class="col-6 mt-3 "><a class="flink" href="blockchain.html">Whitepaper</a></div>
           <div class="col-6 mt-3"><a class="flink" href>Terms of Use</a></div>
           <div class="col-6 mt-3"><a class="flink" href>Privacy Policy</a></div>
@@ -2072,7 +2096,7 @@
               </svg> Play
               Store</a></div>
 
-          <div class="col-md-2 col-12 mt-5 text-center">
+          <div class="col-lg-2 col-md-12 col-12 mt-5 text-center">
             <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
             <div class="social-icons mt-3 text-center  justify-content-center">
               <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>

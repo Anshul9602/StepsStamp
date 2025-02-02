@@ -1260,27 +1260,49 @@
  .mob {
    display: none;
  }
- .offcanvas-body { 
-  background: #1C192D !important;
+
+ .offcanvas-body {
+   background: #1C192D !important;
+ }
+
+ .header {
+   width: 100%;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .sticky-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: #11011e;
+   /* Slight transparency */
+   backdrop-filter: blur(10px);
+   /* Smooth blur effect */
+   padding: 10px 0;
+   z-index: 1000;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
  }
 
  .offcanvas-header {
-  background: #1C192D !important;
-}
-.bold{
-  font-weight: 600;
-}
- @media (max-width:680px) {
-  .nav-item{
-    text-align: center;
-    color: #ECF1F0;
+   background: #1C192D !important;
+ }
 
-font-family: Lexend;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-  }
+ .bold {
+   font-weight: 900;
+ }
+
+ @media (max-width:680px) {
+   .nav-item {
+     text-align: center;
+     color: #ECF1F0;
+
+     font-family: Lexend;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+   }
 
    .blue {
 
@@ -1344,57 +1366,71 @@ line-height: normal;
    .yellow-gradient {
      font-size: 20px !important;
    }
-   .nav2 .nav-link {
-    padding: 10px 0;
-    font-size: 14px;
-}
-   .pool img{
-    width: 50px;
-   }
-.pool{
-padding: 10px 15px;
-}
-.rp {
-  font-size: 16px;
-  
-}
-.rp {
-  font-size: 16px !important;
-  
-}
-.row1 .col-lg-2 {
-  
-  margin-top: 37px;
-}
-.no-padding-margin .row{
-  width: 100%;
-  padding: 0;
-  }
-  .timeline-item h5 {
-    font-size: 16px !important;
-    
-  }
-  .timeline-item p {
-   
-    font-size: 12px !important;
-   
-}
-.timeline-item .timeline-content {
-  width: 85px !important;
-}
-.timeline-item .t1 {
-  left: 190% !important;
-}
-.timeline-item .t3 {
-  right: 190% !important;
-}
 
-  .no-padding-margin .timeline {
-    padding: 20px;
-  }
-.content3 p {
-  font-size: 14px;
-}
+   .nav2 .nav-link {
+     padding: 10px 0;
+     font-size: 14px;
+   }
+
+   .pool img {
+     width: 50px;
+   }
+
+   .pool {
+     padding: 10px 15px;
+   }
+
+   .rp {
+     font-size: 16px;
+
+   }
+
+   .rp {
+     font-size: 16px !important;
+
+   }
+
+   .row1 .col-lg-2 {
+
+     margin-top: 37px;
+   }
+
+   .no-padding-margin .row {
+     width: 100%;
+     padding: 0;
+   }
+
+   .timeline-item h5 {
+     font-size: 16px !important;
+
+   }
+
+   .timeline-item p {
+
+     font-size: 12px !important;
+
+   }
+
+   .timeline-item .timeline-content {
+     width: 85px !important;
+   }
+
+   .timeline-item .t1 {
+     left: 190% !important;
+   }
+
+   .timeline-item .t3 {
+     right: 190% !important;
+   }
+
+   .no-padding-margin .timeline {
+     padding: 20px;
+   }
+
+   .content3 p {
+     font-size: 14px;
+   }
+
    .span_yellow {
      font-size: 20px;
    }
@@ -1406,49 +1442,56 @@ padding: 10px 15px;
    .text-container2 h3 {
      font-size: 12px;
    }
+
    .scrollable-section2 {
-    width: 100%;
-    max-height: 450px;
-    padding: 5px;
-    border-radius: 20px;
-    border: none;
-    background: none;
-    overflow-y: scroll;
-}
+     width: 100%;
+     max-height: 450px;
+     padding: 5px;
+     border-radius: 20px;
+     border: none;
+     background: none;
+     overflow-y: scroll;
+   }
+
    .icon-circle2 {
      width: 35px;
      height: 35px;
      margin-right: 0px;
    }
+
    .active .scroll-item2 {
-    border-radius: 40px;
-   
-    padding: 10px 15px;
-  }
-  .text-container2 p {
-    font-size: 10px;
-    
-}
-.container1{
-  padding: 10px 5px !important;
-}
-.container1 h4{
-  padding: 3px 10px;
-}
-footer .row{
-  margin: 0 !important;
-}
+     border-radius: 40px;
+
+     padding: 10px 15px;
+   }
+
+   .text-container2 p {
+     font-size: 10px;
+
+   }
+
+   .container1 {
+     padding: 10px 5px !important;
+   }
+
+   .container1 h4 {
+     padding: 3px 10px;
+   }
+
+   footer .row {
+     margin: 0 !important;
+   }
+
    .comm h5 {
      font-size: 14px;
    }
 
-   .faq-question {
-     font-size: 14px;
-     padding-bottom: 1px;
-   }
+   
+
    .faq-answer {
-    font-size: 12px;
+     font-size: 12px;
    }
+
    .do_you .yellow-gradient1 {
      font-size: 24px;
    }
@@ -1458,93 +1501,121 @@ footer .row{
    }
 
    .nav2 {
-    height: 50px;
+     height: 50px;
 
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on iOS devices */
-    scrollbar-width: none; /* Optional: Makes the scrollbar thinner */
-    gap:10px;
-  }
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     /* Enables horizontal scrolling */
+     -webkit-overflow-scrolling: touch;
+     /* Adds smooth scrolling on iOS devices */
+     scrollbar-width: none;
+     /* Optional: Makes the scrollbar thinner */
+     gap: 10px;
+   }
 
-  .nav2 .nav-item {
-    flex: 0 0 auto; /* Prevents items from shrinking or wrapping */
-  }
+   .nav2 .nav-item {
+     flex: 0 0 auto;
+     /* Prevents items from shrinking or wrapping */
+   }
 
-  .nav2::-webkit-scrollbar {
-    height: 6px; /* Optional: Customize scrollbar height */
-  }
+   .nav2::-webkit-scrollbar {
+     height: 6px;
+     /* Optional: Customize scrollbar height */
+   }
 
-  .nav2::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Optional: Customize scrollbar color */
-    border-radius: 10px;
-  }
+   .nav2::-webkit-scrollbar-thumb {
+     background-color: #ccc;
+     /* Optional: Customize scrollbar color */
+     border-radius: 10px;
+   }
 
-  .nav2::-webkit-scrollbar-thumb:hover {
-    background-color: #888; /* Optional: Change color on hover */
-  }
+   .nav2::-webkit-scrollbar-thumb:hover {
+     background-color: #888;
+     /* Optional: Change color on hover */
+   }
 
-  .nav2 .nav-link {
-    white-space: nowrap; /* Ensures long text doesn't break into multiple lines */
-    padding: 10px 15px; /* Adjust padding for better spacing on mobile */
-  }
+   .nav2 .nav-link {
+     white-space: nowrap;
+     /* Ensures long text doesn't break into multiple lines */
+     padding: 10px 15px;
+     /* Adjust padding for better spacing on mobile */
+   }
+
    .nav11 {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on iOS devices */
-    scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
-  }
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     /* Enables horizontal scrolling */
+     -webkit-overflow-scrolling: touch;
+     /* Adds smooth scrolling on iOS devices */
+     scrollbar-width: thin;
+     /* Optional: Makes the scrollbar thinner */
+   }
 
-  .nav11 .nav-item {
-    flex: 0 0 auto; /* Prevents items from shrinking or wrapping */
-  }
+   .nav11 .nav-item {
+     flex: 0 0 auto;
+     /* Prevents items from shrinking or wrapping */
+   }
 
-  .nav11::-webkit-scrollbar {
-    height: 6px; /* Optional: Customize scrollbar height */
-  }
+   .nav11::-webkit-scrollbar {
+     height: 6px;
+     /* Optional: Customize scrollbar height */
+   }
 
-  .nav11::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Optional: Customize scrollbar color */
-    border-radius: 10px;
-  }
+   .nav11::-webkit-scrollbar-thumb {
+     background-color: #ccc;
+     /* Optional: Customize scrollbar color */
+     border-radius: 10px;
+   }
 
-  .nav11::-webkit-scrollbar-thumb:hover {
-    background-color: #888; /* Optional: Change color on hover */
-  }
+   .nav11::-webkit-scrollbar-thumb:hover {
+     background-color: #888;
+     /* Optional: Change color on hover */
+   }
+
    .nav1 {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on iOS devices */
-    scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
-  }
+     display: flex;
+     flex-wrap: nowrap;
+     overflow-x: auto;
+     /* Enables horizontal scrolling */
+     -webkit-overflow-scrolling: touch;
+     /* Adds smooth scrolling on iOS devices */
+     scrollbar-width: thin;
+     /* Optional: Makes the scrollbar thinner */
+   }
 
-  .nav1 .nav-item {
-    flex: 0 0 auto; /* Prevents items from shrinking or wrapping */
-  }
+   .nav1 .nav-item {
+     flex: 0 0 auto;
+     /* Prevents items from shrinking or wrapping */
+   }
 
-  .nav1::-webkit-scrollbar {
-    height: 6px; /* Optional: Customize scrollbar height */
-  }
+   .nav1::-webkit-scrollbar {
+     height: 6px;
+     /* Optional: Customize scrollbar height */
+   }
 
-  .nav1::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Optional: Customize scrollbar color */
-    border-radius: 10px;
-  }
+   .nav1::-webkit-scrollbar-thumb {
+     background-color: #ccc;
+     /* Optional: Customize scrollbar color */
+     border-radius: 10px;
+   }
 
-  .nav1::-webkit-scrollbar-thumb:hover {
-    background-color: #888; /* Optional: Change color on hover */
-  }
+   .nav1::-webkit-scrollbar-thumb:hover {
+     background-color: #888;
+     /* Optional: Change color on hover */
+   }
 
-  .nav2 .nav-link {
-    white-space: nowrap; /* Ensures long text doesn't break into multiple lines */
-    padding: 10px 15px; /* Adjust padding for better spacing on mobile */
-  }
-  .nav2 .nav-item {
-    max-width: 45%;
-}
+   .nav2 .nav-link {
+     white-space: nowrap;
+     /* Ensures long text doesn't break into multiple lines */
+     padding: 10px 15px;
+     /* Adjust padding for better spacing on mobile */
+   }
+
+   .nav2 .nav-item {
+     max-width: 45%;
+   }
  }
 
  .copyy {
@@ -1556,4 +1627,32 @@ footer .row{
    font-style: normal;
    font-weight: 400;
    line-height: 20px;
+ }
+
+ .blockchain-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   font-size: 16px;
+   text-align: left;
+ }
+
+ .blockchain-table thead th {
+   background-color: transparent;
+   border-bottom: 2px solid #ddd;
+   padding: 10px;
+   font-weight: 700;
+ }
+
+ .blockchain-table tbody td {
+   border-bottom: 1px solid #ddd;
+   padding: 10px;
+ }
+
+ .blockchain-table tbody tr:nth-child(even) {
+   background-color: transparent;
+ }
+
+ .blockchain-table tbody tr:hover {
+   background-color: transparent;
  }

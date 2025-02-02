@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/n.css" />
+  <script src="assets/js.js"></script>
   <link rel="stylesheet" href="assets/css/mobile.css" />
   <style>
     .up1 {
@@ -53,7 +54,7 @@
       text-transform: uppercase;
       display: inline;
       height: 35px;
-      padding: 0px 40px;
+      padding: 0px 10px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -98,24 +99,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+<style>
+  @media (max-width: 768px) {
+    .w_mob {
+      width: 80% !important;
+    }
+  }
+</style>
 
 <body>
   <!-- header -->
   <!-- header -->
-  <header class="font py-3">
+  <header class=" header font py-3" id="header">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <!-- Logo Section -->
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
-        aria-controls="mobileNav">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-          <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-          <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
+          aria-controls="mobileNav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
 
-      </button>
+        </button>
         <div class="d-flex align-items-center">
           <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
         </div>
@@ -126,26 +134,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <li class="nav-item">
               <a href="index.html" class="nav-link text-light  gradient-text">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="journey.html" class="nav-link text-light">User Journey</a>
-            </li>
+
             <li class="nav-item">
               <a href="#eco" class="nav-link text-light">Ecosystem</a>
-            </li>
-            <li class="nav-item">
-              <a href="#blockchain" class="nav-link text-light">Blockchains</a>
-            </li>
-            <li class="nav-item">
-              <a href="#dssb" class="nav-link text-light">DSSB</a>
             </li>
             <li class="nav-item">
               <a href="#reward" class="nav-link text-light">Rewards</a>
             </li>
             <li class="nav-item">
-              <a href="#whitepaper" class="nav-link text-light">Whitepaper</a>
+              <a href="#dssb" class="nav-link text-light">DSSB</a>
             </li>
             <li class="nav-item">
-              <a href="#faq" class="nav-link text-light">FAQ's</a>
+              <a href="#block" class="nav-link text-light">Blockchains</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="othersDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color:#fff;">
+                Others
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="othersDropdown">
+                <li><a class="dropdown-item" href="#faq">FAQ's</a></li>
+                <li><a class="dropdown-item" href="journey.html">User Journey</a></li>
+
+              </ul>
             </li>
           </ul>
         </nav>
@@ -156,7 +167,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
 
         <!-- Mobile Toggle -->
-      
+
       </div>
     </div>
   </header>
@@ -173,26 +184,29 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <li class="nav-item">
           <a href="index.html" class="nav-link gradient-text">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="journey.html" class="nav-link ">User Journey</a>
-        </li>
+
         <li class="nav-item">
           <a href="#eco" class="nav-link">Ecosystem</a>
-        </li>
-        <li class="nav-item">
-          <a href="#blockchain" class="nav-link ">Blockchains</a>
-        </li>
-        <li class="nav-item">
-          <a href="#dssb" class="nav-link">DSSB</a>
         </li>
         <li class="nav-item">
           <a href="#reward" class="nav-link">Rewards</a>
         </li>
         <li class="nav-item">
+          <a href="#dssb" class="nav-link">DSSB</a>
+        </li>
+        <li class="nav-item">
+          <a href="#block" class="nav-link ">Blockchains</a>
+        </li>
+
+
+        <li class="nav-item">
           <a href="#whitepaper" class="nav-link">Whitepaper</a>
         </li>
         <li class="nav-item">
           <a href="#faq" class="nav-link">FAQ's</a>
+        </li>
+        <li class="nav-item">
+          <a href="journey.html" class="nav-link ">User Journey</a>
         </li>
         <li class="nav-item mt-3">
           <a href="#" class="btn btn-warning text-dark w-100">Get The App</a>
@@ -205,10 +219,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <!-- banner -->
   <section class="hero-banner text-center text-white font">
 
-    <div class="desk">
+    <div class="desk1">
       <img src="img/home2.png" alt="Hero Banner" class=" img-fluid banner1 "
         style="width: 100%;background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
-      
       <div class="content" style="height: 100%;">
 
         <div class="row justify-content-around" style="height: 100%;">
@@ -261,24 +274,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
       </div>
     </div>
-    <div class="mob">
-      <img src="img/home_mob.png" alt="Hero Banner" class="img-fluid banner1 "
+    <div class="tablet">
+      <img src="img/home_mob.png" alt="Hero Banner" class="img-fluid  "
         style="background: var(--High-Fidelity-Color-Main-Background, #11011E);" />
-      <div class="content" style="height: 100%;top:-2%">
+      <div class="content" style="height: 100%;top:3%">
         <div class="scroll-container" style="width: 100%; overflow-x: auto; white-space: nowrap;">
-          <button class="btn blue-btn mt-3" style="font-size: 12px;padding:10px 20px;">
+          <button class="btn blue-btn mt-3" style="font-size: 20px;padding:10px 20px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
             </svg>
             Get Reward by Your Each Movement
           </button>
-          <button class="btn blue-btn mt-3"style="font-size: 12px;padding:10px 20px;">
+          <button class="btn blue-btn mt-3" style="font-size: 20px;padding:10px 20px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
             </svg>
             Get Reward by StepsStamp Blockchains
           </button>
-          <button class="btn blue-btn mt-3"style="font-size: 12px;padding:10px 20px;">
+          <button class="btn blue-btn mt-3" style="font-size: 20px;padding:10px 20px;">
             <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
               <circle cx="3.5" cy="3.5" r="3.5" fill="#11F3FF" />
             </svg>
@@ -303,7 +316,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
           <div class="col-11 row justify-content-between">
 
-            <div class="col-md-3 d-flex align-items-center ttt1">
+            <div class="col-md-6 col-12 d-flex align-items-center ttt1">
               <div class="mt-3 text-center" style="    width: fit-content; margin: auto auto 10%;">
                 <button type="button" class="yellow_btn">Download </button> <svg xmlns="http://www.w3.org/2000/svg"
                   width="30" height="30" viewBox="0 0 41 41" fill="none">
@@ -316,6 +329,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
             </div>
+            <div class="col-md-6 d-flex align-items-center ttt1">
+              <div class="tablet1">
+                <img src="img/mob_video.png" alt="">
+              </div>
+
+
+
+            </div>
           </div>
         </div>
 
@@ -323,19 +344,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
 
+
   </section>
   <!-- banner -->
   <div class="mob text-center" style="background: #11011E;">
     <img src="img/mob_video.png" alt="">
   </div>
+
+  <div class="hhh d-none" style="height: 70px;" id="eco"></div>
   <!-- connecting -->
   <section>
 
 
     <div class="img-box">
-      <img class="desk" src="assets/img/ecosystem.png" alt="" style="width: 100%;" />
+      <img class="desk1" src="assets/img/ecosystem.png" alt="" style="width: 100%;" />
 
-      <div class="img-card1" id="eco">
+      <div class="img-card1">
 
         <div class="container">
           <!-- <div class="up1" style="">
@@ -378,16 +402,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
 
-          <div class="mob">
+          <div class="table">
             <div class="row d-flex justify-content-center mt-5 ">
-              <img src="img/hom1.png" alt="" width="100%">
+              <img src="img/hom2.png" alt="" width="100%">
             </div>
           </div>
-
+         
 
         </div>
       </div>
-      <div class="container desk">
+      <div class="container desk1">
         <div class="img-card2">
           <div class="row d-flex justify-content-evenly">
 
@@ -421,7 +445,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="col-md-8">
                 <div class="text-center">
                   <p class="mb-0 text-center  yellow">Technology</p>
-                  <p class="mb-0 text-center blue1">Decentralization</p>
+                  <p class="mb-0 text-center blue1">Blockchain</p>
                   <p class="cfont text-center where1">A trusted digital backbone ensuring security and transparency in
                     every step.</p>
                 </div>
@@ -436,10 +460,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   </section>
 
-
+  <div class="hhh d-none" style="height: 70px;" id="reward"></div>
 
   <!-- reward -->
-  <section class="desk_mr" id="reward" style="padding-bottom:40px;">
+  <section class="" style="padding-bottom:40px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -457,22 +481,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               Your movement, your reward—secure it on blockchain and mine
               StepsStamp Tokens daily.
             </p>
-            <p><b>7,664 SST daily, earned by your steps or movements.</b></p>
+            <p><b>7,664 SSBT daily, earned by your steps or movements.</b></p>
 
             <div class="pool" style="display: flex; flex-direction: column; flex-grow: 1;">
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
                   <span class="pool-icon">
-                    <img src="assets/img/pool.png" alt="Icon" />
+                    <img src="assets/img/pool.png" alt="Icon" width="100%" />
                   </span>
                 </div>
                 <div class="col-md-10">
                   <h4 class="m-0 rp" style="color: ECF1F0;">Pool A</h4>
                   <p class="m-0 reward-p">
-                    Score 1,000–4,999 Proof of Movement and earn rewards proportionately based on your contribution.
+                    Score 1,500–9,999 Proof of Movement and earn rewards proportionately based on your contribution.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -492,7 +516,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
                   <span class="pool-icon">
-                    <img src="assets/img/pool.png" alt="Icon" />
+                    <img src="assets/img/pool.png" alt="Icon" width="100%" />
                   </span>
                 </div>
                 <div class="col-md-10">
@@ -500,8 +524,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="m-0 reward-p">
                     Reach 10,000 Proof of Movement Milestones and receive tokens equally among participants.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -519,7 +543,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
           </div>
           <div class="icon-container3">
-            <img src="assets/img/minned.png" alt="Icon" />
+            <img src="assets/img/minned.png" alt="Icon" width="100%" />
           </div>
         </div>
 
@@ -530,21 +554,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               Stake today, grow tomorrow—StepsStamp Tokens multiply your assets
               every single day.
             </p>
-            <p><b>5,173 SST daily, grown from your holdings.</b></p>
+            <p><b>5,173 SSBT daily, grown from your holdings.</b></p>
 
             <div class="pool" style="display: flex; flex-direction: column; flex-grow: 1;">
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
-                  <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" /></span>
+                  <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" width="100%" /></span>
                 </div>
                 <div class="col-md-10">
-                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h4>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto Stacking</h4>
                   <p class="m-0 reward-p">
                     In this method, both staking rewards and mining earnings are automatically reinvested into the
                     staking pool the following day.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -563,15 +587,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <div class="pool" style="display: flex; flex-direction: column; flex-grow: 1;">
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
-                  <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" /></span>
+                  <span class="pool-icon"> <img src="assets/img/pig.png" alt="Icon" width="100%" /></span>
                 </div>
                 <div class="col-md-10">
                   <h4 class="m-0 rp" style="color: ECF1F0;">Manual Staking</h4>
                   <p class="m-0 reward-p">
                     In this method, rewards earned from staking are directly transferred to the user’s wallet daily.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -598,8 +622,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
   </section>
   <!-- reward -->
-
-  <section class="normals" id="whitepaper">
+  <div class="hhh d-none" style="height: 70px;" id="dssb"></div>
+  <section class="normals">
     <div class="container">
       <div class="row">
         <div class="powered-by " style="text-align: center;">
@@ -609,10 +633,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <h3 class="main-heading yellow-gradient mt-4">
             Your Gateway to Become StepsStamp <span class="blue">Shareholder</span> </h3>
           <p class="sub-heading mb-1 mt-3">DSS Bank is a decentralized platform that allows users to earn daily rewards
-            by staking their SSBT tokens. With a fixed daily minting of 5173 SSBT, rewards are distributed
+            by staking their SSBT. With a fixed daily of 5173 SSBT, rewards are distributed
             proportionally based on each user's share in the staking pool, ensuring transparency and sustainable growth.
           </p>
-          <a href="" class="lm mt-2">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
+          <a href="" class="lm mt-2 d-none">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
               viewBox="0 0 14 13" fill="none">
               <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2" stroke-linecap="round" />
             </svg></a>
@@ -623,11 +647,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="row pt-5 row1 center">
         <!-- Card 1 -->
-        <div class="col-md-3">
-          <img src="img/gateway.png" alt="" width="100%">
+        <div class="col-md-6" style="    text-align: center;">
+          <img class="w_mob" src="img/gateway.png" alt="" width="50%">
         </div>
-        <div class="col-lg-9 col-md-8 col-sm-6 row mt-md-0 mt-3">
-          <div class="col-md-6 mt-2">
+        <div class="col-lg-6 col-md-6 col-sm-6 row mt-md-0 mt-3">
+          <div class="col-md-12 mt-2">
             <div class="pool mt-0" style="display: flex; flex-direction: column; flex-grow: 1;">
               <div class="d-flex align-items-center" style="flex-grow: 1;">
                 <div class="col-md-2 mr">
@@ -636,13 +660,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </span>
                 </div>
                 <div class="col-md-10">
-                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto-Stacking</h4>
+                  <h4 class="m-0 rp" style="color: ECF1F0;">Auto Stacking</h4>
                   <p class="m-0 reward-p">
                     In this method, both staking rewards and mining earnings are automatically reinvested into the
                     staking pool the following day.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -669,8 +693,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="m-0 reward-p">
                     In this method, rewards earned from staking are directly transferred to the user’s wallet daily.
                   </p>
-                  <a href="#" class="btn-link">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                      viewBox="0 0 24 24" fill="none">
+                  <a href="#" class="btn-link d-none">Know More<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none">
                       <g clip-path="url(#clip0_784_20743)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
@@ -717,7 +741,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               });
             });
           </script>
-          <div class="col-md-6 mt-2">
+          <div class="col-md-6 mt-2 d-none">
             <div class="container1 ">
               <h4 class="m-0 rp" style="color: ECF1F0;">If You Stake 1000 SSB Tokens, Today!</h4>
               <h4 class="m-0 rp" style="color: ECF1F0;">It Will Become...</h4>
@@ -771,21 +795,21 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
   </section>
-
+  <div class="hhh d-none" style="height: 70px;" id="block"></div>
   <!--======= 5 card============= -->
   <!--======= 5card============= -->
-  <div style="background-image: url('assets/img/building.png');" id="dssb">
+  <div style="background-image: url('assets/img/building.png');" id="block">
     <section class="normals">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="main-heading yellow-gradient">
               Get Started Early with StepsStamp <span class="blue"> Blockchain</span> </h3>
-            <p class="sub-heading mb-1">Unlock nodes to mine SSTokens across <br> 5 dynamic blockchains.</p>
+            <p class="sub-heading mb-1">Unlock nodes to mine SSBT across 5 dynamic blockchains.</p>
             <a href="blockchain.html" class="lm">Learn more </a>
           </div>
         </div>
-        <div class="desk">
+        <div class="desk1">
           <div class="row pt-5 row1 center">
             <!-- Card 1 -->
             <div class="col-lg-2 col-md-4 col-sm-6">
@@ -797,17 +821,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="card-body1">
                   <p class="subtext1 mb-0 grey">Per day mining capacity</p>
-                  <p class="mini"><span style="color:#b6b6b6 ;">767 SSB Tokens</span> <span class="super-mini">(50% Pool
+                  <p class="mini"><span style="color:#b6b6b6 ;">767 SSBT</span> <span class="super-mini">(50% Pool
                       A
                       /
                       50% Pool B)</span> </p>
+                  <p class="mini" style="color:#246BFD ;height:16px;"></p>
                   <div class="features2">
                     <p class="mini">Rewards Benefits</p>
                     <ul class="list-unstyled">
-                      <li><i class="bi bi-check-circle-fill text-success"></i>300 SSB Bonus</li>
-                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch Bonus</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 1 (30 Days)</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+
                     </ul>
                   </div>
                   <div class="features2">
@@ -815,7 +840,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <ul class="list-unstyled">
                       <li><i class="bi bi-check-circle-fill text-success"></i>W450 Fresh SSB</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>W150 Mini SSB</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>W75 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>W75 Micro SSB</li>
                     </ul>
                   </div>
                   <button class="btn btn-custom1">Buy Now</button>
@@ -836,14 +861,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="mini"><span style="color:#b6b6b6">1,150 SSBT</span> <span class="super-mini">(50% Pool A
                       /
                       50% Pool B)</span> </p>
-                  <p class="mini" style="color:#246BFD ;">Watch included only 1000 Units.</p>
+                  <p class="mini" style="color:#246BFD ;height:16px;"></p>
                   <div class="features2">
                     <p class="mini">Rewards Benefits</p>
                     <ul class="list-unstyled">
-                      <li><i class="bi bi-check-circle-fill text-success"></i>1500 SSBT Bonus</li>
-                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                      <li><i class="bi bi-x-circle-fill text-danger"></i>Watch Bonus</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 5 (30 Days)</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>$100 Withdraw Limit</li>
+
                     </ul>
                   </div>
                   <div class="features2">
@@ -851,20 +876,77 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <ul class="list-unstyled">
                       <li><i class="bi bi-check-circle-fill text-success"></i>B450 Fresh SSB</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>B150 Mini SSB</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>B75 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>B75 Micro SSB</li>
                     </ul>
                   </div>
                   <button class="btn btn-custom1">Buy Now</button>
                 </div>
               </div>
             </div>
+            <style>
+              .btnw {
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                z-index: 3;
+                width: 100%;
+                top: 0%;
+                right: 3%;
+                border-radius: 4.497px;
+                position: absolute;
+                background-color: #2C223B;
+                width: 67.346px;
+                height: 23.384px;
+                padding: 3.597px 14.39px;
 
+              }
+
+              .btnp {
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                z-index: 3;
+                width: 100%;
+                top: 0%;
+                right: 3%;
+                border-radius: 4.497px;
+                position: absolute;
+                background: linear-gradient(270deg, #8E3567 -7.81%, #6C2CEF 33.93%, #285687 64.52%, #268635 99.5%);
+
+
+
+                width: 67.346px;
+                height: 23.384px;
+                padding: 3.597px 14.39px;
+
+              }
+
+              .btne {
+                color: #fff;
+                font-weight: 600;
+                font-size: 10px;
+                z-index: 3;
+                width: 100%;
+                top: 0%;
+                right: 3%;
+                border-radius: 4.497px;
+                position: absolute;
+                background: linear-gradient(270deg, #2B0134 -17.5%, #8A2F9D 99.96%);
+
+
+                width: 67.346px;
+                height: 23.384px;
+                padding: 3.597px 14.39px;
+
+              }
+            </style>
             <!-- Card 3-->
             <div class="col-lg-2 col-md-4 col-sm-6">
               <div class="card-custom1">
                 <div class="card-header1">
                   <img src="assets/img/silver.png" alt="White Image">
                   <div class="overlay-text ">Silver SS Blockchain</div>
+                  <div class=" btnw">Popular</div>
                   <div class="overlay-text price1">1000 BUSD</div>
                 </div>
                 <div class="card-body1">
@@ -872,14 +954,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="mini"><span style="color:#b6b6b6 ;">1,534 SSBT</span> <span class="super-mini">(50% Pool A
                       /
                       50% Pool B)</span> </p>
-                  <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 1,000 Units.</p>
                   <div class="features2">
                     <p class="mini">Rewards Benefits</p>
                     <ul class="list-unstyled">
-                      <li><i class="bi bi-check-circle-fill text-success"></i>3,000 SSBT Bonus</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 10 (300 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch Bonus 10 (300 Days)</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 16 (30 Days)</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>$200 Withdraw Limit</li>
+
                     </ul>
                   </div>
                   <div class="features2">
@@ -887,7 +969,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <ul class="list-unstyled">
                       <li><i class="bi bi-check-circle-fill text-success"></i>S450 Fresh SSB</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>S150 Mini SSB </li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>S75 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>S75 Micro SSB</li>
                     </ul>
                   </div>
                   <button class="btn btn-custom1">Buy Now</button>
@@ -901,6 +983,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="card-header1">
                   <img src="assets/img/gold.png" alt="White Image">
                   <div class="overlay-text ">Gold SS Blockchain</div>
+                  <div class=" btnp">Premium</div>
                   <div class="overlay-text price1">5000 BUSD</div>
                 </div>
                 <div class="card-body1">
@@ -908,14 +991,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="mini"><span style="color:#b6b6b6 ;">1,919 SSBT</span> <span class="super-mini">(50% Pool A
                       /
                       50% Pool B)</span> </p>
-                  <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
                   <div class="features2">
                     <p class="mini">Rewards Benefits</p>
                     <ul class="list-unstyled">
-                      <li><i class="bi bi-check-circle-fill text-success"></i>15,000 SSBT Bonus</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 50 (450 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Phase welcome Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch Bonus 50 (450 Days)</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 167 (30 Days)</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>$1000 Withdraw Limit</li>
+
                     </ul>
                   </div>
                   <div class="features2">
@@ -923,7 +1006,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <ul class="list-unstyled">
                       <li><i class="bi bi-check-circle-fill text-success"></i>G450 Fresh SSB</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>G150 Mini SSB </li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>G75 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>G75 Micro SSB</li>
                     </ul>
                   </div>
                   <button class="btn btn-custom1">Buy Now</button>
@@ -937,6 +1020,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="card-header1">
                   <img src="assets/img/green.png" alt="White Image">
                   <div class="overlay-text " style="color: white;">Green SS Blockchain</div>
+                  <div class=" btne">Exclusive</div>
                   <div class="overlay-text price1" style="color: white;">10000 BUSD</div>
                 </div>
                 <div class="card-body1">
@@ -944,13 +1028,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p class="mini"><span style="color:#b6b6b6 ;">2,299 SSBT</span> <span class="super-mini">(50% Pool A
                       /
                       50% Pool B)</span> </p>
+                  <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
                   <div class="features2">
                     <p class="mini">Rewards Benefits</p>
                     <ul class="list-unstyled">
-                      <li><i class="bi bi-check-circle-fill text-success"></i>30,000 SSBT Bonus</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 100(730 Days)</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>Watch Bonus 100(730 Days)</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 500 (30 Days)</li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>$2000 Withdraw Limit</li>
+
                     </ul>
                   </div>
                   <div class="features2">
@@ -958,7 +1043,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <ul class="list-unstyled">
                       <li><i class="bi bi-check-circle-fill text-success"></i>GR450 Fresh SSB</li>
                       <li><i class="bi bi-check-circle-fill text-success"></i>GR150 Mini SSB </li>
-                      <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Mini SSB</li>
+                      <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Micro SSB</li>
                     </ul>
                   </div>
                   <button class="btn btn-custom1">Buy Now</button>
@@ -968,7 +1053,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
           </div>
         </div>
-        <div class="mob">
+        <div class="tablet">
           <div class="row pt-5 row1 center">
             <div class="splide" role="group" aria-label="Splide Basic HTML Example">
               <div class="splide__track">
@@ -986,13 +1071,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             class="super-mini">(50% Pool A
                             /
                             50% Pool B)</span> </p>
+                        <p class="mini" style="color:#246BFD ;height:16px;"></p>
                         <div class="features2">
                           <p class="mini">Rewards Benefits</p>
                           <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success"></i>300 SSB Bonus</li>
-                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch Bonus</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 1 (30 Days)</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>$10 Withdraw Limit</li>
+
                           </ul>
                         </div>
                         <div class="features2">
@@ -1000,7 +1086,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           <ul class="list-unstyled">
                             <li><i class="bi bi-check-circle-fill text-success"></i>W450 Fresh SSB</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>W150 Mini SSB</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>W75 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>W75 Micro SSB</li>
                           </ul>
                         </div>
                         <button class="btn btn-custom1">Buy Now</button>
@@ -1020,14 +1106,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             A
                             /
                             50% Pool B)</span> </p>
-                        <p class="mini" style="color:#246BFD ;">Watch included only 1000 Units.</p>
+                        <p class="mini" style="color:#246BFD ;height:16px;"></p>
                         <div class="features2">
                           <p class="mini">Rewards Benefits</p>
                           <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success"></i>1500 SSBT Bonus</li>
-                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch SSB Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                            <li><i class="bi bi-x-circle-fill text-danger"></i>Watch Bonus</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 5 (30 Days)</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>$100 Withdraw Limit</li>
+
                           </ul>
                         </div>
                         <div class="features2">
@@ -1035,7 +1121,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           <ul class="list-unstyled">
                             <li><i class="bi bi-check-circle-fill text-success"></i>B450 Fresh SSB</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>B150 Mini SSB</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>B75 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>B75 Micro SSB</li>
                           </ul>
                         </div>
                         <button class="btn btn-custom1">Buy Now</button>
@@ -1047,6 +1133,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <div class="card-header1">
                         <img src="assets/img/silver.png" alt="White Image">
                         <div class="overlay-text ">Silver SS Blockchain</div>
+                        <div class=" btnw">Popular</div>
                         <div class="overlay-text price1">1000 BUSD</div>
                       </div>
                       <div class="card-body1">
@@ -1055,14 +1142,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             Pool A
                             /
                             50% Pool B)</span> </p>
-                        <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 1,000 Units.</p>
                         <div class="features2">
                           <p class="mini">Rewards Benefits</p>
                           <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success"></i>3,000 SSBT Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 10 (300 Days)</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 16 (30 Days)</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>$200 Withdraw Limit</li>
+
                           </ul>
                         </div>
                         <div class="features2">
@@ -1070,7 +1157,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           <ul class="list-unstyled">
                             <li><i class="bi bi-check-circle-fill text-success"></i>S450 Fresh SSB</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>S150 Mini SSB </li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>S75 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>S75 Micro SSB</li>
                           </ul>
                         </div>
                         <button class="btn btn-custom1">Buy Now</button>
@@ -1082,6 +1169,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <div class="card-header1">
                         <img src="assets/img/gold.png" alt="White Image">
                         <div class="overlay-text ">Gold SS Blockchain</div>
+                        <div class=" btnp">Premium</div>
                         <div class="overlay-text price1">5000 BUSD</div>
                       </div>
                       <div class="card-body1">
@@ -1090,14 +1178,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             Pool A
                             /
                             50% Pool B)</span> </p>
-                        <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 500 Units.</p>
                         <div class="features2">
                           <p class="mini">Rewards Benefits</p>
                           <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success"></i>15,000 SSBT Bonus</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 50 (450 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch Bonus 50 (450 Days)</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 167 (30 Days)</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>$1000 Withdraw Limit</li>
+
                           </ul>
                         </div>
                         <div class="features2">
@@ -1105,7 +1193,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           <ul class="list-unstyled">
                             <li><i class="bi bi-check-circle-fill text-success"></i>G450 Fresh SSB</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>G150 Mini SSB </li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>G75 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>G75 Micro SSB</li>
                           </ul>
                         </div>
                         <button class="btn btn-custom1">Buy Now</button>
@@ -1117,6 +1205,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       <div class="card-header1">
                         <img src="assets/img/green.png" alt="White Image">
                         <div class="overlay-text " style="color: white;">Green SS Blockchain</div>
+                        <div class=" btne">Exclusive</div>
                         <div class="overlay-text price1" style="color: white;">10000 BUSD</div>
                       </div>
                       <div class="card-body1">
@@ -1125,13 +1214,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             Pool A
                             /
                             50% Pool B)</span> </p>
+                        <p class="mini" style="color:#246BFD ;">Watch included only 250 Units.</p>
                         <div class="features2">
                           <p class="mini">Rewards Benefits</p>
                           <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success"></i>30,000 SSBT Bonus</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch SSB Bonus 100(730 Days)</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Phase Welcome Bonus</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>Watch Bonus 100(730 Days)</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>Investor Bonus 500 (30 Days)</li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>$2000 Withdraw Limit</li>
+
                           </ul>
                         </div>
                         <div class="features2">
@@ -1139,7 +1229,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           <ul class="list-unstyled">
                             <li><i class="bi bi-check-circle-fill text-success"></i>GR450 Fresh SSB</li>
                             <li><i class="bi bi-check-circle-fill text-success"></i>GR150 Mini SSB </li>
-                            <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Mini SSB</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>GR75 Micro SSB</li>
                           </ul>
                         </div>
                         <button class="btn btn-custom1">Buy Now</button>
@@ -1160,14 +1250,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!-- strategy -->
     <section class="normals">
-      <div class="container desk">
+      <div class="container desk1">
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="main-heading yellow-gradient">
               Grab Amazing <span class="blue"> Opportunity</span> before It Go Away </h3>
-            <p class="sub-heading mb-1">Since the last 2 phases are completed, don’t miss out the amazing opportunity
+            <p class="sub-heading mb-1"> Don’t miss out the amazing opportunity
               coming in your way.</p>
-            <a href="" class="lm">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
+            <a href="" class="lm d-none">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13"
                 viewBox="0 0 14 13" fill="none">
                 <path d="M1.5 1H12.5M12.5 1V12M12.5 1L1.5 12" stroke="#F78300" stroke-width="2"
                   stroke-linecap="round" />
@@ -1177,44 +1267,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="">
           <div class="timeline-container1">
             <div class="timeline1">
-              <div class="phase1">
-                <div class="phase1-label1">phase A</div>
-                <div class="phase1-circle1 finished" style=""></div>
-
-                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
-                  <h6>Completed</h6>
-                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
-                  <div class="row text-start" style="font-size: 13px;">
-                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
-                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
-                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
-                    <div class="col-md-6 col-6 mt-2">$0.05/SSB</div>
-
-
-                  </div>
-
-                </div>
-              </div>
-              <div class="phase1">
-                <div class="phase1-label1">phase B</div>
-                <div class="phase1-circle1 finished"></div>
-
-                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
-                  <h6>Completed</h6>
-                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
-                  <div class="row text-start">
-                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
-                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
-                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
-                    <div class="col-md-6 col-6 mt-2">$0.06/SSB</div>
-
-
-                  </div>
-
-                </div>
-              </div>
               <div class="phase1 active">
-                <div class="phase1-label1" style="background-color: #F78300;">phase C</div>
+                <div class="phase1-label1" style="background-color: #F78300;">phase A</div>
                 <div class="phase1-circle1 active1"></div>
 
                 <div class="tooltip1 text-center" style="border: 1px solid #F78300;border-radius:16px">
@@ -1231,21 +1285,59 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <div class="row text-start justify-content-around">
                     <div class="col-md-5 col-6 mt-2">SSBT Supply</div>
                     <div class="col-md-5 col-6 mt-2">18,000,000</div>
-                    <div class="col-md-5 col-6 mt-2">People Already</div>
-                    <div class="col-md-5 col-6 mt-2">80,000</div>
-                    <div class="col-md-5 col-6 mt-2">Exchange Price</div>
-                    <div class="col-md-5 col-6 mt-2">$0.07/SSB</div>
+
+                    <div class="col-md-5 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-5 col-6 mt-2">$0.05/SSB</div>
                     <div class="col-md-12">
                       <p></p>
                     </div>
                     <div class="col-md-12">
                       <div class="text-center d-flex justify-content-center mt-3 pb-3"><button
                           class="btn share1">DOWNLOAD
-                          APP TODAY <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                            <circle cx="12.5" cy="12.5" r="11" stroke="#F58200" stroke-width="2"/>
-                            <path d="M9.28394 9.27979H15.723M15.723 9.27979V15.7188M15.723 9.27979L9.28394 15.7188" stroke="#F58200" stroke-width="2"/>
+                          APP TODAY <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                              viewBox="0 0 25 25" fill="none">
+                              <circle cx="12.5" cy="12.5" r="11" stroke="#F58200" stroke-width="2" />
+                              <path d="M9.28394 9.27979H15.723M15.723 9.27979V15.7188M15.723 9.27979L9.28394 15.7188"
+                                stroke="#F58200" stroke-width="2" />
                             </svg></span></button></div>
                     </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="phase1">
+                <div class="phase1-label1">phase B</div>
+                <div class="phase1-circle1 finished"></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Upcomming</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.06/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="phase1">
+                <div class="phase1-label1">phase c</div>
+                <div class="phase1-circle1 finished" style=""></div>
+
+                <div class="tooltip1 text-center" style="color:#E5E5E54D;">
+                  <h6>Upcomming</h6>
+                  <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start" style="font-size: 13px;">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-6 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.07/SSB</div>
 
 
                   </div>
@@ -1261,8 +1353,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
                   <div class="row text-start">
                     <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
-                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
-                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
+                    <div class="col-md-6 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
                     <div class="col-md-6 col-6 mt-2">$0.08/SSB</div>
 
 
@@ -1279,9 +1371,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
                   <div class="row">
                     <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
-                    <div class="col-md-6 col-6 mt-2">18,00,000</div>
-                    <div class="col-md-6 col-6 mt-2">Exchange Price</div>
-                    <div class="col-md-6 col-6 mt-2">$0.08/SSB</div>
+                    <div class="col-md-6 col-6 mt-2">17,468,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-6 col-6 mt-2">$0.09/SSB</div>
 
 
                   </div>
@@ -1293,8 +1385,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
 
       </div>
-      <div class="conatiner mob" style="    text-align: center;">
-        <img src="img/timeline.png" alt="">
+      <div class="conatiner tablet" style="    text-align: center;">
+        <img src="img/time.png" alt="" width="100%">
       </div>
     </section>
   </div>
@@ -1306,7 +1398,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="row">
         <div class="col-md-12 text-center">
           <h3 class="main-heading yellow-gradient">
-            StepsStamp <span class="blue">Watches</span> : A Rare<span class="blue">Gift</span> for Visionaries
+            StepsStamp <span class="blue">Watches</span> : A Rare <span class="blue">Gift</span> for Visionaries
           </h3>
           <p class="sub-heading">Limited-edition timepieces for those who claim their place in the StepsStamp blockchain
             revolution.</p>
@@ -1317,13 +1409,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
           <div class="col-md-3 col-12 mt-3">
-            <img src="assets/img/s.png" alt="" style="width: 100%" />
+            <img src="img/sl1.png" alt="" style="width: 100%" />
           </div>
           <div class="col-md-3 col-12 mt-3">
-            <img src="assets/img/go.png" alt="" style="width: 100%" />
+            <img src="img/gold1.png" alt="" style="width: 100%" />
           </div>
           <div class="col-md-3 col-12 mt-3">
-            <img src="assets/img/gr.png" alt="" style="width: 100%" />
+            <img src="img/green1.png" alt="" style="width: 100%" />
           </div>
         </div>
       </div>
@@ -1533,7 +1625,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="faq-answer">
                       Our app uses the phone’s built-in sensors, such as the accelerometer and gyroscope,
                       to detect movements that match a walking pattern. This data is then processed by our
-                      proprietary algorithm, which translates as a ‘Normalised step’ count.
+                      proprietary algorithm, which translates as a <span>‘Normalised step’</span> count.
                     </div>
                   </div>
                   <div class="faq-item">
@@ -1801,38 +1893,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      <style>
-                        .blockchain-table {
-                          width: 100%;
-                          border-collapse: collapse;
-                          margin: 20px 0;
-                          font-size: 16px;
-                          text-align: left;
-                        }
 
-                        .blockchain-table thead th {
-                          background-color: transparent;
-                          border-bottom: 2px solid #ddd;
-                          padding: 10px;
-                        }
-
-                        .blockchain-table tbody td {
-                          border-bottom: 1px solid #ddd;
-                          padding: 10px;
-                        }
-
-                        .blockchain-table tbody tr:nth-child(even) {
-                          background-color: transparent;
-                        }
-
-                        .blockchain-table tbody tr:hover {
-                          background-color: transparent;
-                        }
-                      </style>
                       Only Blockchain owners can mine SSBT. Mining rewards are decentralized and fixed:
                       <ul>
-                        <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
-                        <li>Your Daily Reward: Depends on your Blockchain type: </li>
+                        <li><span class="bold">Total Daily Mining Supply:</span> 7,664 SSBT/day (distributed for 120
+                          years). </li>
+                        <li><span class="bold">Your Daily Reward:</span> Depends on your Blockchain type: </li>
 
                       </ul>
                       <div style="    width: 100%;        overflow-x: scroll;">
@@ -1936,7 +2002,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      At least 450 days (1 block/day). Consistency is key!
+                      At least <span class="bold">450 days</span> (1 block/day). Consistency is key!
                     </div>
                   </div>
                   <div class="faq-item">
@@ -1954,7 +2020,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      No. Only one Blockchain can be active at a time.
+                      No. Only <span class="bold">one Blockchain</span> can be active at a time.
                     </div>
                   </div>
                   <div class="faq-item">
@@ -1972,10 +2038,58 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      You’ll receive 150 Blocks in Mini StepsStamp Blockchain(New NFT) after 300 Blocks
-                      completed and 75 Blocks in Micro StepsStamp Blockchain(New NFT) after 450 Blocks
-                      completed as rewards. Use them to keep earning or transfer them.
-                      
+                      You’ll receive <span class="bold">150 Blocks in Mini StepsStamp Blockchain(New NFT)</span> after
+                      <span class="bold">300 Blocks
+                        completed and 75 Blocks in Micro StepsStamp Blockchain(New NFT) after 450 Blocks
+                        completed</span> as rewards. Use them to keep earning or transfer them.
+                      <div style="margin-top:20px;    width: 100%;        overflow-x: scroll;">
+                        <table class="blockchain-table">
+                          <thead>
+                            <tr>
+                              <th>Blockchain Type</th>
+                              <th>Main Blockchain
+                                (450 Blocks)
+                              </th>
+                              <th>Mini Blockchain
+                                (300 Blocks)</th>
+                              <th>Micro Blockchain
+                                (450 Blocks)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>White</td>
+                              <td>W450</td>
+                              <td>W150</td>
+                              <td>W75</td>
+                            </tr>
+                            <tr>
+                              <td>Black</td>
+                              <td>B450</td>
+                              <td>B150</td>
+                              <td>B75</td>
+                            </tr>
+                            <tr>
+                              <td>Silver</td>
+                              <td>S450</td>
+                              <td>S150</td>
+                              <td>S75</td>
+                            </tr>
+                            <tr>
+                              <td>Gold</td>
+                              <td>G450</td>
+                              <td>G150</td>
+                              <td>G75</td>
+                            </tr>
+                            <tr>
+                              <td>Green</td>
+                              <td>GR450</td>
+                              <td>GR150</td>
+                              <td>GR75</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2119,10 +2233,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       you earn SSBT tokens equal to a percentage of their purchase in BUSD, based on your
                       Blockchain tier:
                       <ul>
-                        <li class="blod">White/Black Tier: 7% </li>
-                        <li class="blod">Silver Tier: 8% </li>
-                        <li class="blod">Gold Tier: 10% </li>
-                        <li class="blod">Green Tier: 15% </li>
+                        <li class="bold">White/Black Tier: 7% </li>
+                        <li class="bold">Silver Tier: 8% </li>
+                        <li class="bold">Gold Tier: 10% </li>
+                        <li class="bold">Green Tier: 15% </li>
                       </ul>
                       <h6 class="mt-3 bold">Example: </h6>
                       <p style="color: rgba(17, 243, 255, 1);font-size: 14px;text-align: start;">
@@ -2204,7 +2318,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      The Welcome Bonus equals 20% of the Blockchain price in BUSD, converted to SSBT at
+                      The Welcome Bonus equals <span class="bold">20% of the Blockchain price in BUSD,</span> converted
+                      to SSBT at
                       the Phase A rate (1 SSBT = 0.05 BUSD).
                       <p class="mt-2 text-start">● Example: Green Blockchain costs <span class="bold">10,000 BUSD
                         </span>→ 20% = <span class="bold">2,000 BUSD</span> → 2,000 /
@@ -2229,9 +2344,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       StepsStamp Watches are exclusive gifts for Silver, Gold, or Green Blockchain holders.
                       They give you free daily SSBT rewards without walking, but hurry – they’re limited!
                       <ul>
-                        <li>Silver Watch (1,000 units): 10 SSBT/day for 300 days. </li>
-                        <li>Gold Watch (500 units): 50 SSBT/day for 450 days. </li>
-                        <li>Green Watch (250 units): 100 SSBT/day for 730 days. </li>
+                        <li><span class="bold">Silver Watch (1,000 units):</span> 10 SSBT/day for 300 days. </li>
+                        <li><span class="bold">Gold Watch (500 units):</span> 50 SSBT/day for 450 days. </li>
+                        <li><span class="bold">Green Watch (250 units):</span> 100 SSBT/day for 730 days. </li>
                       </ul>
 
                       <p class="text-start mt-2" style="color:#246BFD">First come, first served! Claim yours before
@@ -2272,8 +2387,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      A daily SSBT reward paid for 30 days after purchasing a Blockchain. For example: <br>
-                      ● Gold Blockchain: 167 SSBT/day × 30 days = 5,010 SSBT.
+                      A daily SSBT reward paid for <span class="bold">30 days</span> after purchasing a Blockchain. For
+                      example: <br>
+                      <span class="bold">● Gold Blockchain:</span> 167 SSBT/day × 30 days = <span class="bold">5,010
+                        SSBT.</span>
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2292,7 +2409,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </div>
                     <div class="faq-answer">
                       The maximum 10% BUSD you can swap for SSBT per Blockchain tier. For example: <br>
-                      ● Green Blockchain: Swap up to 1,000 BUSD worth of SSBT.
+                      <span class="bold">● Green Blockchain:</span> Swap up to <span class="bold">1,000 BUSD</span>
+                      worth of SSBT.
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2310,7 +2428,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Phase A SSBT price: 1 SSBT = 0.05 BUSD.
+                      Phase A SSBT price: <span class="bold">1 SSBT = 0.05 BUSD.</span>
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2330,7 +2448,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="faq-answer">
                       All rewards (Welcome Bonus, Watch, Investor) are paid in SSBT. Use the Phase A rate to
                       estimate their BUSD value:<br>
-                      ● Example: 40,000 SSBT (Green Welcome Bonus) = 40,000 × 0.05 = 2,000 BUSD.
+                      ● Example: 40,000 SSBT (Green Welcome Bonus) = 40,000 × 0.05 = <span class="bold">2,000
+                        BUSD.</span>
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2349,8 +2468,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     </div>
                     <div class="faq-answer">
                       After Phase E: <br>
-                      ● Payment Method: Only SSBT tokens can be used to purchase Blockchains. <br>
-                      ● SSBT Price: Determined by the open market (exchanges).
+                      <span class="bold">● Payment Method:</span> Only SSBT tokens can be used to purchase Blockchains.
+                      <br>
+                      <spa● class="bold">● SSBT Price:</span> Determined by the open market (exchanges).
                     </div>
                   </div>
                 </div>
@@ -2373,13 +2493,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer show">
-                      DSSB is a decentralized bank where you become a shareholder by staking SSBT tokens. 
-                      Stakeholders earn daily rewards from a fixed pool of 5,173 SSBT/day for 120 years.
+                      DSSB is a decentralized bank where you become a <span class="bold">shareholder</span by staking
+                        SSBT tokens. Stakeholders earn daily rewards from a fixed pool of <span class="bold">>5,173
+                      SSBT/day for 120 years.</span>
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                      How does staking work? 
+                      How does staking work?
                       <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                           viewBox="0 0 40 40" fill="none">
                           <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -2392,14 +2513,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      ● Daily Staking Pool: 5,173 SSBT (fixed supply). <br>
-                      ● Distribution: Proportional to your stake. <br>
-                      ● Payout Time: Daily at 00:00 GMT.
+                      <span class="bold">● Daily Staking Pool:</span> 5,173 SSBT (fixed supply). <br>
+                      <span class="bold">● Distribution:</span> Proportional to your stake. <br>
+                      <span class="bold">● Payout Time:</span> Daily at <span class="bold">00:00 GMT.</span>
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                      What are manual and auto staking? 
+                      What are manual and auto staking?
                       <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                           viewBox="0 0 40 40" fill="none">
                           <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -2412,24 +2533,40 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      ● Manual Staking: <br>
-○ Example:  <br>
-■ You stake 40,000 SSBT in a pool of 1,000,000 SSBT. <br>
-■ Your share: 4% → Daily reward = 5,173 SSBT × 4% = 206.92 SSBT. <br>
-■ Your stake remains 40,000 SSBT unless you manually add more.<br> 
-● Auto Staking: <br>
-○ Example:  <br>
-■ You stake 40,000 SSBT in a pool of 1,000,000 SSBT. <br>
-■ Daily staking reward: 206.92 SSBT. <br>
-■ Daily mining reward: 120 SSBT (if applicable). <br>
-■ New Stake Next Day: 40,000 + 206.92 + 120 = 40,326.92 SSBT 
-(rewards compound automatically). 
+                      <h5 class="bold">● Manual Staking: </h5>
+                      <h6>&nbsp;&nbsp;&nbsp;&nbsp;○ Example: </h6>
+
+                      <ul>
+                        <p class="text-start" style="padding-left:10px">■ You stake <span class="bold">40,000
+                            SSBT</span> in a pool of <span class="bold">1,000,000 SSBT.</span></p>
+                        <p class="text-start" style="padding-left:10px">■ Your share: <span class="bold">4%</span> →
+                          Daily reward = 5,173 SSBT × 4% = <span class="bold">206.92 SSBT.</span></p>
+                        <p class="text-start" style="padding-left:10px">■ Your stake remains <span class="bold">40,000
+                            SSBT</span> unless you manually add more.</p>
+                      </ul>
+                      <br>
+                      <h5 class="bold">● Auto Staking: </h5>
+                      <h6>&nbsp;&nbsp;&nbsp;&nbsp;○ Example: </h6>
+
+                      <ul>
+                        <p class="text-start" style="padding-left:10px">■ You stake <span class="bold">40,000</span>
+                          SSBT in a pool of <span class="bold">1,000,000 SSBT.</span></p>
+                        <p class="text-start" style="padding-left:10px">■ Daily staking reward: <span
+                            class="bold">206.92 SSBT.</span></p>
+                        <p class="text-start" style="padding-left:10px">■ Daily mining reward: <span class="bold">120
+                            SSBT</span> (if applicable).</p>
+                        <p class="text-start" style="padding-left:10px">■ <span class="bold">New Stake Next Day:</span>
+                          40,000 + 206.92 + 120 = <span class="bold">40,326.92 SSBT </span>
+                          (rewards compound automatically). </p>
+                      </ul>
+
+
 
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                      How do I become a DSSB shareholder? 
+                      How do I become a DSSB shareholder?
                       <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                           viewBox="0 0 40 40" fill="none">
                           <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -2442,12 +2579,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Stake SSBT tokens for 24 hours to start earning rewards.
+                      Stake SSBT tokens for <span class="bold">24 hours</span> to start earning rewards.
                     </div>
                   </div>
                   <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
-                      Can I unstake my tokens anytime? 
+                      Can I unstake my tokens anytime?
                       <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                           viewBox="0 0 40 40" fill="none">
                           <circle cx="20" cy="20" r="20" fill="#F78300" />
@@ -2460,7 +2597,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Yes! Unstaking takes 24 hours, and tokens return to your wallet. 
+                      Yes! Unstaking takes 24 hours, and tokens return to your wallet.
                     </div>
                   </div>
                 </div>
@@ -2486,7 +2623,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </svg></span>
                     </div>
                     <div class="faq-answer">
-                      Only BUSD (Binance USD) is accepted for purchasing Blockchains.
+                      Only <span class="bold">BUSD</span> (Binance USD) is accepted for purchasing Blockchains.
                     </div>
                   </div>
                   <div class="faq-item">
@@ -2576,7 +2713,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        During Phases A to E, you can purchase StepsStamp Blockchains (NFTs) only with
+                        During <span class="bold">Phases A to E,</span> you can purchase StepsStamp Blockchains (NFTs)
+                        only with
                         BUSD. After Phase E ends, only SSBT tokens will be accepted for purchases.
                       </div>
                     </div>
@@ -2595,8 +2733,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        ● Payment Method: Only SSBT tokens can be used to buy Blockchains. <br>
-                        ● SSBT in the Open Market: SSBT will be listed on exchanges, and its price will be
+                        <span class="bold"> ● Payment Method:</span> Only SSBT tokens can be used to buy Blockchains.
+                        <br>
+                        <span class="bold">● SSBT in the Open Market:</span> SSBT will be listed on exchanges, and its
+                        price will be
                         determined by market demand and supply.
                       </div>
                     </div>
@@ -2615,9 +2755,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                           </svg></span>
                       </div>
                       <div class="faq-answer">
-                        No! Watches reward SSBT automatically, even if you don’t walk.
+                        No! Watches reward SSBT <span class="bold">automatically,</span> even if you don’t walk.
 
-              
+
                       </div>
                     </div>
                     <div class="faq-item">
@@ -2777,8 +2917,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </div>
                       <div class="faq-answer">
                         <ul>
-                          <li>Total Daily Mining Supply: 7,664 SSBT/day (distributed for 120 years). </li>
-                          <li>Your Daily Reward: Depends on your Blockchain type: </li>
+                          <li><span class="bold">Total Daily Mining Supply:</span> 7,664 SSBT/day (distributed for 120
+                            years). </li>
+                          <li><span class="bold"> Your Daily Reward: </span>Depends on your Blockchain type: </li>
                         </ul>
                         <div style="    width: 100%;        overflow-x: scroll;">
                           <table class="blockchain-table">
@@ -2822,8 +2963,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                               </tr>
                               <tr>
                                 <td>Green</td>
-                                <td>2,299 SSBT <br>
-                                  BUSD</td>
+                                <td>2,299 SSBT </td>
                                 <td>1.149,50 SSBT</td>
                                 <td>1.149,50 SSBT</td>
 
@@ -2832,14 +2972,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             </tbody>
                           </table>
                         </div>
-                        <h6 class="bold mt-3">Considered as an example: </h6>
+                        <h6 class="bold mt-3"> Example: </h6>
                         <ul>
-                          <li>Total Green Blockchain Owners: 100 participants.</li>
-                          <li>Daily SSBT Pool for Green: 2.299,00 SSBT (split 50-50):
+                          <li><span class="bold">Total Green Blockchain Owners:</span> 100 participants.</li>
+                          <li><span class="bold">Daily SSBT Pool for Green:</span> 2.299,00 SSBT (split 50-50):
                             <div style="padding-left: 10px;">
-                              <p class="text-start mt-2 mb-1">○ Pool A: 1.149,50 SSBT (for 1.500–9.999 POM, distributed
-                                proportionally). </p>
-                              <p class="text-start mb-0">○ Pool B: 1.149,50 SSBT (for 10.000+ POM, distributed equally).
+                              <p class="text-start mt-2 mb-1"><span class="bold">○ Pool A:</span> 1.149,50 SSBT (for
+                                1.500–9.999 POM, distributed
+                                <span class="bold">proportionally</span> ).
+                              </p>
+                              <p class="text-start mb-0"><span class="bold">○ Pool B:</span> 1.149,50 SSBT (for 10.000+
+                                POM, distributed equally).
                               </p>
                             </div>
 
@@ -2848,9 +2991,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         </ul>
                         <h6 class="bold">Participants: </h6>
                         <ul>
-                          <li>100 users walked 1.500 POM → Eligible for Pool A. </li>
-                          <li>28 users walked 10.000 POM → Eligible for Pool A (up to 9.999 POM) + Pool B
-                            (10.000 POM).
+                          <li><span class="bold">100 users</span> walked <span class="bold">1.500 POM</span> → Eligible
+                            for Pool A. </li>
+                          <li><span class="bold">28 users</span> walked <span class="bold">10.000 POM</span> → Eligible
+                            for<span class="bold">Pool A (up to 9.999 POM) + Pool B
+                              (10.000 POM).</span>
 
                           </li>
                         </ul>
@@ -2907,13 +3052,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="do_you">
         <div style="">
           <div class="row justify-content-between">
-            <div class="col-md-5 text-start">
+            <div class="col-lg-5 col-md-10 text-start">
               <h3 class="main-heading yellow-gradient1" style="font-weight: 400;text-transform: capitalize;">Do you have
                 any <span class="span_yellow">
                   Questions</span>?</h3>
               <p class="sub-heading">Feel free to send us your questions or request a free consultation.</p>
             </div>
-            <div class="col-md-5  text-center">
+            <div class="col-lg-5 col-md-12  text-center">
               <form id="contactForm" action="#" class="for">
                 <!-- Name -->
                 <div class="row ">
@@ -2956,8 +3101,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <!-- faq -->
   <script>
     var splide = new Splide('.splide', {
-
+      perPage: 3, // Default (for larger screens)
+      breakpoints: {
+        1024: { // Tablet view
+          perPage: 2
+        },
+        768: { // Mobile view
+          perPage: 1
+        }
+      }
     });
+
     splide.mount();
 
     function toggleFAQ(element) {
@@ -3006,7 +3160,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
   <footer>
     <section>
-      <div class="container desk">
+      <div class="container desk1">
         <div class="row d-flex justify-content-center">
 
           <div class="col-md-2 ">
@@ -3061,7 +3215,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </div>
-      <div class="container mob">
+      <div class="container tablet">
         <div class="row d-flex justify-content-center">
           <div class="col-6 gradient-text"><a class="flink" href>Home</a></div>
           <div class="col-6 "><a class="flink" href="journey.html">User Journey</a></div>
@@ -3088,7 +3242,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </svg> Play
               Store</a></div>
 
-          <div class="col-md-2 col-12 mt-5 text-center">
+          <div class="col-lg-2 col-md-12 col-12 mt-5 text-center">
             <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
             <div class="social-icons mt-3 text-center  justify-content-center">
               <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
