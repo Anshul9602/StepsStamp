@@ -426,7 +426,9 @@ font-size: 28px;
 }
 
 @media (max-width: 768px) {
-
+    .nav11 .nav-item {
+        max-width: 100% !important;
+    }
     .tab_imgg {
         margin-left: 0px !important;
         width: 100%;
