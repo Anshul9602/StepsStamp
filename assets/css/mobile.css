@@ -733,3 +733,122 @@ font-size: 28px;
         text-align: start;
     }
 }
+
+
+
+/* Base styles for the timeline */
+.timeline-container1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0d0b24; /* Background color */
+}
+
+.timeline1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between phases */
+}
+
+.phase1 {
+  width: 100%;
+  max-width: 400px; /* Ensure a reasonable width on desktop */
+  background: linear-gradient(145deg, #1e1c3f, #2d2954);
+  border-radius: 16px;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.phase1-label1 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.phase1-circle1 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.phase1-circle1.active1 {
+  background-color: #f78300;
+}
+
+.phase1-circle1.finished {
+  background-color: #6c757d; /* Finished color */
+}
+
+.phase1-circle1.upcoming {
+  background-color: #e5e5e54d;
+}
+
+.tooltip1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.tooltip1 h6 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tooltip1 p {
+  margin: 5px 0;
+}
+
+.tooltip1 button {
+  background-color: #f78300;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip1 button:hover {
+  background-color: #e07100;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .timeline-container1 {
+    padding: 15px;
+  }
+
+  .timeline1 {
+    width: 100%;
+  }
+
+  .phase1 {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 15px; /* Add spacing between cards */
+  }
+
+  .tooltip1 {
+    font-size: 12px; /* Slightly smaller font size for mobile */
+  }
+
+  .tooltip1 button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .phase1-label1 {
+    font-size: 14px; /* Adjust label size for smaller screens */
+  }
+}
