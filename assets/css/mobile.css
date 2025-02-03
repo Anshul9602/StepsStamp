@@ -115,7 +115,89 @@
     display: none;
 }
 
+
+.blog_card{
+    border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.05);
+background: rgba(255, 255, 255, 0.02);
+padding: 0;
+}
+.blog_card h4{
+    color: #FFF;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.blog_card p{
+    color: #B6B6B6;
+    font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.blog_card .lm{
+    color: #F78300;
+
+text-align: center;
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+text-transform: capitalize;
+}
+.blog_card .fii{
+    color: #B6B6B6;
+    font-feature-settings: 'salt' on, 'liga' off;
+font-family: Lexend;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+border-radius: 4px;
+background: rgba(255, 255, 255, 0.07);
+display: flex;
+padding: 0px 6px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: fit-content;
+}
+.blog_card .date{
+    color: #B6B6B6;
+    text-align: right;
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; 
+width: fit-content;
+}
+
+
+
+
+
+
+
+.blog_main h4{
+   color: #fff !important;
+}
+
 @media (max-width: 1050px) {
+    .blog_main p{
+        font-size: 14px;
+    }
+    .blog_main h4{
+        font-size: 18px;
+    }
+   
     .active .scroll-item2 {
         border-radius: 40px;
         padding: 10px 15px;
@@ -426,6 +508,30 @@ font-size: 28px;
 }
 
 @media (max-width: 768px) {
+    .blog_main p{
+        font-size: 12px;
+    }
+    .blog_main h4{
+        font-size: 16px;
+    }
+    .blog_card h4{
+        font-size: 14px; 
+    }
+    .blog_card .mob_tt{
+        justify-content: start !important;
+    }
+    .blog_card p{ 
+    font-size: 12px;
+    }
+    .blog_card .lm{
+    font-size: 16px;
+    }
+    .blog_card .fii{
+    font-size: 12px;
+    }
+    .blog_card .date{
+        font-size: 12px; 
+    }
     .nav11 .nav-item {
         max-width: 100% !important;
     }

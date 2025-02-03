@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StepsStamp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/whitepaper.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
+  <script src="assets/js.js"></script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="font py-3" id="header">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- Logo Section -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+          aria-controls="mobileNav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M3.125 12.5H21.875" stroke="#F78300" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M3.125 6.25H15.625M9.375 18.75H21.875" stroke="#35ABFF" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+        </button>
+        <div class="d-flex align-items-center">
+          <a href="index.html"> <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" /></a>
+        </div>
+
+        <!-- Navbar Links (Desktop Only) -->
+        <nav class="d-none d-lg-block">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-light  ">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html#eco" class="nav-link text-light">Ecosystem</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#reward" class="nav-link text-light">Rewards</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#dssb" class="nav-link text-light">DSSB</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#blockchain" class="nav-link text-light">Blockchains</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle gradient-text" href="#" id="othersDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false" style="color:#fff;">
+                Others
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="othersDropdown">
+                <li><a class="dropdown-item" href="#faq">FAQ's</a></li>
+                <li><a class="dropdown-item" href="journey.html">User Journey</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blogs</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Button Section -->
+        <div class="">
+          <a href="#" class="btn btn-warning text-dark">Get App</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <h5 id="mobileNavLabel" class="text-light"> <img src="assets/img/logo.png" alt="Logo" style="width: 150px"
+          class="me-2" /></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link ">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html#eco" class="nav-link">Ecosystem</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#reward" class="nav-link">Rewards</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#dssb" class="nav-link">DSSB</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#block" class="nav-link gradient-text">Blockchains</a>
+        </li>
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ's</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#whitepaper" class="nav-link">Whitepaper</a>
+        </li>
+        <li class="nav-item">
+          <a href="journey.html" class="nav-link ">User Journey</a>
+        </li>
+        <li class="nav-item">
+          <a href="blog.html" class="nav-link ">Blogs</a>
+        </li>
+        <li class="nav-item mt-3">
+          <a href="#" class="btn btn-warning text-dark w-100">Get The App</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header -->
+
+  <!-- how -->
+  <section class="normals blog_main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-8 ">
+          <div class="row">
+            <div class="col-md-12 text-start">
+              <h3 class="main-heading yellow-gradient" style="font-weight: 400;">Maximizing Your <span
+                  class="span_yellow">
+                  Rewards </span></h3>
+              <p class="sub-heading">What people usually asked about us.</p>
+            </div>
+          </div>
+          <div class="row text-start">
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facilis aspernatur repudiandae hic, eum
+              recusandae consequuntur quae labore incidunt tenetur omnis esse eligendi quos at dolore, temporibus dicta
+              perferendis tempore natus possimus ratione nihil ad.</p>
+            <div class="img mt-3">
+              <img src="img/blog/max_main.png" alt="" width="100%">
+            </div>
+            <h4 class="mt-4">Lorem ipsum dolor sit amet consectetur.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. Feugiat sit suspendisse fermentum
+              magna fames. Morbi id eu amet blandit vulputate. Est donec massa consequat ullamcorper eu faucibus in.
+              Vestibulum et eu molestie quam nunc sed semper. Lectus senectus malesuada mollis sodales volutpat morbi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. </p>
+            <h4 class="mt-4">1.Lorem ipsum dolor sit amet consectetur.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. Feugiat sit suspendisse fermentum
+              magna fames. Morbi id eu amet blandit vulputate. Est donec massa consequat ullamcorper eu faucibus in.
+              Vestibulum et eu molestie quam nunc sed semper. Lectus senectus malesuada mollis sodales volutpat morbi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. </p>
+            <h4 class="mt-4">2.Lorem ipsum dolor sit amet consectetur.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. Feugiat sit suspendisse fermentum
+              magna fames. Morbi id eu amet blandit vulputate. Est donec massa consequat ullamcorper eu faucibus in.
+              Vestibulum et eu molestie quam nunc sed semper. Lectus senectus malesuada mollis sodales volutpat morbi.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur. Platea in vitae ridiculus cras dictumst a neque. Vulputate
+              integer aenean non ultricies egestas neque eu. Purus condimentum suspendisse morbi eget eget cum.
+              Fringilla tortor at luctus suspendisse morbi ullamcorper nisi viverra. </p>
+
+
+
+
+          </div>
+          <div class="mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M4 13.6453L4.996 13.56C4.97305 13.3038 4.85231 13.0664 4.65888 12.897C4.46545 12.7276 4.21419 12.6391 3.95728 12.6501C3.70037 12.6611 3.45757 12.7706 3.2793 12.956C3.10104 13.1413 3.00101 13.3881 3 13.6453H4ZM26.9813 16.076L26.04 21.516L28.012 21.8573L28.952 16.4173L26.9813 16.076ZM17.66 28.3333H11.4613V30.3333H17.66V28.3333ZM10.2467 27.2173L9.164 14.6933L7.17067 14.8653L8.25467 27.3893L10.2467 27.2173ZM26.04 21.516C25.364 25.4226 21.8413 28.3333 17.66 28.3333V30.3333C22.7613 30.3333 27.1613 26.7746 28.012 21.8573L26.04 21.516ZM17.6733 6.79995L16.7893 12.1933L18.7627 12.516L19.6467 7.12395L17.6733 6.79995ZM9.584 13.6613L11.5027 12.008L10.196 10.4933L8.28 12.1466L9.584 13.6613ZM14.992 6.62929L15.6267 4.18395L13.6907 3.68262L13.056 6.12662L14.992 6.62929ZM16.584 3.70395L16.7773 3.76662L17.3893 1.86262L17.196 1.79995L16.584 3.70395ZM14.0307 9.08795C14.4469 8.30916 14.7696 7.48387 14.992 6.62929L13.056 6.12662C12.8723 6.82834 12.6074 7.50625 12.2667 8.14662L14.0307 9.08795ZM16.7773 3.76662C16.9673 3.82483 17.1396 3.9298 17.2784 4.07191C17.4173 4.21401 17.5182 4.3887 17.572 4.57995L19.508 4.07862C19.3708 3.56035 19.1045 3.08529 18.734 2.69779C18.3635 2.31028 17.9009 2.02295 17.3893 1.86262L16.7773 3.76662ZM15.6267 4.18395C15.6537 4.08811 15.701 3.99919 15.7654 3.92327C15.8298 3.84734 15.9098 3.78618 16 3.74395L15.132 1.94262C14.4227 2.28395 13.8893 2.91595 13.6907 3.68262L15.6267 4.18395ZM16 3.74395C16.1826 3.65732 16.3913 3.64303 16.584 3.70395L17.196 1.79995C16.515 1.58226 15.7766 1.63331 15.132 1.94262L16 3.74395ZM18.872 14.6453H25.7787V12.6453H18.872V14.6453ZM6.292 28.5413L4.996 13.56L3.004 13.732L4.29733 28.7133L6.292 28.5413ZM5 28.684V13.6453H3V28.684H5ZM4.29733 28.7133C4.29327 28.6648 4.30065 28.6161 4.31645 28.5701C4.33224 28.5241 4.35742 28.4819 4.3904 28.4461C4.42338 28.4104 4.46342 28.3819 4.508 28.3625C4.55258 28.3431 4.60071 28.3331 4.64933 28.3333V30.3333C5.61733 30.3333 6.37467 29.504 6.292 28.5413L4.29733 28.7133ZM19.6467 7.12395C19.8143 6.11034 19.767 5.07281 19.508 4.07862L17.572 4.58129C17.7611 5.30554 17.7956 6.06148 17.6733 6.79995L19.6467 7.12395ZM11.4613 28.3333C11.156 28.3328 10.862 28.2179 10.6371 28.0113C10.4123 27.8048 10.273 27.5215 10.2467 27.2173L8.25467 27.3893C8.32405 28.1922 8.69184 28.9399 9.28547 29.4849C9.87911 30.0299 10.6555 30.3326 11.4613 30.3333V28.3333ZM11.5027 12.008C12.4093 11.2266 13.3853 10.2973 14.032 9.08795L12.2667 8.14662C11.8053 9.01195 11.0707 9.74129 10.196 10.4933L11.5027 12.008ZM28.952 16.4173C29.0323 15.9546 29.0104 15.48 28.888 15.0266C28.7655 14.5733 28.5454 14.1522 28.2431 13.7928C27.9408 13.4335 27.5636 13.1446 27.1379 12.9464C26.7122 12.7481 26.2483 12.6454 25.7787 12.6453V14.6453C26.5347 14.6453 27.112 15.328 26.9813 16.076L28.952 16.4173ZM4.64933 28.3333C4.844 28.3333 5 28.4906 5 28.684H3C3 29.5933 3.73733 30.3333 4.64933 30.3333V28.3333ZM16.7893 12.1933C16.7396 12.4954 16.7562 12.8047 16.838 13.0997C16.9198 13.3948 17.0648 13.6685 17.2629 13.9019C17.4611 14.1353 17.7076 14.3228 17.9855 14.4514C18.2633 14.58 18.5658 14.6453 18.872 14.6453V12.6453C18.8557 12.6454 18.8396 12.6432 18.8249 12.6363C18.8101 12.6295 18.7971 12.6194 18.7866 12.607C18.7762 12.5945 18.7686 12.5799 18.7645 12.5641C18.7604 12.5484 18.7597 12.532 18.7627 12.516L16.7893 12.1933ZM9.164 14.6933C9.14774 14.5002 9.17611 14.306 9.24934 14.1267C9.32257 13.9473 9.43726 13.7878 9.584 13.6613L8.27733 12.1453C7.89086 12.4788 7.58903 12.8993 7.39665 13.3721C7.20426 13.8449 7.12682 14.3567 7.17067 14.8653L9.164 14.6933Z"
+                fill="#F78300" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.0021 3C21.3681 2.99979 20.7417 3.13869 20.1673 3.40692C19.5928 3.67514 19.0842 4.06616 18.6773 4.55237C18.2705 5.03858 17.9752 5.60815 17.8125 6.2209C17.6497 6.83364 17.6234 7.47464 17.7354 8.09867L11.4287 12.5147L11.338 12.5853C10.6982 12.0852 9.93074 11.7749 9.12309 11.6898C8.31545 11.6048 7.50015 11.7484 6.77018 12.1043C6.04021 12.4602 5.42495 13.0141 4.99455 13.7028C4.56415 14.3915 4.33594 15.1872 4.33594 15.9993C4.33594 16.8114 4.56415 17.6072 4.99455 18.2959C5.42495 18.9846 6.04021 19.5385 6.77018 19.8944C7.50015 20.2503 8.31545 20.3939 9.12309 20.3088C9.93074 20.2238 10.6982 19.9135 11.338 19.4133L11.4287 19.4853L17.7354 23.9013C17.6909 24.1502 17.6687 24.4053 17.6687 24.6667C17.6689 25.694 18.034 26.6878 18.699 27.4709C19.364 28.2539 20.2855 28.7753 21.2992 28.9419C22.3129 29.1085 23.3528 28.9096 24.2335 28.3806C25.1141 27.8516 25.7781 27.0269 26.1071 26.0537C26.4362 25.0805 26.4087 24.0221 26.0297 23.0673C25.6507 22.1124 24.9448 21.3233 24.0379 20.8406C23.1311 20.358 22.0822 20.2132 21.0785 20.4322C20.0748 20.6511 19.1815 21.2195 18.5581 22.036L12.5861 17.8533C12.8527 17.2907 13.0021 16.6627 13.0021 15.9987C13.0021 15.3347 12.8527 14.7053 12.5861 14.144L18.5594 9.96267C19.0067 10.5486 19.596 11.0108 20.2718 11.3054C20.9475 11.6001 21.6872 11.7175 22.4209 11.6465C23.1547 11.5756 23.8582 11.3186 24.4649 10.9C25.0717 10.4813 25.5616 9.91478 25.8883 9.25398C26.215 8.59318 26.3678 7.85995 26.3321 7.12365C26.2964 6.38735 26.0735 5.67232 25.6845 5.0462C25.2954 4.42007 24.753 3.90356 24.1086 3.5455C23.4643 3.18745 22.7392 2.99969 22.0021 3ZM19.6687 7.33333C19.6687 6.7145 19.9145 6.121 20.3521 5.68342C20.7897 5.24583 21.3832 5 22.0021 5C22.6209 5 23.2144 5.24583 23.652 5.68342C24.0896 6.121 24.3354 6.7145 24.3354 7.33333C24.3354 7.95217 24.0896 8.54566 23.652 8.98325C23.2144 9.42083 22.6209 9.66667 22.0021 9.66667C21.3832 9.66667 20.7897 9.42083 20.3521 8.98325C19.9145 8.54566 19.6687 7.95217 19.6687 7.33333ZM8.66872 13.6667C8.04988 13.6667 7.45639 13.9125 7.0188 14.3501C6.58122 14.7877 6.33538 15.3812 6.33538 16C6.33538 16.6188 6.58122 17.2123 7.0188 17.6499C7.45639 18.0875 8.04988 18.3333 8.66872 18.3333C9.28756 18.3333 9.88105 18.0875 10.3186 17.6499C10.7562 17.2123 11.002 16.6188 11.002 16C11.002 15.3812 10.7562 14.7877 10.3186 14.3501C9.88105 13.9125 9.28756 13.6667 8.66872 13.6667ZM22.0021 22.3333C21.3832 22.3333 20.7897 22.5792 20.3521 23.0168C19.9145 23.4543 19.6687 24.0478 19.6687 24.6667C19.6687 25.2855 19.9145 25.879 20.3521 26.3166C20.7897 26.7542 21.3832 27 22.0021 27C22.6209 27 23.2144 26.7542 23.652 26.3166C24.0896 25.879 24.3354 25.2855 24.3354 24.6667C24.3354 24.0478 24.0896 23.4543 23.652 23.0168C23.2144 22.5792 22.6209 22.3333 22.0021 22.3333Z"
+                fill="#F78300" />
+            </svg>
+            &nbsp;&nbsp;&nbsp;<a href="#" class="btn btn-warning text-dark" style="width: fit-content;">SUBSCRIBE</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 ">
+          <div class="row mt-3">
+
+
+            <div class="col-lg-12 col-md-12 col-12 mt-4">
+              <div class="card text-start blog_card">
+                <img class="card-img-top" src="img/blog/ssb.png" alt="Title" width="100%" />
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6 col-12 ">
+                      <div class="fii">Fitness & Health</div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-end mob_tt">
+                      <div class="date">23 October 2025</div>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3">SSB Token Utility.</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur. Sapien vulputate facilisi sagittis.</p>
+                  <a href="maximizing.html" class="lm">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                      height="20" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_1335_6779)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1335_6779">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-12 col-md-12 col-12 mt-4">
+              <div class="card text-start blog_card">
+                <img class="card-img-top" src="img/blog/min.png" alt="Title" width="100%" />
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6 col-12 ">
+                      <div class="fii">Fitness & Health</div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-end mob_tt">
+                      <div class="date">23 October 2025</div>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3">Mining vs Staking</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur. Sapien vulputate facilisi sagittis.</p>
+                  <a href="maximizing.html" class="lm">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                      height="20" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_1335_6779)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1335_6779">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-12 col-md-12 col-12 mt-4">
+              <div class="card text-start blog_card">
+                <img class="card-img-top" src="img/blog/the.png" alt="Title" width="100%" />
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6 col-12 ">
+                      <div class="fii">Fitness & Health</div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-end mob_tt">
+                      <div class="date">23 October 2025</div>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3">The Power of Auto-Staking.</h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur. Sapien vulputate facilisi sagittis.</p>
+                  <a href="maximizing.html" class="lm">Read More <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                      height="20" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_1335_6779)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M15.7044 11.2932C15.8919 11.4807 15.9972 11.735 15.9972 12.0002C15.9972 12.2653 15.8919 12.5197 15.7044 12.7072L10.0474 18.3642C9.95517 18.4597 9.84482 18.5359 9.72282 18.5883C9.60081 18.6407 9.46959 18.6683 9.33681 18.6694C9.20404 18.6706 9.07236 18.6453 8.94946 18.595C8.82656 18.5447 8.71491 18.4705 8.62102 18.3766C8.52713 18.2827 8.45287 18.171 8.40259 18.0481C8.35231 17.9252 8.32701 17.7936 8.32816 17.6608C8.32932 17.528 8.3569 17.3968 8.40931 17.2748C8.46172 17.1528 8.5379 17.0424 8.63341 16.9502L13.5834 12.0002L8.63341 7.05018C8.45125 6.86158 8.35046 6.60898 8.35274 6.34678C8.35502 6.08458 8.46019 5.83377 8.64559 5.64836C8.831 5.46295 9.08182 5.35778 9.34401 5.35551C9.60621 5.35323 9.85881 5.45402 10.0474 5.63618L15.7044 11.2932Z"
+                          fill="#F78300" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1335_6779">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg></a>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      
+      </div>
+  </section>
+  <!-- how -->
+
+
+  <!-- features -->
+
+
+  <section class="normals">
+    <div class="container">
+      <div class="do_you">
+        <div style="">
+          <div class="row justify-content-between">
+            <div class="col-lg-5 col-md-10 text-start">
+              <h3 class="main-heading yellow-gradient1" style="font-weight: 400;text-transform: capitalize;">Do you have
+                any <span class="span_yellow">
+                  Questions</span>?</h3>
+              <p class="sub-heading">Feel free to send us your questions or request a free consultation.</p>
+            </div>
+            <div class="col-lg-5 col-md-12  text-center">
+              <form id="contactForm" action="#" class="for">
+                <!-- Name -->
+                <div class="row ">
+                  <div class="col-md-10">
+                    <div class="mb-3">
+
+                      <textarea class="form-control" id="message" name="message"
+                        style="background: transparent;    color: #fff;" rows="4" placeholder="Enter your message"
+                        required></textarea>
+                    </div>
+                    <!-- Email -->
+                    <div class="">
+
+                      <input type="email" class="form-control" style="background: transparent;    color: #fff;"
+                        id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                  </div>
+                  <div class="col-md-2" style="align-items: end; display: flex;"> <button type="submit"
+                      class="btn btn-primary"
+                      style="border-radius: 1000px;background: #F78300;border-color:#F78300;padding: 10px 28px;color:black;">SEND</button>
+                  </div>
+                </div>
+
+
+                <!-- Submit Button -->
+
+              </form>
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- faq -->
+  <script>
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      const icon = element.querySelector(".faq-icon");
+
+      // SVG for the plus icon
+      const plusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9974 29.6777C19.2847 29.6777 18.707 29.1 18.707 28.3874L18.707 11.6132C18.707 10.9006 19.2847 10.3229 19.9974 10.3229C20.71 10.3229 21.2877 10.9006 21.2877 11.6132L21.2877 28.3874C21.2877 29.1 20.71 29.6777 19.9974 29.6777Z" fill="white"></path>
+        </svg>
+      `;
+
+      // SVG for the minus icon
+      const minusSVG = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="20" fill="#F78300"></circle>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3203 19.9993C10.3203 19.2867 10.898 18.709 11.6106 18.709H28.3848C29.0975 18.709 29.6752 19.2867 29.6752 19.9993C29.6752 20.7119 29.0975 21.2896 28.3848 21.2896H11.6106C10.898 21.2896 10.3203 20.7119 10.3203 19.9993Z" fill="white"></path>
+        </svg>
+      `;
+
+      // Toggle the visibility of the answer
+      if (answer.classList.contains("show")) {
+        answer.classList.remove("show");
+        icon.innerHTML = plusSVG; // Set back to plus icon
+        icon.classList.remove("rotate");
+      } else {
+        // Close other open answers
+        document.querySelectorAll(".faq-answer.show").forEach((openAnswer) => {
+          openAnswer.classList.remove("show");
+          openAnswer.previousElementSibling.querySelector(".faq-icon").innerHTML = plusSVG;
+          openAnswer.previousElementSibling.querySelector(".faq-icon").classList.remove("rotate");
+        });
+
+        answer.classList.add("show");
+        icon.innerHTML = minusSVG; // Set to minus icon
+        icon.classList.add("rotate");
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <footer>
+    <section>
+      <div class="container desk1">
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-md-2 ">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
+            <div class="social-icons mt-3">
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="col-md-10 d-flex justify-content-around mob-block">
+            <div class="center "><a class="flink" href>Home</a></div>
+            <div class="center gradient-text"><a class="flink" href="journey.html">User Journey</a></div>
+
+            <div class="center"><a class="flink" href>Support</a></div>
+            <div class="center "><a class="flink" href="blockchain.html">Whitepaper</a></div>
+            <div class="center"><a class="flink" href>Terms of Use</a></div>
+            <div class="center"><a class="flink" href>Privacy Policy</a></div>
+            <div class="center"><a class="flink" href>FAQ’s</a></div>
+            <div class="center">
+              <div class="d-flex justify-content-center gap-3">
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"
+                    fill="none">
+                    <path
+                      d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z"
+                      fill="#F78300" />
+                  </svg> App
+                  Store</a>
+                <a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
+                    fill="none">
+                    <path
+                      d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z"
+                      fill="#F78300" />
+                  </svg> Play
+                  Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-1">
+          <div class="col-md-5">
+
+          </div>
+        </div>
+        <hr />
+        <div class="row py-md-3 py-1">
+          <div class="col-md-12 text-center">
+            <p class="sub-heading copyy">© Copyright 2024, All Rights Reserved by
+              StepsStamp</p>
+          </div>
+        </div>
+      </div>
+      <div class="container tablet">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 "><a class="flink" href>Home</a></div>
+          <div class="col-6 gradient-text"><a class="flink" href="journey.html">User Journey</a></div>
+          <div class="col-6 mt-3"><a class="flink" href="">Support</a></div>
+          <div class="col-6 mt-3 "><a class="flink" href="blockchain.html">Whitepaper</a></div>
+          <div class="col-6 mt-3"><a class="flink" href>Terms of Use</a></div>
+          <div class="col-6 mt-3"><a class="flink" href>Privacy Policy</a></div>
+          <div class="col-6 mt-3"><a class="flink" href>FAQ’s</a></div>
+          <div class="col-6 mt-3"></div>
+          <div class="col-6 mt-3"></div>
+          <div class="col-6 mt-3"></div>
+          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"
+                viewBox="0 0 16 20" fill="none">
+                <path
+                  d="M8.1246 5.74647C7.34876 5.74647 6.14778 4.84824 4.88304 4.88071C3.21444 4.90235 1.684 5.86551 0.823124 7.3914C-0.90925 10.454 0.376745 14.9776 2.06661 17.4667C2.8956 18.6787 3.87338 20.0423 5.17 19.999C6.41349 19.9449 6.88112 19.1765 8.39031 19.1765C9.88886 19.1765 10.314 19.999 11.6319 19.9665C12.971 19.9449 13.8212 18.7328 14.6396 17.5099C15.5855 16.1031 15.9787 14.7395 16 14.6638C15.9681 14.6529 13.3961 13.6465 13.3642 10.6164C13.343 8.08401 15.3942 6.87195 15.4899 6.81784C14.3208 5.0755 12.5246 4.88071 11.8976 4.83742C10.2608 4.70756 8.88982 5.74647 8.1246 5.74647ZM10.8879 3.19248C11.5787 2.34837 12.0357 1.16877 11.9082 0C10.9198 0.0432879 9.72944 0.670962 9.01736 1.51508C8.37968 2.26179 7.82702 3.46303 7.97581 4.61016C9.0705 4.69673 10.1971 4.03659 10.8879 3.19248Z"
+                  fill="#F78300" />
+              </svg> App
+              Store</a></div>
+          <div class="col-6 mt-3"><a class="btns11 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                viewBox="0 0 16 17" fill="none">
+                <path
+                  d="M0.267813 0.835546L8.34845 8.50442L0.327909 16.244C0.19669 16.0786 0.0948298 15.8933 0.026503 15.6955C-0.00883434 15.4716 -0.00883434 15.2439 0.026503 15.02V1.84929C0.00246449 1.49587 0.0865993 1.14244 0.266888 0.835546M11.8294 5.15986L9.19165 7.68841L1.20716 0.0893265C1.46604 0.00253603 1.74341 -0.021622 2.0143 0.0195364C2.4396 0.132275 2.84548 0.305855 3.21808 0.532226L10.4444 4.40201C10.9141 4.64627 11.3718 4.90307 11.8294 5.15986ZM9.19258 9.33206L11.8174 11.8266L9.91466 12.852L4.10935 15.9747C3.62858 16.2315 3.14596 16.4766 2.67629 16.7567C2.47531 16.8778 2.24996 16.956 2.01527 16.9861C1.78058 17.0161 1.54196 16.9974 1.31534 16.9312L9.19258 9.33206ZM15.9973 8.50442C16.0041 8.8173 15.9224 9.12601 15.7611 9.39723C15.5998 9.66845 15.365 9.89188 15.082 10.0434L12.913 11.2084L10.0589 8.50442L12.925 5.75397C13.66 6.15034 14.383 6.54672 15.1051 6.91983C15.3931 7.07559 15.6296 7.30707 15.7874 7.58749C15.9451 7.86791 16.0185 8.18581 15.9973 8.50442Z"
+                  fill="#F78300" />
+              </svg> Play
+              Store</a></div>
+
+          <div class="col-lg-2 col-md-12 col-12 mt-5 text-center">
+            <img src="assets/img/logo.png" alt="Logo" style="width: 150px" class="me-2" />
+            <div class="social-icons mt-3 text-center  justify-content-center">
+              <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row pt-1">
+
+        </div>
+        <hr />
+        <div class="row py-md-3 py-1">
+          <div class="col-md-12 text-center">
+            <p class="sub-heading copyy">© Copyright 2024, All Rights Reserved by
+              StepsStamp</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>

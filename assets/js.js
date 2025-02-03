@@ -8,18 +8,20 @@ window.addEventListener("scroll", function () {
   });
   document.addEventListener("DOMContentLoaded", function () {
     // Select all nav links
-    const navLinks = document.querySelectorAll(".nav-link");
+    const navLinks = document.querySelectorAll("#header .nav-link");
     const nav1 = document.querySelectorAll(".hhh");
    
     // Loop through each link
     navLinks.forEach(link => {
       link.addEventListener("click", function () {
-        nav1.classList.remove("d-none");
-        // Remove 'gradient-text' from Home link
+        // Remove 'd-none' from all elements with class 'hhh'
+        nav1.forEach(el => el.classList.remove("d-none"));
+
+        // Remove 'gradient-text' from the previously active link
         document.querySelector(".gradient-text")?.classList.remove("gradient-text");
-  
+
         // Add 'gradient-text' to the clicked link
         this.classList.add("gradient-text");
       });
     });
-  });
+});
