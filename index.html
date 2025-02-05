@@ -93,8 +93,7 @@
   </style>
 
 </head>
-<script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
 <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
@@ -105,6 +104,130 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       width: 80% !important;
     }
   }
+
+  /* watches */
+  .card-containerw {
+    background-image: url('img/card1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .card-imgw {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 15px;
+  }
+
+  .card-textw {
+
+    /* transform: translate(-37%, -5%); */
+    color: #000;
+    font-weight: bold;
+    padding-right: 8px;
+
+  }
+
+  .text-primaryw {
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #0941B4;
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .text-darkw {
+    color: #200745;
+
+    font-family: Lexend;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .text-darkw1 {
+    font-size: 14px;
+    color: #200745;
+  }
+
+  .text-secondaryw {
+    color: #3A3A3A;
+
+    font-family: Lexend;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+
+  .text-secondaryw1 {
+    font-size: 13px;
+    color: #3A3A3A;
+    font-weight: 300;
+  }
+
+  .highlightw {
+    color: #FF6F02;
+    font-size: 14px;
+  }
+
+  .btn-custom-blue {
+    border: 1px solid #246BFD;
+    color: #246BFD;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 11px;
+  }
+
+  .btn-custom-blue:hover {
+    background-color: #246BFD;
+    color: white;
+  }
+
+  .btn-custom-gold {
+    border: 1px solid #965000;
+    color: #965000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 11px;
+  }
+
+  .btn-custom-gold:hover {
+    background-color: #965000;
+    color: white;
+  }
+
+  .btn-custom-green {
+    border: 1px solid #1E7200;
+    color: #1E7200;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 11px;
+  }
+
+  .btn-custom-green:hover {
+    background-color: #1E7200;
+    color: white;
+  }
+
+  .units-containerw {
+    display: flex;
+    /* justify-content: center; */
+    gap: 14px;
+  }
+
+  /* watches */
 </style>
 
 <body>
@@ -1252,7 +1375,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!-- strategy -->
     <section class="normals">
-      <div class="container desk1">
+      <div class="container ">
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="main-heading yellow-gradient">
@@ -1266,7 +1389,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </svg></a>
           </div>
         </div>
-        <div class="">
+        <div class="desk1">
           <div class="timeline-container1">
             <div class="timeline1">
               <div class="phase1 active">
@@ -1385,11 +1508,309 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
         </div>
+        <style>
+          .main1 {
+            position: relative;
+            width: 100%;
+            margin: 10% auto;
+          }
+
+          .main1 .labb {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+          }
+
+          .main1::after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            background: linear-gradient(to bottom,
+                rgba(80, 80, 80, 0) 0%,
+                rgb(80, 80, 80) 8%,
+                rgb(80, 80, 80) 92%,
+                rgba(80, 80, 80, 0) 100%);
+            top: 0;
+            bottom: 0;
+            left: 10.3%;
+            margin-left: -3px;
+            margin-top: -10%;
+          }
+
+          .text-wrapper {
+            padding: 20px 40px 40px 40px;
+            position: relative;
+            width: 90%;
+            box-sizing: border-box;
+            margin-top: 15%;
+          }
+
+          .text-wrapper::after {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            right: -9px;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 4px #59bf6a, inset 0 2px 0 rgb(0 0 0 / 8%),
+              0 3px 0 4px rgb(0 0 0 / 5%);
+            background: #ffffff;
+          }
+
+          .left {
+            left: 0;
+          }
+
+          .right {
+            left: 10%;
+          }
+
+          .right::after {
+            left: -11px;
+          }
+
+          .main1 .content {
+            position: relative;
+            padding: 30px;
+            background: #11011E;
+            border-radius: 16px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+          }
+
+          .main1 .active .content {
+            border: 1px solid #F78300;
+            border-radius: 16px;
+          }
+
+          .labb .col-4 {
+            height: 2px;
+            background: bisque;
+            margin-left: -7%;
+          }
+
+
+          .content h3 {
+            font-size: 14px;
+            color: #fff;
+            letter-spacing: 1px;
+          }
+
+          .content p {
+            font-weight: 300;
+            color: #fff;
+            margin-top: 2px;
+            font-style: italic;
+          }
+
+          @media (max-width: 1049px) {
+            .main1 .phase1-label1 {
+              font-size: 20px;
+              font-weight: 300;
+              margin-bottom: 10px;
+              color: #fff;
+            }
+          }
+
+          @media (max-width: 768px) {
+
+            .text-wrapper {
+              padding: 20px 5px 5px 20px;
+            }
+
+            .main1::after {
+
+              left: 5.3%;
+
+            }
+
+            .right {
+              left: 5%;
+            }
+
+            .main1 .share1 {
+              color: #1C192D;
+              font-family: Lexend;
+              font-size: 11px;
+            }
+
+            .main1 .content {
+              position: relative;
+              padding: px;
+            }
+
+
+          }
+        </style>
+        <div class="tablet">
+          <div class="main1">
+            <div class="text-wrapper right active">
+              <div class="labb row">
+                <div class="col-4 " style="height: 2px;">
+                </div>
+                <div class="col-7">
+                  <div class="phase1-label1" style="background-color: #F78300;    width: fit-content;">phase A</div>
+                </div>
+
+              </div>
+              <h3 style="height: 20px;"></h3>
+              <div class="content">
+                <div class="row justify-content-around" style="color: #fff;">
+                  <div class="col-md-6 col-6">
+                    <h4>SSBTs Distributed</h4>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <p>2,683,217</p>
+                  </div>
+                </div>
+
+                <p style="    height: 11px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                <div class="row text-start justify-content-around" style="color:#fff;">
+                  <div class="col-md-5 col-6 mt-2">SSBT Supply</div>
+                  <div class="col-md-5 col-6 mt-2">18,000,000</div>
+
+                  <div class="col-md-5 col-6 mt-2">Swap Price</div>
+                  <div class="col-md-5 col-6 mt-2">0.05 BUSD/SSB</div>
+                  <div class="col-md-12">
+                    <p></p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="text-center d-flex justify-content-center mt-3 pb-3"><button class="btn share1">DOWNLOAD
+                        APP TODAY <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 25 25" fill="none">
+                            <circle cx="12.5" cy="12.5" r="11" stroke="#F58200" stroke-width="2" />
+                            <path d="M9.28394 9.27979H15.723M15.723 9.27979V15.7188M15.723 9.27979L9.28394 15.7188"
+                              stroke="#F58200" stroke-width="2" />
+                          </svg></span></button></div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="text-wrapper right">
+              <div class="labb row">
+                <div class="col-4 " style="height: 2px;"> </div>
+                <div class="col-7">
+                  <div class="phase1-label1" style="width: fit-content;">phase B</div>
+                </div>
+              </div>
+              <h3 style="height: 20px;"></h3>
+              <div class="content">
+                <div class=" text-center" style="color:#E5E5E54D;">
+                  <h5 class="pb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                      fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM12.773 7.77756H13.3286C13.9397 7.77756 14.4397 8.27756 14.4397 8.88868V14.4442C14.4397 15.0553 13.9397 15.5553 13.3286 15.5553H6.66189C6.05078 15.5553 5.55078 15.0553 5.55078 14.4442V8.88868C5.55078 8.27756 6.05078 7.77756 6.66189 7.77756H7.21745V6.66645C7.21745 5.13312 8.46189 3.88867 9.99523 3.88867C11.5286 3.88867 12.773 5.13312 12.773 6.66645V7.77756ZM8.88412 11.6665C8.88412 12.2776 9.38412 12.7776 9.99523 12.7776C10.6063 12.7776 11.1063 12.2776 11.1063 11.6665C11.1063 11.0553 10.6063 10.5553 9.99523 10.5553C9.38412 10.5553 8.88412 11.0553 8.88412 11.6665ZM8.273 7.77756H11.7175V6.66645C11.7175 5.71645 10.9452 4.94423 9.99523 4.94423C9.04523 4.94423 8.273 5.71645 8.273 6.66645V7.77756Z"
+                        fill="#E5E5E5" fill-opacity="0.3" />
+                    </svg> Upcomming</h5>
+                  <p style="    height: 15px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start justify-content-around">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-5 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-5 col-6 mt-2">0.06 BUSD/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="text-wrapper right">
+              <div class="labb row">
+                <div class="col-4 " style="height: 2px;"> </div>
+                <div class="col-7">
+                  <div class="phase1-label1" style="width: fit-content;">phase C</div>
+                </div>
+              </div>
+              <h3 style="height: 20px;"></h3>
+              <div class="content">
+                <div class=" text-center" style="color:#E5E5E54D;">
+                  <h5 class="pb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                      fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM12.773 7.77756H13.3286C13.9397 7.77756 14.4397 8.27756 14.4397 8.88868V14.4442C14.4397 15.0553 13.9397 15.5553 13.3286 15.5553H6.66189C6.05078 15.5553 5.55078 15.0553 5.55078 14.4442V8.88868C5.55078 8.27756 6.05078 7.77756 6.66189 7.77756H7.21745V6.66645C7.21745 5.13312 8.46189 3.88867 9.99523 3.88867C11.5286 3.88867 12.773 5.13312 12.773 6.66645V7.77756ZM8.88412 11.6665C8.88412 12.2776 9.38412 12.7776 9.99523 12.7776C10.6063 12.7776 11.1063 12.2776 11.1063 11.6665C11.1063 11.0553 10.6063 10.5553 9.99523 10.5553C9.38412 10.5553 8.88412 11.0553 8.88412 11.6665ZM8.273 7.77756H11.7175V6.66645C11.7175 5.71645 10.9452 4.94423 9.99523 4.94423C9.04523 4.94423 8.273 5.71645 8.273 6.66645V7.77756Z"
+                        fill="#E5E5E5" fill-opacity="0.3" />
+                    </svg> Upcomming</h5>
+                  <p style="    height: 15px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start justify-content-around">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-5 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-5 col-6 mt-2">0.07 BUSD/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="text-wrapper right">
+              <div class="labb row">
+                <div class="col-4 " style="height: 2px;"> </div>
+                <div class="col-7">
+                  <div class="phase1-label1" style="width: fit-content;">phase C</div>
+                </div>
+              </div>
+              <h3 style="height: 20px;"></h3>
+              <div class="content">
+                <div class=" text-center" style="color:#E5E5E54D;">
+                  <h5 class="pb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                      fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM12.773 7.77756H13.3286C13.9397 7.77756 14.4397 8.27756 14.4397 8.88868V14.4442C14.4397 15.0553 13.9397 15.5553 13.3286 15.5553H6.66189C6.05078 15.5553 5.55078 15.0553 5.55078 14.4442V8.88868C5.55078 8.27756 6.05078 7.77756 6.66189 7.77756H7.21745V6.66645C7.21745 5.13312 8.46189 3.88867 9.99523 3.88867C11.5286 3.88867 12.773 5.13312 12.773 6.66645V7.77756ZM8.88412 11.6665C8.88412 12.2776 9.38412 12.7776 9.99523 12.7776C10.6063 12.7776 11.1063 12.2776 11.1063 11.6665C11.1063 11.0553 10.6063 10.5553 9.99523 10.5553C9.38412 10.5553 8.88412 11.0553 8.88412 11.6665ZM8.273 7.77756H11.7175V6.66645C11.7175 5.71645 10.9452 4.94423 9.99523 4.94423C9.04523 4.94423 8.273 5.71645 8.273 6.66645V7.77756Z"
+                        fill="#E5E5E5" fill-opacity="0.3" />
+                    </svg> Upcomming</h5>
+                  <p style="    height: 15px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start justify-content-around">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-5 col-6 mt-2">18,000,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-5 col-6 mt-2">0.08 BUSD/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="text-wrapper right">
+              <div class="labb row">
+                <div class="col-4 " style="height: 2px;"> </div>
+                <div class="col-7">
+                  <div class="phase1-label1" style="width: fit-content;">phase C</div>
+                </div>
+              </div>
+              <h3 style="height: 20px;"></h3>
+              <div class="content">
+                <div class=" text-center" style="color:#E5E5E54D;">
+                  <h5 class="pb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                      fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20ZM12.773 7.77756H13.3286C13.9397 7.77756 14.4397 8.27756 14.4397 8.88868V14.4442C14.4397 15.0553 13.9397 15.5553 13.3286 15.5553H6.66189C6.05078 15.5553 5.55078 15.0553 5.55078 14.4442V8.88868C5.55078 8.27756 6.05078 7.77756 6.66189 7.77756H7.21745V6.66645C7.21745 5.13312 8.46189 3.88867 9.99523 3.88867C11.5286 3.88867 12.773 5.13312 12.773 6.66645V7.77756ZM8.88412 11.6665C8.88412 12.2776 9.38412 12.7776 9.99523 12.7776C10.6063 12.7776 11.1063 12.2776 11.1063 11.6665C11.1063 11.0553 10.6063 10.5553 9.99523 10.5553C9.38412 10.5553 8.88412 11.0553 8.88412 11.6665ZM8.273 7.77756H11.7175V6.66645C11.7175 5.71645 10.9452 4.94423 9.99523 4.94423C9.04523 4.94423 8.273 5.71645 8.273 6.66645V7.77756Z"
+                        fill="#E5E5E5" fill-opacity="0.3" />
+                    </svg> Upcomming</h5>
+                  <p style="    height: 15px; width: 2px;    background: #01ADF566;    margin: auto;"></p>
+                  <div class="row text-start justify-content-around">
+                    <div class="col-md-6 col-6 mt-2">SSBT Supply</div>
+                    <div class="col-md-5 col-6 mt-2">17,468,000</div>
+                    <div class="col-md-6 col-6 mt-2">Swap Price</div>
+                    <div class="col-md-5 col-6 mt-2">0.09 BUSD/SSB</div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
       </div>
-      <div class="conatiner tablet" style="    text-align: center;">
-        <img src="img/time11.png" alt="" width="100%">
-      </div>
+
     </section>
   </div>
   <!-- strategy -->
@@ -1406,21 +1827,86 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             revolution.</p>
         </div>
       </div>
-      <div class="row pt-md-4   d-flex justify-content-center">
-        <div class="col-md-12 row justify-content-evenly">
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card-containerw">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/wa.png" alt="" width="100%">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-textw">
+                    <h6 class="text-primaryw mb-1">Limited Edition</h6>
+                    <h2 class="text-darkw mb-1">Silver Watch</h2>
+
+                    <p class="text-secondaryw mb-2">Get 10 SSBT/Day for 300 Days</p>
+                    <!-- <p class="highlightw mb-0">Hurry Up!</p>
+                    <p class="text-darkw1 mb-0">1000 Units Left</p>
+                    <button class="btn-customw">GET NOW</button> -->
+                    <div class="units-containerw">
+                      <div class="div">
+                        <p class="highlightw mb-0">Hurry Up!</p>
+                        <p class="text-darkw1 mb-0">1000 Units Left</p>
+                      </div>
+                      <div class="div">
+                        <button class="btn-custom-blue">GET NOW</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
 
 
-          <div class="col-md-3 col-12 mt-3">
-            <img src="img/sl1.png" alt="" style="width: 100%" />
+            </div>
           </div>
-          <div class="col-md-3 col-12 mt-3">
-            <img src="img/gold1.png" alt="" style="width: 100%" />
+          <div class="col-md-4">
+            <div class="card-containerw">
+              <img src="assets/img/watch2.png" alt="Card Background" class="card-imgw">
+              <div class="card-textw">
+                <h6 class="text-primaryw mb-1">Limited Edition</h6>
+                <h2 class="text-darkw mb-1">Gold Watch</h2>
+                <p class="text-secondaryw1 mb-2">Office ipsum you must be muted. Anom eye closing low-hanging latest
+                  eco.</p>
+                <p class="text-secondaryw mb-2">Get 50 SSBT/Day for 450 Days</p>
+                <div class="units-containerw">
+                  <div class="div">
+                    <p class="highlightw mb-0">Hurry Up!</p>
+                    <p class="text-darkw1 mb-0">500 Units Left</p>
+                  </div>
+                  <div class="div">
+                    <button class="btn-custom-gold">GET NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-3 col-12 mt-3">
-            <img src="img/green1.png" alt="" style="width: 100%" />
+          <div class="col-md-4">
+            <div class="card-containerw">
+              <img src="assets/img/watch3.png" alt="Card Background" class="card-imgw">
+              <div class="card-textw">
+                <h6 class="text-primaryw mb-1">Limited Edition</h6>
+                <h2 class="text-darkw mb-1">Green Watch</h2>
+                <p class="text-secondaryw1 mb-2">Office ipsum you must be muted. Anom eye closing low-hanging latest
+                  eco.</p>
+                <p class="text-secondaryw mb-2">Get 100 SSBT/Day for 730 Days</p>
+                <div class="units-containerw">
+                  <div class="div">
+                    <p class="highlightw mb-0">Hurry Up!</p>
+                    <p class="text-darkw1 mb-0">250 Units Left</p>
+                  </div>
+                  <div class="div">
+                    <button class="btn-custom-green">GET NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
   <!-- watch -->
